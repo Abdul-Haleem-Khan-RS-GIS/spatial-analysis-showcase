@@ -4,7 +4,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:0a3d2e,100:00e5a0&height=200&section=header&text=Abdul%20Haleem%20Khan&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=GIS%20Analyst%20%7C%20Remote%20Sensing%20Specialist%20%7C%20Cartographer&descAlignY=58&descSize=16&descColor=a0f0d0" width="100%" />
 
 <!-- TYPING ANIMATION -->
-<img src="https://readme-typing-svg.demolab.com?font=Space+Mono&size=15&duration=3000&pause=1000&color=00E5A0&center=true&vCenter=true&multiline=false&width=600&lines=Turning+complex+spatial+data+into+clear+decisions;ArcGIS+Pro+%7C+QGIS+%7C+Google+Earth+Engine;Remote+Sensing+%7C+Cartography+%7C+Urban+GIS;Available+for+Freelance+%E2%80%94+Saudi+Arabia" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Space+Mono&size=15&duration=3000&pause=1000&color=00E5A0&center=true&vCenter=true&multiline=false&width=600&lines=Turning+complex+spatial+data+into+clear+decisions;ArcGIS+Pro+%7C+QGIS+%7C+Google+Earth+Engine;Remote+Sensing+%7C+Cartography+%7C+Urban+GIS;Available+for+Freelance+%20%7C%20+Worldwide" alt="Typing SVG" />
 
 <br/>
 
@@ -21,13 +21,13 @@
 
 I am a freelance **GIS & Remote Sensing Specialist** based in Saudi Arabia, helping businesses and researchers transform complex spatial data into clear, actionable maps and analysis.
 
-I bridge the gap between raw geodata and real decisions — whether that's mapping wildfire damage from Sentinel-2 imagery, optimizing business logistics across a city, or designing publication-quality cartographic outputs.
+I bridge the gap between raw geodata and real decisions whether that's mapping wildfire damage from Sentinel-2 imagery, optimizing business logistics across a city, or designing publication-quality cartographic outputs.
 
 ```
-Specialization  →  Satellite Image Analysis · Spatial Modeling · Cartographic Design
-Platforms       →  ArcGIS Pro · QGIS · Google Earth Engine · ERDAS Imagine
-Code            →  GEE JavaScript API · Python (ArcPy)
-Data            →  Sentinel-2 · Landsat · OpenStreetMap · GeoJSON · Shapefiles
+Specialization  |   Satellite Image Analysis · Spatial Modeling · Cartographic Design 
+Platforms       |   ArcGIS Pro · QGIS · Google Earth Engine · ERDAS Imagine           
+Code            |   GEE JavaScript API · Python (ArcPy)                               
+Data            |   Sentinel-2 · Landsat · OpenStreetMap · GeoJSON · Shapefiles       
 ```
 
 ---
@@ -59,7 +59,7 @@ Data            →  Sentinel-2 · Landsat · OpenStreetMap · GeoJSON · Shapef
 
 ## 📂 Project Portfolio
 
-### 🛰️ Category A — Remote Sensing
+### 🛰️ Category A - Remote Sensing
 
 > *Satellite imagery analysis for environmental monitoring & land assessment*
 
@@ -90,7 +90,7 @@ Category-A-Remote-Sensing/
 
 ---
 
-### 🗺️ Category B — Cartography & Map Design
+### 🗺️ Category B - Cartography & Map Design
 
 > *High-quality map design for presentations, publications, and web delivery*
 
@@ -110,7 +110,7 @@ Category-A-Remote-Sensing/
 
 ---
 
-### 🏙️ Category C — Urban GIS & Spatial Analysis
+### 🏙️ Category C - Urban GIS & Spatial Analysis
 
 > *City-scale spatial analysis for planning, strategy, and social infrastructure*
 
@@ -130,7 +130,7 @@ Category-A-Remote-Sensing/
 
 ---
 
-### 🔗 Category D — Network GIS & Route Analysis
+### 🔗 Category D - Network GIS & Route Analysis
 
 > *Route optimization and transport network analysis across terrain*
 
