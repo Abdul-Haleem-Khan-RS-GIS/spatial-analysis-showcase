@@ -11,7 +11,7 @@
 <!-- PROFILE BADGES -->
 [![Location](https://img.shields.io/badge/📍_Saudi_Arabia-Riyadh-00e5a0?style=for-the-badge&labelColor=0d1117)](https://github.com/Abdul-Haleem-Khan-RS-GIS)
 [![Freelance](https://img.shields.io/badge/💼_Status-Available_for_Hire-00b8d4?style=for-the-badge&labelColor=0d1117)](https://github.com/Abdul-Haleem-Khan-RS-GIS)
-[![Upwork](https://img.shields.io/badge/Upwork-Profile-14a800?style=for-the-badge&logo=upwork&logoColor=white&labelColor=0d1117)](https://www.upwork.com)
+[![Upwork](https://img.shields.io/badge/Upwork-Profile-14a800?style=for-the-badge&logo=upwork&logoColor=white&labelColor=0d1117)]([https://www.upwork.com](https://www.upwork.com/freelancers/abdulhaleemrsgis?mp_source=share))
 
 </div>
 
