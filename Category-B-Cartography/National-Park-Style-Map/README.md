@@ -119,6 +119,11 @@ National-Park-Style-Map/
 
 ---
 
+<h2>🖼️ Visual Preview</h2>
+<img src="Rocky Mountain NPS Maps.jpg" alt="Rocky Mountain NPS Map" width="600">
+
+---
+
 ## 🔗 Navigation
 
 [← Back to Portfolio](../README.md) &nbsp;|&nbsp; [Previous: Riyadh Postcode Mapping](../Riyadh-Postcode-Mapping) &nbsp;|&nbsp; [Next: Zurich Demographics →](../Zurich-Demographics)
