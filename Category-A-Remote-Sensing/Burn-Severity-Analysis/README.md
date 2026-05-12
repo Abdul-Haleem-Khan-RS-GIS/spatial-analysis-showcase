@@ -112,6 +112,7 @@ Burn-Severity-Analysis/
 ![Sentinel-2](https://img.shields.io/badge/Sentinel--2_L2A-003247?style=flat-square&logoColor=white)
 
 ---
+![Map Title](https://raw.githubusercontent.com/Abdul-Haleem-Khan-RS-GIS/spatial-analysis-showcase/blob/adf46489d2f21b8945dbfafe5781006a83276a1a/Category-A-Remote-Sensing/Burn-Severity-Analysis/burn_severity_map.png)
 
 ## 🔗 Navigation
 
