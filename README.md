@@ -186,7 +186,7 @@ Specializing in turning geodata into decision-making tools.
 
 <br/>
 
-[![GitHub](https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdul-Haleem-Khan-RS-GIS/GIS-RemoteSensing-Portfolio)
+[![GitHub](https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdul-Haleem-Khan-RS-GIS/spatial-analysis-showcase)
 [![Upwork](https://img.shields.io/badge/Upwork-Hire_Me-14a800?style=for-the-badge&logo=upwork&logoColor=white)](https://www.upwork.com)
 [![Email](https://img.shields.io/badge/Email-Contact-00e5a0?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your@email.com)
 
