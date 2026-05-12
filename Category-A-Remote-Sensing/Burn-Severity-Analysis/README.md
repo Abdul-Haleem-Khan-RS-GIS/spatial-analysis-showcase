@@ -1,13 +1,16 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:3d1a00,100:ff6b00&height=160&section=header&text=Burn%20Severity%20Analysis&fontSize=32&fontColor=ffffff&fontAlignY=45&desc=Wildfire%20Damage%20Mapping%20with%20Sentinel-2&descAlignY=65&descSize=14&descColor=ffb380" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:3d1a00,100:ff6b00&height=200&section=header&text=Burn%20Severity%20Analysis&fontSize=32&fontColor=ffffff&fontAlignY=32&desc=Wildfire%20Damage%20Mapping%20with%20Sentinel-2&descAlignY=50&descSize=16&descColor=ffb380" width="100%"/>
+
+<div align="center">
+
 
 [![Category](https://img.shields.io/badge/Category-A%20Remote%20Sensing-ff6b00?style=for-the-badge&labelColor=0d1117)](../)
 [![Satellite](https://img.shields.io/badge/Data-Sentinel--2-003247?style=for-the-badge&logo=esa&logoColor=white&labelColor=0d1117)]()
 [![Platform](https://img.shields.io/badge/Platform-ArcGIS%20Pro-2C7BB6?style=for-the-badge&logo=esri&logoColor=white&labelColor=0d1117)]()
 [![Index](https://img.shields.io/badge/Index-NBR%20%2F%20dNBR-ff4500?style=for-the-badge&labelColor=0d1117)]()
 
-</div>
+<div align="left">
 
 ---
 
