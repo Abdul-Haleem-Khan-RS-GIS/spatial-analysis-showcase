@@ -1,14 +1,15 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:2a1a00,100:e67e22&height=240&section=header&text=Bike%20Route%20Network%20Analysis&fontSize=32&fontColor=ffffff&fontAlignY=40&desc=Optical%20Urban%20Cycling%20Terrain%20Network%20Analysis&descAlignY=60&descSize=16&descColor=ffffff" width="100%"/>
-<br><br>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:2a1a00,100:e67e22&height=240&section=header&text=Bike%20Route%20Network%20Analysis&fontSize=32&fontColor=ffffff&fontAlignY=32&desc=Optical%20Urban%20Cycling%20Terrain%20Network%20Analysis&descAlignY=50&descSize=16&descColor=ffffff" width="100%"/>
+<div align="center">
+
 
 [![Category](https://img.shields.io/badge/Category-D%20Network%20GIS-27ae60?style=for-the-badge&labelColor=0d1117)](../)
 [![Method](https://img.shields.io/badge/Method-Network%20Analyst-2C7BB6?style=for-the-badge&logo=esri&logoColor=white&labelColor=0d1117)]()
 [![Data](https://img.shields.io/badge/Network-OpenStreetMap-7EBC6F?style=for-the-badge&logo=openstreetmap&logoColor=white&labelColor=0d1117)]()
 [![Terrain](https://img.shields.io/badge/Elevation-DEM%20Integrated-a8f0c0?style=for-the-badge&labelColor=0d1117)]()
 
-</div>
+<div align="left">
 
 
 ## 📌 Project Overview
