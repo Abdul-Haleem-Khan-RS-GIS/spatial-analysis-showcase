@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:1a1a3d,100:6c63ff&height=160&section=header&text=Riyadh%20Postcode%20Mapping&fontSize=32&fontColor=ffffff&fontAlignY=45&desc=Geospatial%20Postal%20Boundaries%20in%20GeoJSON&descAlignY=65&descSize=14&descColor=c0b8ff" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:1a1a3d,100:6c63ff&height=200&section=header&text=Riyadh%20Postcode%20Mapping&fontSize=32&fontColor=ffffff&fontAlignY=36&desc=Geospatial%20Postal%20Boundaries%20in%20GeoJSON&descAlignY=50&descSize=14&descColor=c0b8ff" width="100%"/>
 
 [![Category](https://img.shields.io/badge/Category-B%20Cartography-6c63ff?style=for-the-badge&labelColor=0d1117)](../)
 [![Location](https://img.shields.io/badge/Area-Riyadh%2C%20Saudi%20Arabia-00b8d4?style=for-the-badge&labelColor=0d1117)]()
@@ -114,6 +114,8 @@ Riyadh-Postcode-Mapping/
 ![OpenStreetMap](https://img.shields.io/badge/OpenStreetMap-7EBC6F?style=flat-square&logo=openstreetmap&logoColor=white)
 
 ---
+
+![Alt Map](https://github.com/Abdul-Haleem-Khan-RS-GIS/spatial-analysis-showcase/blob/b8f7ef2cef4b9cb7118763ce13e2c33610a234d8/Category-B-Cartography/Riyadh-Postcode-Mapping/riyadh_postcode_map.png)
 
 ## 🔗 Navigation
 
