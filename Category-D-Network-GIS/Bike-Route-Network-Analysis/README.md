@@ -1,6 +1,7 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:2a1a00,100:e67e22&height=160&section=header&text=Bike%20Route%20Network%20Analysis&fontSize=30&fontColor=ffffff&fontAlignY=45&desc=Optical%20Urban%20Cycling%20Terrain%20Network%20Analysis&descAlignY=65&descSize=14&descColor=f0c08a" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:2a1a00,100:e67e22&height=240&section=header&text=Bike%20Route%20Network%20Analysis&fontSize=32&fontColor=ffffff&fontAlignY=40&desc=Optical%20Urban%20Cycling%20Terrain%20Network%20Analysis&descAlignY=60&descSize=16&descColor=ffffff" width="100%"/>
+<br><br>
 
 [![Category](https://img.shields.io/badge/Category-D%20Network%20GIS-27ae60?style=for-the-badge&labelColor=0d1117)](../)
 [![Method](https://img.shields.io/badge/Method-Network%20Analyst-2C7BB6?style=for-the-badge&logo=esri&logoColor=white&labelColor=0d1117)]()
@@ -9,7 +10,6 @@
 
 </div>
 
----
 
 ## 📌 Project Overview
 
