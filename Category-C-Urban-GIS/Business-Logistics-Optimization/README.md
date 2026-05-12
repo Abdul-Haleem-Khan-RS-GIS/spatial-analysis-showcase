@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:2d1b4a,100:9b59b6&height=160&section=header&text=Business%20Logistics%20Optimization&fontSize=28&fontColor=ffffff&fontAlignY=45&desc=Employee%E2%80%93Client%20Spatial%20Strategy%20%E2%80%94%20Switzerland&descAlignY=65&descSize=14&descColor=d7b8f0" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:2d1b4a,100:9b59b6&height=200&section=header&text=Business%20Logistics%20Optimization&fontSize=28&fontColor=ffffff&fontAlignY=36&desc=Employee%20%E2%80%93%20Client%20Spatial%20Strategy%20%E2%80%94%20Switzerland&descAlignY=55&descSize=14&descColor=d7b8f0" width="100%"/>
 
 [![Category](https://img.shields.io/badge/Category-C%20Urban%20GIS-9b59b6?style=for-the-badge&labelColor=0d1117)](../)
 [![Location](https://img.shields.io/badge/Area-Switzerland-e30613?style=for-the-badge&labelColor=0d1117)]()
