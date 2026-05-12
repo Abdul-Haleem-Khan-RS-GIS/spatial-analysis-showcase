@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:0a3d2e,100:00e5a0&height=160&section=header&text=Land%20Use%20Classification&fontSize=32&fontColor=ffffff&fontAlignY=45&desc=Supervised%20vs%20Unsupervised%20%E2%80%94%20GEE%20vs%20ArcGIS&descAlignY=65&descSize=14&descColor=a0f0d0" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:0a3d2e,100:00e5a0&height=200&section=header&text=Land%20Use%20Classification&fontSize=32&fontColor=ffffff&fontAlignY=32&desc=Supervised%20vs%20Unsupervised%20%E2%80%94%20GEE%20vs%20ArcGIS&descAlignY=50&descSize=14&descColor=a0f0d0" width="100%"/>
 
 [![Category](https://img.shields.io/badge/Category-A%20Remote%20Sensing-00e5a0?style=for-the-badge&labelColor=0d1117)](../)
 [![GEE](https://img.shields.io/badge/Platform-Google%20Earth%20Engine-4285F4?style=for-the-badge&logo=google&logoColor=white&labelColor=0d1117)]()
@@ -18,7 +18,7 @@ A **comparative classification study** evaluating two industry-standard land use
 - **Supervised Classification** via Google Earth Engine (Maximum Likelihood / Random Forest)
 - **Unsupervised Classification** via ArcGIS Pro (ISODATA clustering)
 
-The project evaluates accuracy, workflow efficiency, and output quality — providing a practical framework for selecting the right method per project context.
+The project evaluates accuracy, workflow efficiency, and output quality providing a practical framework for selecting the right method per project context.
 
 ---
 
