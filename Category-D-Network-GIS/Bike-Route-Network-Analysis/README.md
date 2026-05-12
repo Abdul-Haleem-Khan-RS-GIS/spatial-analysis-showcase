@@ -1,8 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:0a2a1a,100:27ae60&height=160&section=header&text=Bike%20Route%20Network%20Analysis&fontSize=30&fontColor=ffffff&fontAlignY=45&desc=Optimal%20Urban%20Cycling%20Paths%20%E2%80%94%20Terrain%20%26%20Network%20Analysis&descAlignY=65&descSize=14&descColor=a8f0c0" width="100%"/>
-
-<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:0d1117,60:0a2a1a,100:27ae60&amp;height=160&amp;section=header&amp;text=Bike%20Route%20Network%20Analysis&amp;fontSize=30&amp;fontColor=ffffff&amp;fontAlignY=45&amp;desc=Optimal%20Urban%20Cycling%20Paths%20%E2%80%94%20Terrain%20%26%20Network%20Analysis&amp;descAlignY=65&amp;descSize=14&amp;descColor=a8f0c0" width="100%"/>
 
 [![Category](https://img.shields.io/badge/Category-D%20Network%20GIS-27ae60?style=for-the-badge&labelColor=0d1117)](../)
 [![Method](https://img.shields.io/badge/Method-Network%20Analyst-2C7BB6?style=for-the-badge&logo=esri&logoColor=white&labelColor=0d1117)]()
@@ -55,7 +53,7 @@ The result is a set of truly optimal bike routes that a cyclist would choose in 
 2. ELEVATION INTEGRATION
    └── Load DEM (SRTM 30m or higher resolution)
    └── Extract elevation values along each road segment:
-       ← Elevation at start node / end node → slope %
+       Elevation at start node / end node → slope %
    └── Calculate: grade-adjusted impedance per segment
        Formula: impedance = distance × (1 + k × max(0, slope))
        where k = effort coefficient for uphill penalty
@@ -67,7 +65,7 @@ The result is a set of truly optimal bike routes that a cyclist would choose in 
    └── Validate connectivity
 
 4. ROUTE ANALYSIS
-   └── Define Origin–Destination pairs (residential → POI)
+   └── Define Origin-Destination pairs (residential → POI)
    └── Solve: Closest Facility / Route solver
    └── Solve 1: minimum distance (ignore elevation)
    └── Solve 2: minimum effort (grade-adjusted cost)
@@ -126,9 +124,9 @@ The grade-adjusted cycling impedance applied per network edge:
 cycling_cost = segment_length_m × (1 + 0.03 × max(0, slope_%))
 
 Where:
-  slope_% = rise/run × 100
-  0.03    = empirical uphill effort coefficient
-  Downhill segments → no penalty (coasting assumed)
+  slope_%  = rise/run × 100
+  0.03     = empirical uphill effort coefficient
+  Downhill = no penalty (coasting assumed)
 ```
 
 ---
@@ -148,6 +146,7 @@ Where:
 [← Back to Portfolio](../README.md) &nbsp;|&nbsp; [Category D: All Network GIS Projects](../Category-D-Network-GIS)
 
 ---
+
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:27ae60,60:0a2a1a,100:0d1117&height=80&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:27ae60,60:0a2a1a,100:0d1117&amp;height=80&amp;section=footer" width="100%"/>
 </div>
