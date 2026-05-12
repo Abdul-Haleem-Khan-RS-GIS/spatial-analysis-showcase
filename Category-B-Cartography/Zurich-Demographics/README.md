@@ -113,6 +113,10 @@ Zurich-Demographics/
 
 ---
 
+<h2>🖼️ Visual Preview</h2>
+![image alt](https://github.com/Abdul-Haleem-Khan-RS-GIS/spatial-analysis-showcase/blob/a403af7da35f91d6aa8be2feac19fbe1ab2997ea/Category-B-Cartography/Zurich-Demographics/zurich_pop_density_map.png)
+
+---
 ## 🔗 Navigation
 
 [← Back to Portfolio](../README.md) &nbsp;|&nbsp; [Previous: National Park Style Map](../National-Park-Style-Map) &nbsp;|&nbsp; [Category C: Urban GIS →](../../Category-C-Urban-GIS)
