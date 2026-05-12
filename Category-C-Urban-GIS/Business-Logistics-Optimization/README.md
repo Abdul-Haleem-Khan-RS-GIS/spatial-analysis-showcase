@@ -116,6 +116,8 @@ Business-Logistics-Optimization/
 
 ---
 
+![Alt Map](https://github.com/Abdul-Haleem-Khan-RS-GIS/spatial-analysis-showcase/blob/bb0d630d1521b877081e49634ba6647b731799a4/Category-C-Urban-GIS/Business-Logistics-Optimization/optimized_assignment_map.png)
+
 ## 🔗 Navigation
 
 [← Back to Portfolio](../README.md) &nbsp;|&nbsp; [Category C: All Urban GIS Projects](../Category-C-Urban-GIS) &nbsp;|&nbsp; [Next: Employment Density →](../Employment-Density-Analysis)
