@@ -57,7 +57,7 @@ Data            |   Sentinel-2 · Landsat · OpenStreetMap · GeoJSON · Shapefi
 
 ---
 
-## 📂 Project Portfolio
+## 📂 Spatial Analysis Showcase
 
 ### 🛰️ Category A - Remote Sensing
 
