@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:1a3a3a,100:00b8d4&height=160&section=header&text=Daycare%20Accessibility%20Analysis&fontSize=30&fontColor=ffffff&fontAlignY=45&desc=Social%20Infrastructure%20Gap%20Mapping%20%E2%80%94%20Zurich&descAlignY=65&descSize=14&descColor=a0e8f0" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:1a3a3a,100:00b8d4&height=200&section=header&text=Daycare%20Accessibility%20Analysis&fontSize=30&fontColor=ffffff&fontAlignY=36&desc=Social%20Infrastructure%20Gap%20Mapping%20%E2%80%94%20Zurich&descAlignY=55&descSize=14&descColor=a0e8f0" width="100%"/>
 
 [![Category](https://img.shields.io/badge/Category-C%20Urban%20GIS-00b8d4?style=for-the-badge&labelColor=0d1117)](../)
 [![Location](https://img.shields.io/badge/Area-Zurich%2C%20Switzerland-e30613?style=for-the-badge&labelColor=0d1117)]()
@@ -13,7 +13,7 @@
 
 ## 📌 Project Overview
 
-This project maps **access to daycare services** across Zurich, identifying which residential areas fall within acceptable travel distance of a daycare facility and — critically — which areas are **underserved**. The analysis uses service area / catchment modeling on the pedestrian road network to define realistic walking access zones.
+This project maps **access to daycare services** across Zurich, identifying which residential areas fall within acceptable travel distance of a daycare facility and critically which areas are **underserved**. The analysis uses service area / catchment modeling on the pedestrian road network to define realistic walking access zones.
 
 Results directly support urban social policy: planners can use this output to prioritize new facility locations, identify equity gaps, and report on childcare access by district.
 
@@ -119,6 +119,7 @@ Daycare-Accessibility/
 ![ArcGIS Pro](https://img.shields.io/badge/ArcGIS_Pro-2C7BB6?style=flat-square&logo=esri&logoColor=white)
 
 ---
+![Alt Map](https://github.com/Abdul-Haleem-Khan-RS-GIS/spatial-analysis-showcase/blob/6da8527e967e96cc006559a79c6ba58d6140cab8/Category-C-Urban-GIS/Daycare-Accessibility/daycare_accessibility_mapdaycare_accessibility_map.png)
 
 ## 🔗 Navigation
 
