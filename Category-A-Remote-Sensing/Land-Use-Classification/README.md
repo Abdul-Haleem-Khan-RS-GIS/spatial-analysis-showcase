@@ -124,6 +124,12 @@ Land-Use-Classification/
 ![JavaScript](https://img.shields.io/badge/GEE_JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
 ---
+## Supervised Classification
+![Alt Map](https://github.com/Abdul-Haleem-Khan-RS-GIS/spatial-analysis-showcase/blob/0106be3b31bd106b558b8cb1c8cdf62953f11059/Category-A-Remote-Sensing/Land-Use-Classification/Supervised%20Classification.png)
+
+## Unsupervised Classification
+
+![Alt Map](https://github.com/Abdul-Haleem-Khan-RS-GIS/spatial-analysis-showcase/blob/0106be3b31bd106b558b8cb1c8cdf62953f11059/Category-A-Remote-Sensing/Land-Use-Classification/Unsupervised%20Classification.png)
 
 ## 🔗 Navigation
 
