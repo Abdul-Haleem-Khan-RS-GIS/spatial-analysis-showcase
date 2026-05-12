@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:1a2a4a,100:4488cc&height=160&section=header&text=Zurich%20Demographics&fontSize=32&fontColor=ffffff&fontAlignY=45&desc=Thematic%20Mapping%20of%20Population%20Density&descAlignY=65&descSize=14&descColor=a0c8f0" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:1a2a4a,100:4488cc&height=200&section=header&text=Zurich%20Demographics&fontSize=32&fontColor=ffffff&fontAlignY=36&desc=Thematic%20Mapping%20of%20Population%20Density&descAlignY=50&descSize=14&descColor=a0c8f0" width="100%"/>
 
 [![Category](https://img.shields.io/badge/Category-B%20Cartography-4488cc?style=for-the-badge&labelColor=0d1117)](../)
 [![Location](https://img.shields.io/badge/Area-Zurich%2C%20Switzerland-e30613?style=for-the-badge&labelColor=0d1117)]()
