@@ -43,7 +43,7 @@ The project evaluates accuracy, workflow efficiency, and output quality providin
 
 ## ⚙️ Methodology
 
-### Method 1 — Supervised (Google Earth Engine)
+### Method 1 - Supervised (Google Earth Engine)
 
 ```
 1. Load Sentinel-2 collection → filter by date, cloud, AOI
@@ -54,7 +54,7 @@ The project evaluates accuracy, workflow efficiency, and output quality providin
 6. Accuracy assessment → confusion matrix → Overall Accuracy & Kappa
 ```
 
-### Method 2 — Unsupervised (ArcGIS Pro)
+### Method 2 - Unsupervised (ArcGIS Pro)
 
 ```
 1. Import Sentinel-2 bands into ArcGIS Pro mosaic dataset
@@ -94,10 +94,10 @@ Land-Use-Classification/
 
 | Metric | Supervised (GEE) | Unsupervised (ArcGIS) |
 |--------|-----------------|----------------------|
-| Overall Accuracy | —% | —% |
+| Overall Accuracy | % | % |
 | Kappa Coefficient | — | — |
-| Urban Class Accuracy | —% | —% |
-| Vegetation Class Accuracy | —% | —% |
+| Urban Class Accuracy | % | % |
+| Vegetation Class Accuracy | % | % |
 
 > 📝 *Fill in from your confusion matrix outputs.*
 
