@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:2a1a00,100:e67e22&height=240&section=header&text=Bike%20Route%20Network%20Analysis&fontSize=32&fontColor=ffffff&fontAlignY=32&desc=Optical%20Urban%20Cycling%20Terrain%20Network%20Analysis&descAlignY=50&descSize=16&descColor=ffffff" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:2a1a00,100:e67e22&height=200&section=header&text=Bike%20Route%20Network%20Analysis&fontSize=32&fontColor=ffffff&fontAlignY=32&desc=Optical%20Urban%20Cycling%20Terrain%20Network%20Analysis&descAlignY=50&descSize=16&descColor=ffffff" width="100%"/>
 <div align="center">
 
 
