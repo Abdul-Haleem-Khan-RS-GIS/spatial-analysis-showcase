@@ -1,8 +1,5 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:1a3a3a,100:00b8d4&height=160&section=header&text=Bike%20Route%20Network%20Analysis&fontSize=30&fontColor=ffffff&fontAlignY=45&desc=Optimal%20Urban%20Cycling%20Gap%20Mapping%20%E2%80%94%20Terrain%20%26%20Network%20Analysis&descAlignY=65&descSize=14&descColor=a8f0c0" width="100%"/>
-<div align="center">
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:0a2a1a,100:27ae60&height=160&section=header&text=Bike%20Route%20Network%20Analysis&fontSize=30&fontColor=ffffff&fontAlignY=45&desc=Optimal%20Urban%20Cycling%20Paths%20%E2%80%94%20Terrain%20%26%20Network%20Analysis&descAlignY=65&descSize=14&descColor=a8f0c0" width="100%"/>
 
 <div align="center">
