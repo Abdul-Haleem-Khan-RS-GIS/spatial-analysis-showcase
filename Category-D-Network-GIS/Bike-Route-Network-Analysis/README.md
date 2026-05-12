@@ -13,7 +13,7 @@
 
 ## 📌 Project Overview
 
-This project uses **ArcGIS Network Analyst** to calculate optimal cycling routes across an urban area incorporating not just distance, but also terrain difficulty — elevation gain, gradient, and path surface quality. Standard shortest-path routing ignores hills; this analysis weights routes by both travel distance and cycling effort.
+This project uses **ArcGIS Network Analyst** to calculate optimal cycling routes across an urban area incorporating not just distance, but also terrain difficulty elevation gain, gradient, and path surface quality. Standard shortest-path routing ignores hills; this analysis weights routes by both travel distance and cycling effort.
 
 The result is a set of truly optimal bike routes that a cyclist would choose in practice — minimizing a composite cost of distance, elevation gain, and road type. This approach is directly applicable to urban cycling infrastructure planning, bike-share deployment, and active transport policy.
 
@@ -140,6 +140,8 @@ Where:
 ![Python](https://img.shields.io/badge/Python_ArcPy-3776AB?style=flat-square&logo=python&logoColor=white)
 
 ---
+![Alt Map](https://github.com/Abdul-Haleem-Khan-RS-GIS/spatial-analysis-showcase/blob/44c74f47368bb03850b291e4c0d7104d87ac36ec/Category-D-Network-GIS/Bike-Route-Network-Analysis/route_comparison_map.png)
+
 
 ## 🔗 Navigation
 
