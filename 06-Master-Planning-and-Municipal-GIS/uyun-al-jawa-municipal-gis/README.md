@@ -18,7 +18,7 @@ Two years as the municipality's GIS Engineer, running its spatial databases for 
 ## Results
 Up-to-date municipal geodatabases, planning and infrastructure maps, GIS data shared across departments, and GIS training delivered to World Bank officials.
 
-*Municipal maps will be added where the municipality allows publication.*
+*See also the Rawd Al-Jawa investment site plan, drafted in AutoCAD for the municipality.*
 
 ---
 [← All projects](../../README.md) · [Portfolio website](https://abdul-haleem-khan-rs-gis.github.io/Geospatial_Portfolio/projects/uyun-al-jawa-municipal-gis.html)

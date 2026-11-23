@@ -271,7 +271,15 @@ add(slug="uyun-al-jawa-municipal-gis", cat="planning", featured=True, pro=True,
     summary="Two years as the municipality's GIS Engineer, running its spatial databases for urban planning and infrastructure and producing the maps behind municipal decisions.",
     result="Up-to-date municipal geodatabases, planning and infrastructure maps, GIS data shared across departments, and GIS training delivered to World Bank officials.",
     method=["Maintain municipal geodatabases (planning, parcels, infrastructure)", "Coordinate GPS field data collection", "Spatial analysis and map production for planning and services", "Integrate GIS data across departments; staff and World Bank training"],
-    files=[], note="Municipal maps will be added where the municipality allows publication.")
+    files=[], note="See also the Rawd Al-Jawa investment site plan, drafted in AutoCAD for the municipality.")
+add(slug="rawd-al-jawa-investment-site-plan", cat="planning", featured=True, pro=True,
+    title="Rawd Al-Jawa Municipal Investment Site: AutoCAD Regulatory Plan", year="2024–2026",
+    client="Municipality of Uyun Al Jawa · Al-Qassim Region Municipality (Amanah)",
+    where="Rawd Al-Jawa, Uyun Al Jawa, Al-Qassim, Saudi Arabia", tools=["AutoCAD 2023", "Scanned-map digitising", "Google Earth", "Cadastral drafting"],
+    summary="Redrew an old scanned municipal map as an accurate AutoCAD regulatory plan for a 5,000 m² commercial investment site in Rawd Al-Jawa, prepared for preliminary approval by the Al-Qassim Region Municipality.",
+    result="Preliminary-approval regulatory plan (1:500) for a 5,000 m² commercial municipal-investment site with a garden area, dimensioned boundaries, location insets and hydrological recommendations.",
+    method=["Digitised the plot from the old scanned map in AutoCAD"],
+    files=["Rawd Al-Jawa investment site plan (AutoCAD plot).pdf"])
 add(slug="sahiwal-city-comprehensive-plan", cat="planning", featured=True, pro=True,
     title="Sahiwal Land-Use City Comprehensive Plan (2022–2042)", year="2022–2024", client="PICIIP, Government of Punjab · via Shehersaaz (UMDS Consultant)",
     where="Municipal Committee Sahiwal, Punjab, Pakistan", tools=["ArcGIS", "Land-use survey", "Suitability analysis"],
