@@ -1,0 +1,43 @@
+# Approximate project locations (lat, lon, place label) for the 3D project globe.
+# Regional-scale pins only; projects without a known place are left off the globe.
+LOC = {
+    "burn-severity-sentinel2": (-30.4, 152.3, "Eastern Australia"),
+    "lulc-andijan-reservoir": (40.76, 73.12, "Andijan Reservoir, Uzbekistan"),
+    "los-angeles-urban-land-cover": (34.05, -118.25, "Los Angeles, USA"),
+    "ndvi-and-image-classification-studies": (34.05, -118.25, "Los Angeles, USA"),
+    "landsat-thermal-and-image-analysis": (34.05, -118.25, "Los Angeles, USA"),
+    "ndvi-summary-arcgis-pro": (34.05, -118.25, "Los Angeles, USA"),
+    "nps-map-redesign": (40.34, -105.68, "Rocky Mountain National Park, USA"),
+    "georgia-choropleth-classification": (32.68, -83.22, "Georgia, USA"),
+    "riyadh-postcode-map": (24.71, 46.68, "Riyadh, Saudi Arabia"),
+    "zurich-population-density": (47.37, 8.54, "Zurich, Switzerland"),
+    "zurich-daycare-centres": (47.37, 8.54, "Zurich, Switzerland"),
+    "swiss-client-employee-strategy-maps": (47.37, 8.54, "Zurich, Switzerland"),
+    "dubendorf-employment-density": (47.40, 8.62, "Dübendorf, Switzerland"),
+    "racehorse-facility-location-map": (31.0, -99.0, "Texas, USA"),
+    "indonesia-landuse-school-locator": (-7.36, 109.90, "Wonosobo, Indonesia"),
+    "new-mexico-snow-load-kmz": (34.5, -106.0, "New Mexico, USA"),
+    "zip-code-territory-map": (41.45, -81.70, "Cleveland area, Ohio, USA"),
+    "atlanta-green-space-suitability": (33.75, -84.39, "Atlanta, USA"),
+    "umluj-flood-risk-mcda": (25.02, 37.27, "Umluj, Saudi Arabia"),
+    "riverside-fire-hazard-parcels": (33.95, -117.40, "Riverside, California, USA"),
+    "st-louis-parcel-criteria-map": (38.63, -90.24, "St. Louis, USA"),
+    "qgis-polygon-point-digitisation": (29.38, -94.92, "Texas City, USA"),
+    "minnesota-county-data-merge": (44.70, -93.20, "Scott & Dakota counties, Minnesota, USA"),
+    "nc-contours-to-cad": (35.13, -84.06, "Cherokee County, North Carolina, USA"),
+    "global-mapper-csv-export-script": (52.6, -1.5, "United Kingdom"),
+    "uyun-al-jawa-municipal-gis": (26.50, 43.68, "Uyun Al Jawa, Al-Qassim, Saudi Arabia"),
+    "rawd-al-jawa-investment-site-plan": (26.50, 43.68, "Uyun Al Jawa, Al-Qassim, Saudi Arabia"),
+    "sahiwal-city-comprehensive-plan": (30.66, 73.11, "Sahiwal, Pakistan"),
+    "sialkot-city-comprehensive-plan": (32.49, 74.53, "Sialkot, Pakistan"),
+    "batswat-terrain-assessment": (36.20, 73.80, "Batswat, Ghizer (Gilgit-Baltistan), Pakistan"),
+    "punjab-kp-master-plans-and-cadastre": (31.52, 74.35, "Lahore, Pakistan"),
+}
+
+# 3D "fly-to" views: label, centre (lon, lat), zoom, pitch, bearing, linked project slug
+TOURS = [
+    ("Ghizer valley, Gilgit-Baltistan (Batswat)", (73.80, 36.20), 10.4, 72, 30, "batswat-terrain-assessment"),
+    ("Rocky Mountain National Park", (-105.68, 40.34), 10.6, 70, -20, "nps-map-redesign"),
+    ("Umluj coast, Red Sea", (37.27, 25.02), 10.8, 60, 0, "umluj-flood-risk-mcda"),
+    ("Andijan Reservoir, Uzbekistan", (73.12, 40.76), 10.8, 65, 15, "lulc-andijan-reservoir"),
+]

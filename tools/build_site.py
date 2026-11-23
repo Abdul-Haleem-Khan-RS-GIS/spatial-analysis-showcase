@@ -119,6 +119,14 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .mapfull figcaption{font-size:14px;color:var(--muted);padding-top:10px;text-align:center}.mapfull figcaption .mono{margin-right:6px}
 .find{padding-left:0;list-style:none}.find li{border-left:3px solid var(--accent);padding:6px 0 6px 14px;margin:0 0 10px;background:#fff}
 .side hr{border:0;border-top:1px solid var(--line);margin:18px 0}.side .dl{margin-bottom:0}
+.globe-sec{background:#0e1517;color:#e9ecea;padding:88px 0}.globe-sec h2{color:#fff}.globe-sec .lead{color:#b9c2c0}.globe-sec .mono{color:#9fb3b0}
+.tours{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 18px}.tours button{font:500 14px Inter,sans-serif;background:transparent;color:#e9ecea;border:1px solid #3b4a4c;padding:9px 14px;cursor:pointer}
+.tours button:hover,.tours button[aria-pressed=true]{background:#f5b700;color:#16181a;border-color:#f5b700}
+.globe{position:relative;height:min(72vh,640px);border:1px solid #2a3739;background:radial-gradient(circle at 50% 45%,#16302f,#0b1112 70%)}#globe-map{position:absolute;inset:0}
+.globe-msg{display:none;position:absolute;inset:0;margin:0;align-items:center;justify-content:center;text-align:center;padding:24px}.globe-off .globe-msg{display:flex}.globe-msg a{color:#f5b700}
+.globe-foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:12px}.globe-foot a{color:#f5b700}
+.gpop{font:14px/1.45 Inter,sans-serif;color:#16181a}.gpop .mono{color:#5b6668;font-size:11px}.gpop ul{margin:6px 0 0;padding-left:16px}.gpop a{color:#0f5257}
+.maplibregl-popup-content{border-radius:0;padding:12px 14px}
 .side ul{padding-left:18px;margin:8px 0 0;font-size:14px;color:var(--muted)}
 .next{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0 64px}
 .next a{text-decoration:none}
@@ -134,7 +142,7 @@ def head(title, desc, ogimg, depth=""):
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{depth}assets/site.css"></head><body>
 <header class="nav"><div class="wrap"><a class="logo" href="{depth}index.html">Abdul Haleem <span>Khan</span></a>
-<nav><a href="{depth}index.html#planning">Master plans</a><a href="{depth}index.html#work">Work</a><a href="{depth}index.html#experience">Experience</a><a href="{depth}index.html#skills">Skills</a><a href="{depth}index.html#about">About</a><a class="btn" href="{depth}index.html#contact">Contact</a></nav></div></header>"""
+<nav><a href="{depth}index.html#map">Map</a><a href="{depth}index.html#planning">Master plans</a><a href="{depth}index.html#work">Work</a><a href="{depth}index.html#experience">Experience</a><a href="{depth}index.html#skills">Skills</a><a href="{depth}index.html#about">About</a><a class="btn" href="{depth}index.html#contact">Contact</a></nav></div></header>"""
 
 FOOT = f"""<footer><div class="wrap"><span>© 2026 Abdul Haleem Khan · GIS Engineer & Remote Sensing Specialist</span>
 <span><a href="{LINKEDIN}">LinkedIn</a> · <a href="{GITHUB}">GitHub</a> · <a href="{UPWORK}">Upwork</a> · <a href="mailto:{EMAIL}">Email</a></span></div></footer>"""
@@ -168,6 +176,21 @@ REVIEWS = [
  ("Thanks for fast assistance on an urgent task related to Polygon and Point Digitization!", "Valorian · QGIS digitisation"),
 ]
 
+from locations import LOC, TOURS
+_pageset = {p["slug"] for p in pro + shown} | {p["slug"] for p in more if p.get("challenge")}
+_title = {p["slug"]: p["title"] for p in P}
+_groups = {}
+for slug,(lat,lon,place) in LOC.items():
+    if slug not in _title: continue
+    g = _groups.setdefault((lat,lon), {"place": place, "items": []})
+    g["items"].append({"t": _title[slug], "url": ("projects/"+slug+".html") if slug in _pageset else ""})
+_feats = [{"type":"Feature","geometry":{"type":"Point","coordinates":[lon,lat]},
+           "properties":{"place":g["place"],"n":min(len(g["items"]),4),"items":json.dumps(g["items"])}} for (lat,lon),g in _groups.items()]
+_tours = [{"title":t,"c":list(c),"z":z,"p":pt,"b":b,"url":("projects/"+sl+".html") if sl in _pageset else ""} for (t,c,z,pt,b,sl) in TOURS]
+GLOBE_DATA = json.dumps({"pins":{"type":"FeatureCollection","features":_feats},"tours":_tours}).replace("</","<\\/")
+N_PLACES = len(_groups); N_COUNTRIES = len({g["place"].split(",")[-1].strip() for g in _groups.values()})
+TOUR_BTNS = "".join(f'<button type="button" data-tour="{k}" aria-pressed="false">{E(t[0])}</button>' for k,t in enumerate(TOURS))
+
 index = head("Abdul Haleem Khan | GIS Engineer & Remote Sensing Specialist",
              "GIS Engineer and Remote Sensing Specialist: satellite image analysis, cartography, site suitability and GIS data engineering. Portfolio of real client maps.",
              hero["img"][0][0]) + f"""
@@ -182,6 +205,14 @@ index = head("Abdul Haleem Khan | GIS Engineer & Remote Sensing Specialist",
 <figure class="sheet portrait"><img src="assets/portrait.jpg" alt="Abdul Haleem Khan, GIS Engineer and Remote Sensing Specialist" width="400" height="512"><figcaption><span class="mono">Abdul Haleem Khan</span><span class="mono">GIS Engineer · RS Specialist</span></figcaption></figure>
 </div></section>
 
+<section id="map" class="globe-sec"><div class="wrap">
+<span class="mono">Interactive · 3D</span><h2>Where I've mapped</h2>
+<p class="lead" style="max-width:760px">{N_PLACES} project locations in {N_COUNTRIES} countries on a 3D globe built with MapLibre GL, Sentinel-2 cloud-free imagery and real terrain elevation. Click a pin to open its case study, or fly into one of the landscapes below in 3D.</p>
+<div class="tours">{TOUR_BTNS}<button type="button" id="globe-home">↺ Whole globe</button></div>
+<div id="globe" class="globe"><div id="globe-map"></div><p class="globe-msg">The 3D globe needs WebGL. <a href="#work">Browse the projects instead →</a></p></div>
+<p class="globe-foot"><a id="globe-link" class="mono" hidden href="#"></a><span class="mono">Drag to rotate · right-drag or Ctrl+drag to tilt · click the map, then scroll to zoom</span></p>
+</div></section>
+<script type="application/json" id="globe-data">{GLOBE_DATA}</script>
 <section id="planning"><div class="wrap">
 <span class="mono">Professional work</span><h2>Master plans & municipal GIS</h2>
 <p class="sub">City comprehensive plans for the Government of Punjab (PICIIP) and the Aga Khan Agency for Habitat at Shehersaaz, master-plan and cadastral work across Punjab and KP, and two years running municipal GIS in Saudi Arabia.</p>
@@ -242,12 +273,14 @@ index = head("Abdul Haleem Khan | GIS Engineer & Remote Sensing Specialist",
 const bs=document.querySelectorAll('.filters button'),cs=document.querySelectorAll('#cards .card');
 bs.forEach(b=>b.addEventListener('click',()=>{{bs.forEach(x=>x.setAttribute('aria-pressed',x===b));const f=b.dataset.f;cs.forEach(c=>c.style.display=(f==='all'||c.dataset.cat===f)?'':'none')}}));
 </script>
+<script src="assets/globe.js" defer></script>
 <script type="application/ld+json">{json.dumps({"@context":"https://schema.org","@type":"Person","name":"Abdul Haleem Khan","jobTitle":"GIS Engineer & Remote Sensing Specialist","url":URL,"email":"mailto:"+EMAIL,"address":{"@type":"PostalAddress","addressLocality":"Lahore","addressCountry":"PK"},"sameAs":[LINKEDIN,GITHUB,UPWORK]})}</script>
 </body></html>"""
 
 open(os.path.join(SITE, "index.html"), "w").write(index)
 os.makedirs(os.path.join(SITE, "assets"), exist_ok=True)
 open(os.path.join(SITE, "assets/site.css"), "w").write(CSS)
+shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "globe.js"), os.path.join(SITE, "assets/globe.js"))
 shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "portrait.jpg"), os.path.join(SITE, "assets/portrait.jpg"))
 
 def cap(p, k):
