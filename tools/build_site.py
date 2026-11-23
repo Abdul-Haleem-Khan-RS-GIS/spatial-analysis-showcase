@@ -1,0 +1,277 @@
+import os, sys, json, html, shutil, urllib.parse
+from PIL import Image
+
+BUILD = os.path.dirname(os.path.abspath(__file__))
+SHOW = sys.argv[1]          # built showcase repo
+SITE = sys.argv[2]          # site repo checkout
+P = json.load(open(os.path.join(BUILD, "projects_built.json")))
+sys.path.insert(0, BUILD)
+from projects import CATS
+
+GH = "https://github.com/Abdul-Haleem-Khan-RS-GIS/spatial-analysis-showcase/tree/main/"
+E = html.escape
+EMAIL = "abdulhaleemk03@gmail.com"
+UPWORK = "https://www.upwork.com/freelancers/abdulhaleemrsgis"
+LINKEDIN = "https://www.linkedin.com/in/abdul-haleem-khan-rs-gis-specialist"
+GITHUB = "https://github.com/Abdul-Haleem-Khan-RS-GIS"
+URL = "https://abdul-haleem-khan-rs-gis.github.io/Geospatial_Portfolio/"
+
+# ---------- images ----------
+for d in ["projects", "assets/maps"]:
+    shutil.rmtree(os.path.join(SITE, d), ignore_errors=True)
+    os.makedirs(os.path.join(SITE, d))
+
+for p in P:
+    p["img"] = []
+    for i, m in enumerate(p["maps"], 1):
+        im = Image.open(os.path.join(SHOW, m)).convert("RGB")
+        big = im.copy(); big.thumbnail((2000, 2000))
+        b = f"assets/maps/{p['slug']}-{i}.jpg"
+        big.save(os.path.join(SITE, b), quality=84, optimize=True, progressive=True)
+        th = im.copy(); th.thumbnail((900, 900))
+        t = f"assets/maps/{p['slug']}-{i}-thumb.jpg"
+        th.save(os.path.join(SITE, t), quality=80, optimize=True, progressive=True)
+        p["img"].append((b, t, big.size))
+
+pro = [p for p in P if p.get("pro")]
+shown = [p for p in P if p["img"] and not p.get("pro")]
+more = [p for p in P if not p["img"] and not p.get("pro")]
+
+CSS = r"""
+:root{--paper:#f6f5f1;--card:#fff;--ink:#16181a;--muted:#5c6066;--line:#dedbd3;--accent:#0f5257;--accent2:#c8642b;
+--serif:'Fraunces',Georgia,serif;--sans:'Inter',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}img{max-width:100%;display:block}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(246,245,241,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:var(--serif);font-weight:600;font-size:20px;text-decoration:none}
+.logo span{color:var(--accent)}
+nav a{text-decoration:none;font-size:14px;margin-left:24px;color:var(--muted)}nav a:hover{color:var(--ink)}
+nav a.btn{color:#fff}
+.btn{display:inline-block;padding:11px 20px;border-radius:4px;background:var(--ink);color:#fff;text-decoration:none;font-size:14px;font-weight:500;border:1px solid var(--ink)}
+.btn.ghost{background:transparent;color:var(--ink)}.btn:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.hero{padding:72px 0 56px;border-bottom:1px solid var(--line);background-image:linear-gradient(rgba(22,24,26,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(22,24,26,.05) 1px,transparent 1px);background-size:64px 64px;background-position:-1px -1px}
+.hero .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(40px,5.4vw,64px);line-height:1.02;margin:12px 0 16px;letter-spacing:-.02em}
+.lead{font-size:18px;color:var(--muted);max-width:34em;margin:0 0 28px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:flex;gap:36px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line)}
+.stats b{display:block;font-family:var(--serif);font-size:30px;font-weight:600;line-height:1.1}
+.stats span{font-size:13px;color:var(--muted)}
+.sheet{background:#fff;border:1px solid var(--ink);padding:14px;box-shadow:10px 10px 0 var(--ink)}
+.sheet img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center}
+.sheet figcaption{display:flex;justify-content:space-between;margin-top:10px}
+section{padding:80px 0;border-bottom:1px solid var(--line)}
+h2{font-family:var(--serif);font-weight:600;font-size:38px;margin:6px 0 12px;letter-spacing:-.01em}
+.sub{color:var(--muted);max-width:42em;margin:0 0 32px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px}
+.filters button{font:500 13px var(--sans);padding:8px 14px;border:1px solid var(--line);background:#fff;border-radius:999px;cursor:pointer;color:var(--muted)}
+.filters button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column;text-decoration:none;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--ink);transform:translateY(-3px)}
+.card .ph{aspect-ratio:4/3;overflow:hidden;background:#eceae4;border-bottom:1px solid var(--line)}
+.card .ph img{width:100%;height:100%;object-fit:cover}.card.text{background:#fff;border-top:4px solid var(--accent)}
+.card .bd{padding:18px 18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-family:var(--serif);font-weight:600;font-size:20px;line-height:1.2;margin:0}
+.card p{margin:0;font-size:14px;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:8px}
+.tags span{font:11px var(--mono);border:1px solid var(--line);padding:3px 7px;border-radius:3px;color:var(--muted)}
+.morelist{margin-top:56px;overflow-x:auto}
+.morelist table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);font-size:14px}
+.morelist th,.morelist td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line)}
+.morelist th{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.tl{list-style:none;margin:0;padding:0;border-left:2px solid var(--ink)}
+.tl li{position:relative;padding:0 0 28px 24px}
+.tl li:before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;background:var(--paper);border:2px solid var(--ink);border-radius:50%}
+.tl h3{margin:0;font-size:18px;font-family:var(--serif);font-weight:600}
+.tl .org{font-weight:500}.tl p{margin:6px 0 0;color:var(--muted);font-size:15px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.skills div{background:#fff;border:1px solid var(--line);padding:20px}
+.skills h3{margin:0 0 10px;font-family:var(--serif);font-weight:600;font-size:18px}
+.skills p{margin:0;color:var(--muted);font-size:15px}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+blockquote{margin:0;background:#fff;border:1px solid var(--line);padding:20px;font-family:var(--serif);font-size:18px;line-height:1.4}
+blockquote cite{display:block;margin-top:12px;font:13px var(--sans);color:var(--muted);font-style:normal}
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:48px}
+.contact dl{margin:0}.contact dt{font:500 11px var(--mono);text-transform:uppercase;color:var(--muted);margin-top:18px}
+.contact dd{margin:2px 0 0;font-size:17px}.contact dd a{text-decoration:none;border-bottom:1px solid var(--line)}
+form label{display:block;font-size:13px;font-weight:500;margin:14px 0 6px}
+form input,form textarea{width:100%;padding:12px;border:1px solid var(--ink);background:#fff;font:15px var(--sans);border-radius:3px}
+footer{padding:40px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+/* project page */
+.crumb{padding:28px 0 0;font-size:14px}.crumb a{color:var(--muted);text-decoration:none}
+.phero{padding:20px 0 40px}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);background:#fff;margin:24px 0 32px}
+.facts div{padding:14px 16px;border-right:1px solid var(--line)}.facts div:last-child{border-right:0}
+.facts dd{margin:4px 0 0;font-size:15px}
+.mapfull{background:#fff;border:1px solid var(--line);padding:12px;margin-bottom:20px}
+.mapfull a{cursor:zoom-in}.mapfull img{max-height:82vh;width:auto;margin:0 auto}
+.pbody{display:grid;grid-template-columns:1.6fr 1fr;gap:48px;padding:24px 0 72px}
+.pbody h2{font-size:26px;margin-top:0}.pbody ol{padding-left:20px;color:var(--muted)}
+.side{background:#fff;border:1px solid var(--line);padding:20px;align-self:start}
+.side ul{padding-left:18px;margin:8px 0 0;font-size:14px;color:var(--muted)}
+.next{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0 64px}
+.next a{text-decoration:none}
+@media(max-width:900px){.hero .grid,.two,.contact,.pbody{grid-template-columns:1fr}.cards,.skills,.reviews{grid-template-columns:1fr 1fr}.facts{grid-template-columns:1fr 1fr}nav a:not(.btn){display:none}}
+@media(max-width:600px){.morelist th:nth-child(2),.morelist td:nth-child(2),.morelist th:nth-child(3),.morelist td:nth-child(3){display:none}.ctas .btn{flex:1;text-align:center}.facts{grid-template-columns:1fr}.facts div{border-right:0;border-bottom:1px solid var(--line)}.cards,.skills,.reviews{grid-template-columns:1fr}.stats{gap:20px}h2{font-size:30px}}
+"""
+
+def head(title, desc, ogimg, depth=""):
+    return f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{E(title)}</title><meta name="description" content="{E(desc)}">
+<meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:image" content="{URL}{ogimg}"><meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{depth}assets/site.css"></head><body>
+<header class="nav"><div class="wrap"><a class="logo" href="{depth}index.html">Abdul Haleem <span>Khan</span></a>
+<nav><a href="{depth}index.html#planning">Master plans</a><a href="{depth}index.html#work">Work</a><a href="{depth}index.html#experience">Experience</a><a href="{depth}index.html#skills">Skills</a><a href="{depth}index.html#about">About</a><a class="btn" href="{depth}index.html#contact">Contact</a></nav></div></header>"""
+
+FOOT = f"""<footer><div class="wrap"><span>© 2026 Abdul Haleem Khan · GIS Engineer & Remote Sensing Specialist</span>
+<span><a href="{LINKEDIN}">LinkedIn</a> · <a href="{GITHUB}">GitHub</a> · <a href="{UPWORK}">Upwork</a> · <a href="mailto:{EMAIL}">Email</a></span></div></footer>"""
+
+def card(p, depth=""):
+    b, t, _ = p["img"][0]
+    return f"""<a class="card" href="{depth}projects/{p['slug']}.html" data-cat="{p['cat']}">
+<div class="ph"><img src="{depth}{t}" alt="{E(p['title'])} map" loading="lazy"></div>
+<div class="bd"><span class="mono">{E(CATS[p['cat']][1])} · {E(p['year'])}</span><h3>{E(p['title'])}</h3><p>{E(p['where'])}</p>
+<div class="tags">{''.join(f'<span>{E(x)}</span>' for x in p['tools'][:3])}</div></div></a>"""
+
+def procard(p):
+    if p["img"]:
+        return card(p)
+    return f"""<a class="card text" href="projects/{p['slug']}.html"><div class="bd"><span class="mono">{E(p['year'])}</span><h3>{E(p['title'])}</h3><p>{E(p['client'])}</p><p style="color:var(--ink)">{E(p['summary'])}</p>
+<div class="tags">{''.join(f'<span>{E(x)}</span>' for x in p['tools'][:3])}</div></div></a>"""
+
+# order: featured first
+shown.sort(key=lambda p: (not p.get("featured"), list(CATS).index(p["cat"])))
+hero = next(p for p in shown if p["slug"] == "burn-severity-sentinel2")
+cats_present = [k for k in CATS if any(p["cat"] == k for p in shown)]
+
+filters = '<button aria-pressed="true" data-f="all">All</button>' + "".join(
+    f'<button aria-pressed="false" data-f="{k}">{E(CATS[k][1])}</button>' for k in cats_present)
+
+more_rows = "".join(f"<tr><td><a href=\"{GH}{p['dir']}\">{E(p['title'])}</a></td><td>{E(CATS[p['cat']][1])}</td><td>{E(p['where'])}</td><td>{E(p['year'])}</td></tr>" for p in more)
+
+REVIEWS = [
+ ("Abdul delivered exactly what we needed with a complex GIS to CAD conversion.", "MBH Inc., USA · Contours to CAD"),
+ ("He did very well Job delivered his project on time.", "Engineering client · Solar plant GIS dataset ($1,000)"),
+ ("Thanks for fast assistance on an urgent task related to Polygon and Point Digitization!", "Valorian · QGIS digitisation"),
+]
+
+index = head("Abdul Haleem Khan | GIS Engineer & Remote Sensing Specialist",
+             "GIS Engineer and Remote Sensing Specialist: satellite image analysis, cartography, site suitability and GIS data engineering. Portfolio of real client maps.",
+             hero["img"][0][0]) + f"""
+<main>
+<section class="hero"><div class="wrap grid">
+<div><span class="mono">GIS Engineer · Remote Sensing Specialist · Lahore, Pakistan</span>
+<h1>Abdul Haleem Khan</h1>
+<p class="lead">I turn satellite imagery and spatial data into maps and analysis people can act on, from municipal GIS in Saudi Arabia and city master plans in Pakistan to freelance projects for clients in the USA, Europe and the Gulf.</p>
+<div class="ctas"><a class="btn" href="#work">View work</a><a class="btn ghost" href="#contact">Get in touch</a><a class="btn ghost" href="{UPWORK}">Hire on Upwork</a></div>
+<div class="stats"><div><b>4+ yrs</b><span>Professional GIS</span></div><div><b>33</b><span>Upwork jobs</span></div><div><b>4.8★</b><span>14 client reviews</span></div></div>
+</div>
+<figure class="sheet"><img src="{hero['img'][0][0]}" alt="Burn severity (dNBR) map from Sentinel-2"><figcaption><span class="mono">Burn severity · dNBR</span><span class="mono">Sentinel-2 · GEE · ArcGIS Pro</span></figcaption></figure>
+</div></section>
+
+<section id="planning"><div class="wrap">
+<span class="mono">Professional work</span><h2>Master plans & municipal GIS</h2>
+<p class="sub">City comprehensive plans for the Government of Punjab (PICIIP) and the Aga Khan Agency for Habitat at Shehersaaz, master-plan and cadastral work across Punjab and KP, and two years running municipal GIS in Saudi Arabia.</p>
+<div class="cards">{''.join(procard(p) for p in pro)}</div>
+</div></section>
+
+<section id="work"><div class="wrap">
+<span class="mono">Freelance & client work</span><h2>Real maps from real projects</h2>
+<p class="sub">These are maps I delivered to clients or produced in my professional work, plus a few practice studies (marked as such). Each case study links to its folder on GitHub with the maps, write-up and data.</p>
+<div class="filters" role="group" aria-label="Filter projects">{filters}</div>
+<div class="cards" id="cards">{''.join(card(p) for p in shown)}</div>
+{"<div class='morelist'><span class='mono'>More projects on GitHub</span><h2 style='font-size:26px'>Other delivered work</h2><table><thead><tr><th>Project</th><th>Category</th><th>Where</th><th>Year</th></tr></thead><tbody>"+more_rows+"</tbody></table></div>" if more else ""}
+<p style="margin-top:32px"><a class="btn ghost" href="{GITHUB}/spatial-analysis-showcase">All projects on GitHub →</a></p>
+</div></section>
+
+<section id="experience"><div class="wrap two">
+<div><span class="mono">Experience</span><h2>Where I've worked</h2>
+<ul class="tl">
+<li><span class="mono">Jun 2024 – Jun 2026 · Saudi Arabia</span><h3>GIS Engineer</h3><div class="org">Municipality of Uyun Al Jawa, Al-Qassim</div><p>Managed municipal spatial databases and urban-planning and infrastructure datasets, produced planning maps, coordinated GPS field data collection, and delivered GIS training to World Bank officials.</p></li>
+<li><span class="mono">Apr – May 2024 · Lahore</span><h3>Junior GIS Expert</h3><div class="org">NESPAK</div><p>Collected, managed and processed imagery, survey and vector data for engineering and infrastructure projects.</p></li>
+<li><span class="mono">May 2022 – Mar 2024 · Lahore</span><h3>GIS Analyst</h3><div class="org">Shehersaaz Urban Planning Consultancy</div><p>Spatial analysis and mapping for Land Use Focused City Comprehensive Plans (Sahiwal, Sialkot) and terrain studies for the Aga Khan Agency for Habitat.</p></li>
+<li><span class="mono">2023 – present · Remote</span><h3>Freelance GIS & Remote Sensing</h3><div class="org">Upwork · Spatial Nexus</div><p>33 jobs for clients in the USA, Saudi Arabia, Switzerland and elsewhere: remote sensing, cartography, suitability analysis and GIS-to-CAD data work.</p></li>
+</ul></div>
+<div id="about"><span class="mono">About</span><h2>Education</h2>
+<ul class="tl">
+<li><span class="mono">In progress</span><h3>MSc Geography and Territorial Sciences</h3><div class="org">University of Turin, Italy</div></li>
+<li><span class="mono">Master's</span><h3>GIS and Remote Sensing</h3><div class="org">University of the Punjab</div><p>Thesis: urban sprawl trend in Mardan City, Pakistan (image classification in ERDAS Imagine and ArcMap).</p></li>
+<li><span class="mono">2020 – 2022</span><h3>BEng Geographical Information Systems</h3><div class="org">University of the Punjab</div></li>
+</ul>
+<span class="mono">Certifications</span>
+<ul class="tl" style="margin-top:12px"><li><h3 style="font-size:16px">Advanced Diploma in Geographic Information Systems</h3><p>Alison · Feb 2025</p></li>
+<li><h3 style="font-size:16px">Remote Sensing Technology and Data Processing Applications</h3><p>DQGAST & PIESAT · Feb 2022</p></li></ul>
+</div></div></section>
+
+<section id="skills"><div class="wrap"><span class="mono">Skills</span><h2>Tools and methods</h2>
+<div class="skills">
+<div><h3>GIS software</h3><p>ArcGIS Pro, ArcMap, ArcGIS Online, QGIS, Global Mapper, AutoCAD (GIS–CAD exchange), Google Earth / KMZ</p></div>
+<div><h3>Remote sensing</h3><p>Google Earth Engine, ENVI, ERDAS Imagine, SNAP; Sentinel-2, Landsat 8/9; NDVI, NBR/dNBR, supervised and unsupervised classification, change detection</p></div>
+<div><h3>Analysis</h3><p>Multi-criteria suitability (MCDA), flood risk, kernel density, buffers and service areas, network routing, choropleth classification</p></div>
+<div><h3>Data engineering</h3><p>Geodatabases, digitising, georeferencing, topology QA, geocoding, GeoJSON / SHP / DWG / KMZ conversion, PostGIS</p></div>
+<div><h3>Programming</h3><p>Python (ArcPy, GeoPandas, Rasterio, GDAL), GEE JavaScript, Global Mapper scripting</p></div>
+<div><h3>Cartography</h3><p>Print and web map layout, symbology and labelling, terrain and hillshade, thematic and reference maps</p></div>
+</div>
+<div class="reviews">{''.join(f'<blockquote>“{E(q)}”<cite>{E(c)}</cite></blockquote>' for q, c in REVIEWS)}</div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+<div><span class="mono">Contact</span><h2>Let's work on your map</h2><p class="sub">Tell me about the area, the data you have and what decision the map should support. I usually reply within a few hours.</p>
+<dl><dt>Email</dt><dd><a href="mailto:{EMAIL}">{EMAIL}</a></dd><dt>Upwork</dt><dd><a href="{UPWORK}">abdulhaleemrsgis</a></dd><dt>LinkedIn</dt><dd><a href="{LINKEDIN}">abdul-haleem-khan-rs-gis-specialist</a></dd><dt>Based in</dt><dd>Lahore, Pakistan (GMT+5) · working remotely</dd></dl></div>
+<form action="https://formsubmit.co/{EMAIL}" method="POST">
+<input type="hidden" name="_subject" value="New portfolio enquiry"><input type="hidden" name="_captcha" value="true"><input type="text" name="_honey" style="display:none">
+<label for="n">Name</label><input id="n" name="name" required>
+<label for="e">Email</label><input id="e" name="email" type="email" required>
+<label for="s">Project / organisation</label><input id="s" name="project">
+<label for="m">Message</label><textarea id="m" name="message" rows="5" required></textarea>
+<p style="margin-top:16px"><button class="btn" type="submit">Send message</button></p></form>
+</div></section>
+</main>{FOOT}
+<script>
+const bs=document.querySelectorAll('.filters button'),cs=document.querySelectorAll('#cards .card');
+bs.forEach(b=>b.addEventListener('click',()=>{{bs.forEach(x=>x.setAttribute('aria-pressed',x===b));const f=b.dataset.f;cs.forEach(c=>c.style.display=(f==='all'||c.dataset.cat===f)?'':'none')}}));
+</script>
+<script type="application/ld+json">{json.dumps({"@context":"https://schema.org","@type":"Person","name":"Abdul Haleem Khan","jobTitle":"GIS Engineer & Remote Sensing Specialist","url":URL,"email":"mailto:"+EMAIL,"address":{"@type":"PostalAddress","addressLocality":"Lahore","addressCountry":"PK"},"sameAs":[LINKEDIN,GITHUB,UPWORK]})}</script>
+</body></html>"""
+
+open(os.path.join(SITE, "index.html"), "w").write(index)
+os.makedirs(os.path.join(SITE, "assets"), exist_ok=True)
+open(os.path.join(SITE, "assets/site.css"), "w").write(CSS)
+
+pages = pro + shown
+for i, p in enumerate(pages):
+    nxt = pages[(i + 1) % len(pages)]
+    imgs = "".join(f'<figure class="mapfull"><a href="../{b}"><img src="../{b}" alt="{E(p["title"])} map {k}" width="{w}" height="{h}"></a></figure>'
+                   for k, (b, t, (w, h)) in enumerate(p["img"], 1))
+    files = "".join(f"<li>{E(f)}</li>" for f in p.get("files", []))
+    og = p["img"][0][0] if p["img"] else hero["img"][0][0]
+    pg = head(f"{p['title']} | Abdul Haleem Khan", p["summary"], og, "../") + f"""
+<main class="wrap">
+<div class="crumb"><a href="../index.html#work">← All work</a></div>
+<div class="phero"><span class="mono">{E(CATS[p['cat']][1])}</span><h1 style="font-size:clamp(32px,4.5vw,52px)">{E(p['title'])}</h1>
+<p class="lead">{E(p['summary'])}</p>
+<dl class="facts"><div><dt class="mono">Location</dt><dd>{E(p['where'])}</dd></div><div><dt class="mono">Year</dt><dd>{E(p['year'])}</dd></div><div><dt class="mono">Client</dt><dd>{E(p['client'])}</dd></div><div><dt class="mono">Tools</dt><dd>{E(', '.join(p['tools']))}</dd></div></dl>
+{imgs}{('<p class="mono">'+E(p['note'])+'</p>') if p.get('note') else ''}</div>
+<div class="pbody"><div><h2>Approach</h2><ol>{''.join(f'<li>{E(s)}</li>' for s in p['method'])}</ol>
+<h2>Result</h2><p>{E(p['result'])}</p>{'<p class="mono">Practice study: course and client details omitted.</p>' if p.get('study') else ''}</div>
+<aside class="side"><span class="mono">Files & data</span><p style="margin:8px 0 0"><a class="btn" href="{GH}{p['dir']}">Open on GitHub</a></p>{('<ul>'+files+'</ul>') if files else ''}</aside></div>
+<div class="next"><a href="../index.html#work">← All work</a><a href="{nxt['slug']}.html">Next: {E(nxt['title'])} →</a></div>
+</main>{FOOT}</body></html>"""
+    open(os.path.join(SITE, "projects", p["slug"] + ".html"), "w").write(pg)
+
+open(os.path.join(SITE, "README.md"), "w").write(f"""# Geospatial Portfolio: Abdul Haleem Khan
+
+Live site: {URL}
+
+Static portfolio site (HTML/CSS, no build step) deployed with GitHub Pages. Map images live in `assets/maps/`; each case study page links to its folder in [spatial-analysis-showcase]({GITHUB}/spatial-analysis-showcase), which holds the full maps, write-up and data.
+""")
+print("site:", len(pro), "professional,", len(shown), "case studies,", len(more), "listed")

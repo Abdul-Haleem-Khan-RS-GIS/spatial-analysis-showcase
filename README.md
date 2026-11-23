@@ -1,206 +1,77 @@
-<div align="center">
+# GIS & Remote Sensing Project Showcase
 
-<!-- HEADER BANNER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:0a3d2e,100:00e5a0&height=200&section=header&text=Abdul%20Haleem%20Khan&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=GIS%20Analyst%20%7C%20Remote%20Sensing%20Specialist%20%7C%20Cartographer&descAlignY=58&descSize=16&descColor=a0f0d0" width="100%" />
+**Abdul Haleem Khan**, GIS Engineer & Remote Sensing Specialist  
+[Portfolio website](https://abdul-haleem-khan-rs-gis.github.io/Geospatial_Portfolio/) · [Upwork](https://www.upwork.com/freelancers/abdulhaleemrsgis) · [LinkedIn](https://www.linkedin.com/in/abdul-haleem-khan-rs-gis-specialist) · [Email](mailto:abdulhaleemk03@gmail.com)
 
-<!-- TYPING ANIMATION -->
-<img src="https://readme-typing-svg.demolab.com?font=Space+Mono&size=15&duration=3000&pause=1000&color=00E5A0&center=true&vCenter=true&multiline=false&width=600&lines=Turning+complex+spatial+data+into+clear+decisions;ArcGIS+Pro+%7C+QGIS+%7C+Google+Earth+Engine;Remote+Sensing+%7C+Cartography+%7C+Urban+GIS;Available+for+Freelance+%20%7C%20+Worldwide" alt="Typing SVG" />
+Final maps, reports and data from planning consultancy work in Pakistan and freelance GIS projects for clients in the USA, Saudi Arabia, Switzerland and beyond, organised by discipline. Each folder has the maps, a short write-up and the delivered files.
 
-<br/>
+## Remote Sensing & Earth Observation
 
-<!-- PROFILE BADGES -->
-[![Location](https://img.shields.io/badge/📍_Saudi_Arabia-Riyadh-00e5a0?style=for-the-badge&labelColor=0d1117)](https://github.com/Abdul-Haleem-Khan-RS-GIS)
-[![Freelance](https://img.shields.io/badge/💼_Status-Available_for_Hire-00b8d4?style=for-the-badge&labelColor=0d1117)](https://github.com/Abdul-Haleem-Khan-RS-GIS)
-[![Upwork](https://img.shields.io/badge/Upwork-Hire_Me-14a800?style=for-the-badge&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/abdulhaleemrsgis)
+| Project | Where | Year | Tools |
+|---|---|---|---|
+| [Burn Severity Analysis (NBR / dNBR)](01-Remote-Sensing/burn-severity-sentinel2/) | Wildfire-affected landscape | 2024 | Sentinel-2, Google Earth Engine, ArcGIS Pro |
+| [Land-Cover Classification: Supervised vs Unsupervised](01-Remote-Sensing/lulc-andijan-reservoir/) | Andijan Reservoir, Uzbekistan / Kyrgyzstan | 2024 | Sentinel-2, Google Earth Engine, Random Forest |
+| [Landsat Band 4 & Band 10 Surface Analysis](01-Remote-Sensing/landsat-band4-band10-analysis/) | Study area | 2024 | Landsat, ArcGIS Pro |
+| [Manual Land-Cover Classification of Aerial Imagery](01-Remote-Sensing/aerial-image-manual-classification/) | Aerial image tile | 2024 | ArcGIS Pro, Digitising |
+| [Urban Land-Cover Classification of Los Angeles](01-Remote-Sensing/los-angeles-urban-land-cover/) | Los Angeles, USA | 2024 | ENVI, Landsat |
+| [NDVI, Supervised & Unsupervised Classification Studies](01-Remote-Sensing/ndvi-and-image-classification-studies/) | Various study areas | 2024 | ENVI, ArcGIS Pro, Landsat |
+| [Landsat 9 Thermal & Image Analysis](01-Remote-Sensing/landsat-thermal-and-image-analysis/) | USA (Landsat 9 scene, June 2022) | 2024 | Landsat 9, ArcGIS Pro |
+| [NDVI Summary Map (ArcGIS Pro)](01-Remote-Sensing/ndvi-summary-arcgis-pro/) | Study area | 2025 | ArcGIS Pro, NDVI |
 
-</div>
+## Cartography & Thematic Mapping
 
----
+| Project | Where | Year | Tools |
+|---|---|---|---|
+| [U.S. National Park Service Map Redesign](02-Cartography/nps-map-redesign/) | Rocky Mountain National Park, USA | 2025 | ArcGIS Pro, NPS open data |
+| [Choropleth Classification Comparison: Georgia](02-Cartography/georgia-choropleth-classification/) | Georgia, USA (159 counties) | 2025 | ArcGIS 10.8, U.S. Census data |
+| [Reference Mapping with Text, Icons & Labels](02-Cartography/reference-mapping-text-icons/) | Reference map series | 2025 | ArcGIS Pro |
+| [Riyadh Postal Code Boundaries (GeoJSON)](02-Cartography/riyadh-postcode-map/) | Riyadh, Saudi Arabia | 2025 | QGIS, ArcGIS Pro, GeoJSON |
+| [Zurich Population Density, Ages 25–45](02-Cartography/zurich-population-density/) | Zurich, Switzerland | 2023 | ArcGIS |
+| [Racehorse Training Facility Location Map](02-Cartography/racehorse-facility-location-map/) | USA | 2024 | ArcGIS Pro |
+| [Land Use & School Locator Map: Wonosobo, Indonesia](02-Cartography/indonesia-landuse-school-locator/) | Wonosobo, Indonesia | 2025 | ArcGIS Pro |
+| [New Mexico Cities Snow-Load & Elevation KMZ](02-Cartography/new-mexico-snow-load-kmz/) | New Mexico, USA | 2026 | QGIS, Google Earth, KML/KMZ |
+| [Sales Territory Map from ZIP Codes](02-Cartography/zip-code-territory-map/) | USA | 2024 | ArcGIS Pro |
 
-## 👤 About Me
+## Urban GIS & Site Suitability
 
-I am a freelance **GIS & Remote Sensing Specialist** based in Saudi Arabia, helping businesses and researchers transform complex spatial data into clear, actionable maps and analysis.
+| Project | Where | Year | Tools |
+|---|---|---|---|
+| [Site Suitability for Urban Green Space: Atlanta](03-Urban-GIS-and-Suitability/atlanta-green-space-suitability/) | Atlanta, Georgia, USA | 2025 | ArcGIS Pro, 2020 U.S. Census, Buffer analysis |
+| [Multi-Criteria Flood Risk Map: Umluj](03-Urban-GIS-and-Suitability/umluj-flood-risk-mcda/) | Umluj, Saudi Arabia | 2025 | ArcGIS Pro, MCDA, DEM |
+| [Employment Density (KDE): Dübendorf](03-Urban-GIS-and-Suitability/dubendorf-employment-density/) | Dübendorf, Switzerland | 2024 | ArcGIS, QGIS, Kernel Density |
+| [Daycare Centres of Zurich](03-Urban-GIS-and-Suitability/zurich-daycare-centres/) | Zurich, Switzerland | 2023 | ArcGIS |
+| [Client & Employee Strategy Maps: Switzerland](03-Urban-GIS-and-Suitability/swiss-client-employee-strategy-maps/) | Switzerland | 2023–2025 | ArcGIS, QGIS |
+| [Residential Parcels by Fire Hazard Zone: Riverside](03-Urban-GIS-and-Suitability/riverside-fire-hazard-parcels/) | Riverside, California, USA | 2024 | ArcGIS Pro |
+| [Suitable Locations for a Summer Campground](03-Urban-GIS-and-Suitability/summer-campground-suitability/) | Study area, USA | 2024 | ArcGIS Pro, DEM, Weighted overlay |
+| [Real-Estate Parcel Screening: St. Louis](03-Urban-GIS-and-Suitability/st-louis-parcel-criteria-map/) | St. Louis, Missouri, USA | 2025 | ArcGIS Pro |
 
-I bridge the gap between raw geodata and real decisions whether that's mapping wildfire damage from Sentinel-2 imagery, optimizing business logistics across a city, or designing publication-quality cartographic outputs.
+## Network Analysis & Routing
 
-```
-Specialization  |   Satellite Image Analysis · Spatial Modeling · Cartographic Design 
-Platforms       |   ArcGIS Pro · QGIS · Google Earth Engine · ERDAS Imagine           
-Code            |   GEE JavaScript API · Python (ArcPy)                               
-Data            |   Sentinel-2 · Landsat · OpenStreetMap · GeoJSON · Shapefiles       
-```
+| Project | Where | Year | Tools |
+|---|---|---|---|
+| [Bike Route Network Analysis](04-Network-Analysis/bike-route-network-analysis/) | Mountainous region | 2024 | ArcGIS Pro, Network Analyst, OpenStreetMap |
 
----
+## GIS Data Engineering & CAD
 
-## 🛠️ Technical Stack
+| Project | Where | Year | Tools |
+|---|---|---|---|
+| [Solar Power Plant GIS Dataset](05-GIS-Data-Engineering-and-CAD/solar-plant-gis-dataset/) | Solar power plant site | 2026 | ArcGIS Pro, AutoCAD, Shapefile |
+| [1-ft Contours to CAD (DWG + SHP)](05-GIS-Data-Engineering-and-CAD/nc-contours-to-cad/) | Cherokee County, North Carolina, USA | 2026 | ArcGIS Pro, Export to CAD, NC OneMap |
+| [Vectorised Contours from Scanned Maps (KMZ)](05-GIS-Data-Engineering-and-CAD/scanned-contours-to-kmz/) | USA | 2026 | ArcGIS Pro, Georeferencing, KMZ |
+| [County Dataset Integration: Scott & Dakota, MN](05-GIS-Data-Engineering-and-CAD/minnesota-county-data-merge/) | Scott and Dakota Counties, Minnesota, USA | 2024 | ArcGIS Pro |
+| [Address Geocoding: New York & Long Island](05-GIS-Data-Engineering-and-CAD/ny-address-geocoding/) | New York, USA | 2025 | Geocoding, Excel, Google Maps |
+| [Polygon & Point Digitisation (QGIS)](05-GIS-Data-Engineering-and-CAD/qgis-polygon-point-digitisation/) | Imagery tile | 2025 | QGIS |
+| [Global Mapper Script: Export Layers to CSV](05-GIS-Data-Engineering-and-CAD/global-mapper-csv-export-script/) | — | 2024 | Global Mapper scripting |
 
-<div align="center">
+## Master Plans & Municipal GIS
 
-### GIS Software
-![ArcGIS Pro](https://img.shields.io/badge/ArcGIS_Pro-2C7BB6?style=for-the-badge&logo=esri&logoColor=white)
-![QGIS](https://img.shields.io/badge/QGIS-589632?style=for-the-badge&logo=qgis&logoColor=white)
-![Google Earth Engine](https://img.shields.io/badge/Google_Earth_Engine-4285F4?style=for-the-badge&logo=google&logoColor=white)
-![ERDAS Imagine](https://img.shields.io/badge/ERDAS_Imagine-FF6B00?style=for-the-badge&logoColor=white)
-
-### Programming & Data
-![JavaScript](https://img.shields.io/badge/GEE_JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python_ArcPy-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![GeoJSON](https://img.shields.io/badge/GeoJSON-000000?style=for-the-badge&logo=json&logoColor=white)
-![Shapefile](https://img.shields.io/badge/Shapefile_.shp-8B4513?style=for-the-badge&logoColor=white)
-
-### Satellite Data Sources
-![Sentinel-2](https://img.shields.io/badge/Sentinel--2-003247?style=for-the-badge&logo=esa&logoColor=white)
-![Landsat](https://img.shields.io/badge/Landsat_8/9-1E3A5F?style=for-the-badge&logo=nasa&logoColor=white)
-![OpenStreetMap](https://img.shields.io/badge/OpenStreetMap-7EBC6F?style=for-the-badge&logo=openstreetmap&logoColor=white)
-
-</div>
-
----
-
-## 📂 Spatial Analysis Showcase
-
-### 🛰️ Category A - Remote Sensing
-
-> *Satellite imagery analysis for environmental monitoring & land assessment*
-
-| Project | Description | Tools & Indices |
-|---------|-------------|-----------------|
-| **Burn Severity Analysis** | Wildfire damage mapping using pre/post fire Sentinel-2 imagery | `NBR` `dNBR` `Sentinel-2` `ArcGIS Pro` |
-| **Land Use Classification** | Comparative study: Supervised (GEE) vs Unsupervised (ArcGIS) methods | `GEE JavaScript` `ISODATA` `Maximum Likelihood` |
-
-<details>
-<summary><b>📁 View project files →</b></summary>
-<br>
-
-```
-Category-A-Remote-Sensing/
-├── Burn-Severity-Analysis/
-│   ├── README.md
-│   ├── scripts/          ← GEE JavaScript code
-│   └── outputs/          ← Maps & reports
-└── Land-Use-Classification/
-    ├── README.md
-    ├── supervised/       ← GEE workflow
-    └── unsupervised/     ← ArcGIS workflow
-```
-
-[→ Browse Category A](./Category-A-Remote-Sensing)
-
-</details>
+| Project | Where | Year | Tools |
+|---|---|---|---|
+| [Municipal GIS: Uyun Al Jawa, Saudi Arabia](06-Master-Planning-and-Municipal-GIS/uyun-al-jawa-municipal-gis/) | Uyun Al Jawa, Al-Qassim, Saudi Arabia | Jun 2024 – Jun 2026 | ArcGIS Pro, Geodatabases, GPS field survey |
+| [Sahiwal Land-Use City Comprehensive Plan (2022–2042)](06-Master-Planning-and-Municipal-GIS/sahiwal-city-comprehensive-plan/) | Municipal Committee Sahiwal, Punjab, Pakistan | 2022–2024 | ArcGIS, Land-use survey, Suitability analysis |
+| [Sialkot Land-Use City Comprehensive Plan](06-Master-Planning-and-Municipal-GIS/sialkot-city-comprehensive-plan/) | Sialkot, Punjab, Pakistan | 2022–2024 | ArcGIS, Land-use survey |
+| [Batswat Habitat Planning: Terrain Assessment](06-Master-Planning-and-Municipal-GIS/batswat-terrain-assessment/) | Batswat, Pakistan | 2022–2024 | ArcGIS, DEM, Slope & contour analysis |
+| [City Master Plans & Cadastral Mapping: Punjab and KP](06-Master-Planning-and-Municipal-GIS/punjab-kp-master-plans-and-cadastre/) | Cities in Punjab and Khyber Pakhtunkhwa, Pakistan | 2022–2024 | ArcGIS Pro, QGIS, ERDAS Imagine |
 
 ---
-
-### 🗺️ Category B - Cartography & Map Design
-
-> *High-quality map design for presentations, publications, and web delivery*
-
-| Project | Description | Tools |
-|---------|-------------|-------|
-| **Riyadh Postcode Mapping** | Accurate Saudi postal boundaries in GeoJSON format | `QGIS` `GeoJSON` `ArcGIS Pro` |
-| **National Park Style Map** | Recreation of iconic US National Park Service cartographic style | `ArcGIS Pro` `Custom Symbology` |
-| **Zurich Demographics** | Thematic population density mapping with advanced classification | `QGIS` `Choropleth` `Jenks Breaks` |
-
-<details>
-<summary><b>📁 View project files →</b></summary>
-<br>
-
-[→ Browse Category B](./Category-B-Cartography)
-
-</details>
-
----
-
-### 🏙️ Category C - Urban GIS & Spatial Analysis
-
-> *City-scale spatial analysis for planning, strategy, and social infrastructure*
-
-| Project | Description | Tools |
-|---------|-------------|-------|
-| **Business Logistics Optimization** | Employee–client travel optimization for Swiss firm | `Network Analysis` `ArcGIS Pro` `OSM` |
-| **Employment Density Analysis** | Job cluster mapping using Kernel Density Estimation | `KDE` `ArcGIS Pro` `Spatial Statistics` |
-| **Daycare Accessibility** | Social infrastructure gap analysis across Zurich | `Service Area Analysis` `QGIS` `OSM` |
-
-<details>
-<summary><b>📁 View project files →</b></summary>
-<br>
-
-[→ Browse Category C](./Category-C-Urban-GIS)
-
-</details>
-
----
-
-### 🔗 Category D - Network GIS & Route Analysis
-
-> *Route optimization and transport network analysis across terrain*
-
-| Project | Description | Tools |
-|---------|-------------|-------|
-| **Bike Route Network Analysis** | Optimal urban cycling path calculation accounting for elevation & terrain | `Network Analyst` `OSM` `ArcGIS Pro` `Elevation Data` |
-
-<details>
-<summary><b>📁 View project files →</b></summary>
-<br>
-
-[→ Browse Category D](./Category-D-Network-GIS)
-
-</details>
-
----
-
-## ⚙️ Analysis Capabilities
-
-<div align="center">
-
-| Remote Sensing | Spatial Analysis | Cartography | Automation |
-|:-:|:-:|:-:|:-:|
-| Image Classification | Kernel Density Estimation | Thematic Mapping | GEE JavaScript |
-| Spectral Indices (NDVI, NBR, EVI) | Network Analysis | Symbology Design | Python ArcPy |
-| Change Detection | Spatial Clustering | Map Layout | Batch Processing |
-| Georeferencing | Service Area Analysis | Coordinate Systems | Workflow Scripts |
-| Band Composites | Proximity Analysis | GeoJSON Export | Automated Reports |
-
-</div>
-
----
-
-## 📊 Workflow
-
-```
-01 DATA ACQUISITION          02 PROCESSING               03 VISUALIZATION           04 DELIVERY
-─────────────────────        ──────────────────          ─────────────────          ──────────────
-Satellite Imagery       →    Spectral Analysis      →    Cartographic Design   →    GeoJSON / SHP
-OSM / Vector Data            Classification               Symbology                 PDF / Print
-Field Data                   Spatial Modeling             Layout Design             Web Export
-Existing Databases           Georeferencing               Color Schemes             Full Report
-```
-
----
-
-## 📫 Let's Work Together
-
-<div align="center">
-
-I am available for freelance GIS & Remote Sensing projects.
-Specializing in turning geodata into decision-making tools.
-
-<br/>
-
-[![GitHub](https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdul-Haleem-Khan-RS-GIS/spatial-analysis-showcase)
-[![Upwork](https://img.shields.io/badge/Upwork-Hire_Me-14a800?style=for-the-badge&logo=upwork&logoColor=white)](https://www.upwork.com)
-[![Email](https://img.shields.io/badge/Email-Contact-00e5a0?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your@email.com)
-
-<br/>
-
-**Role:** GIS Analyst · Cartographer · Remote Sensing Specialist  
-**Focus:** Spatial data → clear, actionable maps  
-**Location:** Saudi Arabia · Working globally
-
-</div>
-
----
-
-<!-- FOOTER WAVE -->
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00e5a0,50:0a3d2e,100:0d1117&height=100&section=footer" width="100%" />
-</div>
+Practice studies are anonymised: course and client details are omitted.
