@@ -1,5 +1,6 @@
 // Dixie Fire 2021 - Land Surface Temperature and NDVI Analysis (v2)
 // Google Earth Engine Code Editor script by Abdul Haleem Khan
+// Open in the Code Editor: https://code.earthengine.google.com/41b9b32b5c8690a4727865efe43eb71a
 //
 // Import used by this script (set in the Code Editor "Imports" panel):
 //   var table = ee.FeatureCollection('projects/ee-abdulhaleemk03/assets/DixieFire2021');  // Dixie Fire perimeter
