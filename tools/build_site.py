@@ -203,9 +203,7 @@ index = head("Abdul Haleem Khan | GIS Engineer & Remote Sensing Specialist",
 </ul></div>
 <div id="about"><span class="mono">About</span><h2>Education</h2>
 <ul class="tl">
-<li><span class="mono">In progress</span><h3>MSc Geography and Territorial Sciences</h3><div class="org">University of Turin, Italy</div></li>
-<li><span class="mono">Master's</span><h3>GIS and Remote Sensing</h3><div class="org">University of the Punjab</div><p>Thesis: urban sprawl trend in Mardan City, Pakistan (image classification in ERDAS Imagine and ArcMap).</p></li>
-<li><span class="mono">2020 – 2022</span><h3>BEng Geographical Information Systems</h3><div class="org">University of the Punjab</div></li>
+<li><span class="mono">Master's</span><h3>Geographical Information System</h3><div class="org">University of the Punjab</div><p>Thesis: urban sprawl trend in Mardan City, Pakistan (image classification in ERDAS Imagine and ArcMap).</p></li>
 </ul>
 <span class="mono">Certifications</span>
 <ul class="tl" style="margin-top:12px"><li><h3 style="font-size:16px">Advanced Diploma in Geographic Information Systems</h3><p>Alison · Feb 2025</p></li>
