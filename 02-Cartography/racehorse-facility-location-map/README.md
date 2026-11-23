@@ -4,7 +4,7 @@
 **Client:** Upwork client, USA  
 **Tools & data:** ArcGIS Pro
 
-*Map images will be added here.*
+![Racehorse Training Facility Location Map](maps/racehorse-facility-location-map-1.jpg)
 
 ## Overview
 Strategic location graphic showing a racehorse training facility relative to the top race tracks.

@@ -4,7 +4,7 @@
 **Client:** Sadeem International Company, Saudi Arabia (5.0★)  
 **Tools & data:** ArcGIS Pro, MCDA, DEM
 
-*Map images will be added here.*
+![Multi-Criteria Flood Risk Map: Umluj](maps/umluj-flood-risk-mcda-1.png)
 
 ## Overview
 Environmental assessment to choose sites for flood sensors: a multi-criteria flood risk map of Umluj city and surroundings.

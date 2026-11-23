@@ -4,7 +4,13 @@
 **Client:** Upwork client, USA (5.0★)  
 **Tools & data:** ArcGIS Pro, 2020 U.S. Census, Buffer analysis
 
-*Map images will be added here.*
+![Site Suitability for Urban Green Space: Atlanta](maps/atlanta-green-space-suitability-1.png)
+
+![Site Suitability for Urban Green Space: Atlanta](maps/atlanta-green-space-suitability-2.png)
+
+![Site Suitability for Urban Green Space: Atlanta](maps/atlanta-green-space-suitability-3.png)
+
+![Site Suitability for Urban Green Space: Atlanta](maps/atlanta-green-space-suitability-4.png)
 
 ## Overview
 GIS site-suitability study for new urban green space in Atlanta, combining park access, population density and available parcels.
@@ -16,7 +22,7 @@ GIS site-suitability study for new urban green space in Atlanta, combining park 
 4. Suitable parcel selection + report
 
 ## Result
-Five large-format maps (existing parks with 500 m access, 2020 population density by tract, underserved areas, suitable parcels) and a full report.
+Several neighbourhoods, especially in Southeast Atlanta, had no green space within 500 m, and many of them were tracts above 5,000 people/km². Of 6,000+ vacant parcels screened, 37 met every criterion (location, size, accessibility) and were ranked high, medium or low priority. Delivered as four large-format maps and a full report.
 
 ## Deliverables
 

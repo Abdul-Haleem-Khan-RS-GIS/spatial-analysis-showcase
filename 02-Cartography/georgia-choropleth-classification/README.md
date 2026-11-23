@@ -4,7 +4,13 @@
 **Client:** Upwork client  
 **Tools & data:** ArcGIS 10.8, U.S. Census data
 
-*Map images will be added here.*
+![Choropleth Classification Comparison: Georgia](maps/georgia-choropleth-classification-1.png)
+
+![Choropleth Classification Comparison: Georgia](maps/georgia-choropleth-classification-2.png)
+
+![Choropleth Classification Comparison: Georgia](maps/georgia-choropleth-classification-3.png)
+
+![Choropleth Classification Comparison: Georgia](maps/georgia-choropleth-classification-4.png)
 
 ## Overview
 Mapped U.S. Census population for Georgia's 159 counties four ways (Equal Interval, Quantile, Natural Breaks, Standard Deviation) with matching layouts.
