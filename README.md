@@ -9,13 +9,13 @@ Final maps, reports and data from planning consultancy work in Pakistan and free
 
 | Project | Where | Year | Tools |
 |---|---|---|---|
-| [Burn Severity Analysis (NBR / dNBR)](01-Remote-Sensing/burn-severity-sentinel2/) | Wildfire-affected landscape | 2024 | Sentinel-2, Google Earth Engine, ArcGIS Pro |
-| [Land-Cover Classification: Supervised vs Unsupervised](01-Remote-Sensing/lulc-andijan-reservoir/) | Andijan Reservoir, Uzbekistan / Kyrgyzstan | 2024 | Sentinel-2, Google Earth Engine, Random Forest |
+| [Burn Severity Analysis (NBR / dNBR)](01-Remote-Sensing/burn-severity-sentinel2/) | Eastern Australia (Sentinel-2, UTM zone 56S) | 2024 | Sentinel-2, QGIS, Google Earth Engine |
+| [Land-Cover Classification: Supervised vs Unsupervised](01-Remote-Sensing/lulc-andijan-reservoir/) | Andijan Reservoir, Uzbekistan | 2024 | Sentinel-2, ArcGIS Pro, Google Earth Engine |
 | [Landsat Band 4 & Band 10 Surface Analysis](01-Remote-Sensing/landsat-band4-band10-analysis/) | Study area | 2024 | Landsat, ArcGIS Pro |
-| [Manual Land-Cover Classification of Aerial Imagery](01-Remote-Sensing/aerial-image-manual-classification/) | Aerial image tile | 2024 | ArcGIS Pro, Digitising |
-| [Urban Land-Cover Classification of Los Angeles](01-Remote-Sensing/los-angeles-urban-land-cover/) | Los Angeles, USA | 2024 | ENVI, Landsat, Maximum Likelihood |
-| [NDVI, Supervised & Unsupervised Classification Studies](01-Remote-Sensing/ndvi-and-image-classification-studies/) | Various study areas | 2024 | ENVI, ArcGIS Pro, Landsat |
-| [Landsat 9 Thermal & Image Analysis](01-Remote-Sensing/landsat-thermal-and-image-analysis/) | Southern California (Landsat 9 scene, June 2022) | 2024 | Landsat 9, ArcGIS Pro |
+| [Manual Land-Cover Classification of Aerial Imagery](01-Remote-Sensing/aerial-image-manual-classification/) | Aerial image tile | 2024 | ArcGIS 10.8, Visual interpretation, Digitising |
+| [Urban Land-Cover Classification of Los Angeles](01-Remote-Sensing/los-angeles-urban-land-cover/) | Los Angeles, USA | 2024 | Landsat 8 OLI, ENVI, Maximum Likelihood |
+| [NDVI, Supervised & Unsupervised Classification Studies](01-Remote-Sensing/ndvi-and-image-classification-studies/) | Los Angeles, USA | 2024 | ENVI, Landsat 8, Landsat 9 |
+| [Landsat 9 & Thermal Image Analysis](01-Remote-Sensing/landsat-thermal-and-image-analysis/) | Los Angeles, Rome and Ann Arbor | 2024 | Landsat 9, Landsat TM, Airborne thermal scanner |
 | [NDVI Map of Los Angeles County (Landsat 8)](01-Remote-Sensing/ndvi-summary-arcgis-pro/) | Los Angeles County, USA | 2025 | Landsat 8, ArcGIS Pro, NDVI |
 
 ## Cartography & Thematic Mapping
@@ -23,11 +23,11 @@ Final maps, reports and data from planning consultancy work in Pakistan and free
 | Project | Where | Year | Tools |
 |---|---|---|---|
 | [U.S. National Park Service Map Redesign](02-Cartography/nps-map-redesign/) | Rocky Mountain National Park, USA | 2025 | ArcGIS Pro, NPS open data |
-| [Choropleth Classification Comparison: Georgia](02-Cartography/georgia-choropleth-classification/) | Georgia, USA (159 counties) | 2025 | ArcGIS 10.8, U.S. Census data |
-| [Reference Mapping with Text, Icons & Labels](02-Cartography/reference-mapping-text-icons/) | Reference map series | 2025 | ArcGIS Pro |
+| [Choropleth Classification Comparison: Georgia](02-Cartography/georgia-choropleth-classification/) | Georgia, USA (159 counties) | 2025 | ArcGIS 10.8, 2020 U.S. Census, TIGER/Line |
+| [Reference Mapping with Text, Icons & Labels](02-Cartography/reference-mapping-text-icons/) | United States (national, Arizona and Colorado map panels) | 2025 | ArcGIS Pro |
 | [Riyadh Postal Code Boundaries (GeoJSON)](02-Cartography/riyadh-postcode-map/) | Riyadh, Saudi Arabia | 2025 | QGIS, ArcGIS Pro, GeoJSON |
 | [Zurich Population Density, Ages 25–45](02-Cartography/zurich-population-density/) | Zurich, Switzerland | 2023 | ArcGIS |
-| [Racehorse Training Facility Location Map](02-Cartography/racehorse-facility-location-map/) | USA | 2024 | ArcGIS Pro |
+| [Racehorse Training Facility Location Map](02-Cartography/racehorse-facility-location-map/) | Texas and the U.S. Gulf states | 2024 | ArcGIS Pro |
 | [Land Use & School Locator Map: Wonosobo, Indonesia](02-Cartography/indonesia-landuse-school-locator/) | Wonosobo, Indonesia | 2025 | ArcGIS Pro |
 | [New Mexico Cities Snow-Load & Elevation KMZ](02-Cartography/new-mexico-snow-load-kmz/) | New Mexico, USA | 2026 | QGIS, Google Earth, KML/KMZ |
 | [Sales Territory Map from ZIP Codes](02-Cartography/zip-code-territory-map/) | Cuyahoga County (Cleveland area), Ohio, USA | 2024 | ArcGIS Pro, Census ZCTA, OpenStreetMap |
@@ -36,7 +36,7 @@ Final maps, reports and data from planning consultancy work in Pakistan and free
 
 | Project | Where | Year | Tools |
 |---|---|---|---|
-| [Site Suitability for Urban Green Space: Atlanta](03-Urban-GIS-and-Suitability/atlanta-green-space-suitability/) | Atlanta, Georgia, USA | 2025 | ArcGIS Pro, 2020 U.S. Census, Buffer analysis |
+| [Site Suitability for Urban Green Space: Atlanta](03-Urban-GIS-and-Suitability/atlanta-green-space-suitability/) | Atlanta, Georgia, USA | 2025 | ArcGIS 10.8, 2020 U.S. Census, Buffer & overlay analysis |
 | [Multi-Criteria Flood Risk Map: Umluj](03-Urban-GIS-and-Suitability/umluj-flood-risk-mcda/) | Umluj, Saudi Arabia | 2025 | ArcGIS Pro, MCDA, DEM |
 | [Employment Density on a 100 m Grid: Dübendorf](03-Urban-GIS-and-Suitability/dubendorf-employment-density/) | Dübendorf, Switzerland | 2024 | ArcGIS, QGIS, Swiss 100 m grid |
 | [Daycare Centres of Zurich](03-Urban-GIS-and-Suitability/zurich-daycare-centres/) | Zurich, Switzerland | 2023 | ArcGIS |

@@ -4,19 +4,26 @@
 **Client:** Upwork client, Saudi Arabia  
 **Tools & data:** QGIS, ArcGIS Pro, GeoJSON
 
-![Riyadh Postal Code Boundaries (GeoJSON)](maps/riyadh-postcode-map-1.png)
+![Postal-code boundaries of Riyadh over satellite imagery](maps/riyadh-postcode-map-1.png)
+*Figure 1. Postal-code boundaries of Riyadh over satellite imagery*
 
 ## Overview
 Delineated Riyadh postal code boundaries and delivered them as GeoJSON ready for GIS platforms and web maps.
 
-## Approach
-1. Reference boundary sources
-2. Delineate postcode polygons
-3. Attribute + topology check
-4. GeoJSON export
+## Challenge
+The client needed Riyadh's postal-code boundaries as a clean dataset that works in GIS software and web maps.
 
-## Result
-Postal-code polygon dataset (GeoJSON) and map.
+## Data
+- Postal-code reference boundaries for Riyadh
+- Satellite basemap for checking
+
+## Approach
+1. Delineated the postal-code zones in QGIS and ArcGIS Pro
+2. Checked attributes and topology so neighbouring zones share edges
+3. Exported to GeoJSON (and shapefile) for web and GIS use
+
+## Results
+- Postal-code polygon layer for the whole city, delivered as GeoJSON and shapefile
 
 ## Deliverables
 

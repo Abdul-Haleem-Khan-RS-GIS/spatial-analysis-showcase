@@ -4,10 +4,14 @@
 **Client:** PICIIP, Government of Punjab · via Shehersaaz (UMDS Consultant)  
 **Tools & data:** ArcGIS, Land-use survey
 
-![Sialkot Land-Use City Comprehensive Plan](maps/sialkot-city-comprehensive-plan-1.jpg)
+![Existing land use of the Sialkot study area](maps/sialkot-city-comprehensive-plan-1.jpg)
+*Figure 1. Existing land use of the Sialkot study area*
 
 ## Overview
 Existing land-use mapping of the Sialkot study area for Output A-1 of the PICIIP Land-Use Focused City Comprehensive Plan.
+
+## Challenge
+Map the existing land use of the Sialkot study area as the base for its land-use focused city comprehensive plan.
 
 ## Approach
 1. Land-use survey data
@@ -15,7 +19,7 @@ Existing land-use mapping of the Sialkot study area for Output A-1 of the PICIIP
 3. Transport network and administrative boundaries
 4. Plan-standard map layout
 
-## Result
+## Results
 Existing land-use map of the study area showing residential, commercial, industrial, agricultural, education and religious uses with the M11 motorway, railway, road hierarchy, MC and cantonment boundaries.
 
 ---

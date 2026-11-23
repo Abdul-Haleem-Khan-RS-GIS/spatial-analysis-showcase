@@ -1,24 +1,33 @@
-# Landsat 9 Thermal & Image Analysis
+# Landsat 9 & Thermal Image Analysis
 
-**Category:** Remote Sensing & Earth Observation &nbsp;·&nbsp; **Location:** Southern California (Landsat 9 scene, June 2022) &nbsp;·&nbsp; **Year:** 2024  
+**Category:** Remote Sensing & Earth Observation &nbsp;·&nbsp; **Location:** Los Angeles, Rome and Ann Arbor &nbsp;·&nbsp; **Year:** 2024  
 **Client:** Practice study  
-**Tools & data:** Landsat 9, ArcGIS Pro
+**Tools & data:** Landsat 9, Landsat TM, Airborne thermal scanner, ENVI
 
 > Practice study. Course and client details are omitted.
 
-![Landsat 9 Thermal & Image Analysis](maps/landsat-thermal-and-image-analysis-1.jpg)
+![Landsat 9 scene over Los Angeles, 12 January 2024](maps/landsat-thermal-and-image-analysis-1.jpg)
+*Figure 1. Landsat 9 scene over Los Angeles, 12 January 2024*
 
 ## Overview
-Analysed a Landsat 9 Collection 2 scene (15 June 2022): band composites, thermal band interpretation and surface analysis.
+Image analysis of a Landsat 9 scene of Los Angeles (12 January 2024) and thermal interpretation of Landsat TM Band 6 over Rome and airborne thermal imagery of Ann Arbor.
+
+## Challenge
+Interpret multispectral and thermal imagery correctly: what different band combinations and thermal values reveal about urban surfaces.
+
+## Data
+- Landsat 9 scene of Los Angeles, 12 January 2024 (7,751 columns × 7,881 rows, 11 bands)
+- Landsat TM Band 6 (thermal) image of Rome
+- Airborne thermal infrared scan of Ann Arbor, 9 May 1981 (8–14 µm, 3,600 m altitude)
 
 ## Approach
-1. Landsat 9 C2 L2 scene
-2. Band composites
-3. Thermal band analysis
-4. Reports
+1. True-colour (4-3-2) and false-colour SWIR composite (7-6-4) to highlight urban areas
+2. Image dimension and band review, and subsetting to the area of interest
+3. Interpretation of thermal digital numbers for roads, rivers, vegetation and buildings
 
-## Result
-Two illustrated reports on Landsat image analysis and thermal interpretation.
+## Results
+- The 7-6-4 composite shows urban areas in pink and magenta, clearly separated from natural land
+- In early-morning thermal imagery, roads and rivers appear warmer than vegetation
 
 ## Deliverables
 

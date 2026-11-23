@@ -1,21 +1,29 @@
 # Racehorse Training Facility Location Map
 
-**Category:** Cartography & Thematic Mapping &nbsp;·&nbsp; **Location:** USA &nbsp;·&nbsp; **Year:** 2024  
+**Category:** Cartography & Thematic Mapping &nbsp;·&nbsp; **Location:** Texas and the U.S. Gulf states &nbsp;·&nbsp; **Year:** 2024  
 **Client:** Upwork client, USA  
 **Tools & data:** ArcGIS Pro
 
-![Racehorse Training Facility Location Map](maps/racehorse-facility-location-map-1.jpg)
+![Strategic location of the training facility relative to the top race tracks](maps/racehorse-facility-location-map-1.jpg)
+*Figure 1. Strategic location of the training facility relative to the top race tracks*
 
 ## Overview
 Strategic location graphic showing a racehorse training facility relative to the top race tracks.
 
-## Approach
-1. Facility and race-track locations
-2. Base map and distances
-3. Graphic design and export
+## Challenge
+Create a marketing graphic that shows at a glance how close a racehorse training property is to the region's top race tracks.
 
-## Result
-High-resolution map in PNG, JPG and PDF for marketing use.
+## Data
+- Property location and race-track locations supplied by the client
+- U.S. state boundaries
+
+## Approach
+1. Plotted the property and tracks with distinct symbols
+2. Added leader lines and labels to each track
+3. Exported high-resolution PNG, JPG and PDF
+
+## Results
+- High-resolution location graphic (20 MB PNG and 16 MB PDF) ready for marketing
 
 ## Deliverables
 

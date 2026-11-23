@@ -4,14 +4,20 @@
 **Client:** Aga Khan Agency for Habitat · via Shehersaaz  
 **Tools & data:** ArcGIS, DEM, Slope & contour analysis
 
-![Batswat Habitat Planning: Terrain Assessment](maps/batswat-terrain-assessment-1.jpg)
+![Location and land-use map of Batswat with inset maps](maps/batswat-terrain-assessment-1.jpg)
+*Figure 1. Location and land-use map of Batswat with inset maps*
 
-![Batswat Habitat Planning: Terrain Assessment](maps/batswat-terrain-assessment-2.jpg)
+![Slope map (degrees)](maps/batswat-terrain-assessment-2.jpg)
+*Figure 2. Slope map (degrees)*
 
-![Batswat Habitat Planning: Terrain Assessment](maps/batswat-terrain-assessment-3.jpg)
+![Contour map](maps/batswat-terrain-assessment-3.jpg)
+*Figure 3. Contour map*
 
 ## Overview
 Base maps for a habitat planning study: a location and land-use map, a slope map and a contour map of the Batswat study area.
+
+## Challenge
+Understand the terrain constraints of the Batswat study area for a habitat planning study.
 
 ## Approach
 1. DEM processing
@@ -19,7 +25,7 @@ Base maps for a habitat planning study: a location and land-use map, a slope map
 3. Contour generation
 4. Location and land-use map with inset maps
 
-## Result
+## Results
 Location, slope (in degrees) and contour maps used to read terrain constraints and the river corridor for habitat planning.
 
 ---

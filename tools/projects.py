@@ -300,3 +300,11 @@ add(slug="punjab-kp-master-plans-and-cadastre", cat="planning", pro=True,
     result="Planning geodatabases and map sets for master-plan reports, cadastral maps for PULSE, and automated processing workflows in ArcGIS Pro, QGIS, ERDAS Imagine and Python.",
     method=["Base data and imagery processing", "Geodatabase design and management", "Planning and cadastral mapping", "Workflow automation with Python"],
     files=[])
+
+# ---- merge detailed case-study content ----
+try:
+    from details import D as _D
+except ImportError:
+    _D = {}
+for _p in P:
+    _p.update(_D.get(_p["slug"], {}))

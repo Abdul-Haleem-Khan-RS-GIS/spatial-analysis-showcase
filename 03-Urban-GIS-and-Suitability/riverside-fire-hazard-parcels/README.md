@@ -6,19 +6,26 @@
 
 > Practice study. Course and client details are omitted.
 
-![Residential Parcels by Fire Hazard Zone: Riverside](maps/riverside-fire-hazard-parcels-1.jpg)
+![Residential parcels by fire hazard zone in Riverside, California](maps/riverside-fire-hazard-parcels-1.jpg)
+*Figure 1. Residential parcels by fire hazard zone in Riverside, California*
 
 ## Overview
 Overlay of residential parcels with fire hazard severity zones in Riverside, including a neighbourhood case study (Alessandro Heights).
 
-## Approach
-1. Parcel and hazard-zone layers
-2. Spatial join / overlay
-3. Summary by zone
-4. Maps
+## Challenge
+Identify residential parcels in Riverside that fall within classified fire hazard severity zones.
 
-## Result
-Map and data package of residential parcels by fire hazard zone.
+## Data
+- Riverside residential parcels
+- Fire hazard severity zones (moderate, high, very high)
+
+## Approach
+1. Overlaid parcels with the hazard zones
+2. Summarised parcels by zone
+3. Neighbourhood case study of Alessandro Heights
+
+## Results
+- Very-high hazard zones run along the city's western and southern edges next to open land
 
 ## Deliverables
 

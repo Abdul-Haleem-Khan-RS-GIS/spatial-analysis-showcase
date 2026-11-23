@@ -4,18 +4,24 @@
 **Client:** Futurewise Aerial  
 **Tools & data:** Global Mapper scripting
 
-*Map images will be added here.*
+*No public map for this project: the deliverable was data or code (see Deliverables).*
 
 ## Overview
 Global Mapper script that exports multiple layers to separate CSV files, with a how-to guide.
 
-## Approach
-1. Layer loop in Global Mapper script
-2. CSV export per layer
-3. Test + guide
+## Challenge
+The client needed to export several shapefile layers to separate CSV files in one go instead of by hand.
 
-## Result
-Working script, sample CSV outputs and documentation.
+## Data
+- Four shapefile layers
+
+## Approach
+1. Wrote a Global Mapper script: SET_DIR, then IMPORT → EXPORT_VECTOR TYPE=CSV → UNLOAD_ALL for each layer
+2. Tested the export and delivered sample CSVs
+3. Wrote a step-by-step guide explaining every command
+
+## Results
+- Working script, four sample CSV outputs and documentation
 
 ## Deliverables
 

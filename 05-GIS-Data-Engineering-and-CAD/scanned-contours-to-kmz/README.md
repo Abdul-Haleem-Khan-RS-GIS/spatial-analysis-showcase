@@ -4,7 +4,7 @@
 **Client:** Upwork client (5.0★)  
 **Tools & data:** ArcGIS Pro, Georeferencing, KMZ
 
-*Map images will be added here.*
+*No public map for this project: the deliverable was data or code (see Deliverables).*
 
 ## Overview
 Georeferenced scanned maps, vectorised the contours and delivered attributed KMZ polygons.
@@ -15,7 +15,7 @@ Georeferenced scanned maps, vectorised the contours and delivered attributed KMZ
 3. Build polygons + attributes
 4. KMZ export
 
-## Result
+## Results
 Attributed contour polygons in KMZ.
 
 ---

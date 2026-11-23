@@ -4,7 +4,7 @@
 **Client:** Upwork client, USA  
 **Tools & data:** ArcGIS Pro
 
-*Map images will be added here.*
+*No public map for this project: the deliverable was data or code (see Deliverables).*
 
 ## Overview
 Mapped St. Louis real-estate parcels that meet a client's criteria.
@@ -14,7 +14,7 @@ Mapped St. Louis real-estate parcels that meet a client's criteria.
 2. Attribute and spatial criteria
 3. Filtered parcel map
 
-## Result
+## Results
 Parcel screening map.
 
 ---

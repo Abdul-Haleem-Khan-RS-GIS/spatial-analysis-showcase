@@ -115,6 +115,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .pbody{display:grid;grid-template-columns:1.6fr 1fr;gap:48px;padding:24px 0 72px}
 .pbody h2{font-size:26px;margin-top:0}.pbody ol{padding-left:20px;color:var(--muted)}
 .side{background:#fff;border:1px solid var(--line);padding:20px;align-self:start}
+.mapfull figcaption{font-size:14px;color:var(--muted);padding-top:10px;text-align:center}.mapfull figcaption .mono{margin-right:6px}
+.find{padding-left:0;list-style:none}.find li{border-left:3px solid var(--accent);padding:6px 0 6px 14px;margin:0 0 10px;background:#fff}
+.side hr{border:0;border-top:1px solid var(--line);margin:18px 0}.side .dl{margin-bottom:0}
 .side ul{padding-left:18px;margin:8px 0 0;font-size:14px;color:var(--muted)}
 .next{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0 64px}
 .next a{text-decoration:none}
@@ -156,7 +159,7 @@ cats_present = [k for k in CATS if any(p["cat"] == k for p in shown)]
 filters = '<button aria-pressed="true" data-f="all">All</button>' + "".join(
     f'<button aria-pressed="false" data-f="{k}">{E(CATS[k][1])}</button>' for k in cats_present)
 
-more_rows = "".join(f"<tr><td><a href=\"{GH}{p['dir']}\">{E(p['title'])}</a></td><td>{E(CATS[p['cat']][1])}</td><td>{E(p['where'])}</td><td>{E(p['year'])}</td></tr>" for p in more)
+more_rows = "".join(f"<tr><td><a href=\"{('projects/'+p['slug']+'.html') if p.get('challenge') else GH+p['dir']}\">{E(p['title'])}</a></td><td>{E(CATS[p['cat']][1])}</td><td>{E(p['where'])}</td><td>{E(p['year'])}</td></tr>" for p in more)
 
 REVIEWS = [
  ("Abdul delivered exactly what we needed with a complex GIS to CAD conversion.", "MBH Inc., USA · Contours to CAD"),
@@ -245,10 +248,14 @@ open(os.path.join(SITE, "index.html"), "w").write(index)
 os.makedirs(os.path.join(SITE, "assets"), exist_ok=True)
 open(os.path.join(SITE, "assets/site.css"), "w").write(CSS)
 
-pages = pro + shown
+def cap(p, k):
+    c = p.get('captions') or []
+    return c[k-1] if k-1 < len(c) else p['title']
+
+pages = pro + shown + [p for p in more if p.get('challenge')]
 for i, p in enumerate(pages):
     nxt = pages[(i + 1) % len(pages)]
-    imgs = "".join(f'<figure class="mapfull"><a href="../{b}"><img src="../{b}" alt="{E(p["title"])} map {k}" width="{w}" height="{h}"></a></figure>'
+    imgs = "".join(f'<figure class="mapfull"><a href="../{b}"><img src="../{b}" alt="{E(cap(p,k))}" width="{w}" height="{h}"></a><figcaption><span class="mono">Fig. {k}</span> {E(cap(p,k))}</figcaption></figure>'
                    for k, (b, t, (w, h)) in enumerate(p["img"], 1))
     files = "".join(f"<li>{E(f)}</li>" for f in p.get("files", []))
     og = p["img"][0][0] if p["img"] else hero["img"][0][0]
@@ -259,9 +266,10 @@ for i, p in enumerate(pages):
 <p class="lead">{E(p['summary'])}</p>
 <dl class="facts"><div><dt class="mono">Location</dt><dd>{E(p['where'])}</dd></div><div><dt class="mono">Year</dt><dd>{E(p['year'])}</dd></div><div><dt class="mono">Client</dt><dd>{E(p['client'])}</dd></div><div><dt class="mono">Tools</dt><dd>{E(', '.join(p['tools']))}</dd></div></dl>
 {imgs}{('<p class="mono">'+E(p['note'])+'</p>') if p.get('note') else ''}</div>
-<div class="pbody"><div><h2>Approach</h2><ol>{''.join(f'<li>{E(s)}</li>' for s in p['method'])}</ol>
-<h2>Result</h2><p>{E(p['result'])}</p>{'<p class="mono">Practice study: course and client details omitted.</p>' if p.get('study') else ''}</div>
-<aside class="side"><span class="mono">Files & data</span><p style="margin:8px 0 0"><a class="btn" href="{GH}{p['dir']}">Open on GitHub</a></p>{('<ul>'+files+'</ul>') if files else ''}</aside></div>
+<div class="pbody"><div>{('<h2>Challenge</h2><p>'+E(p['challenge'])+'</p>') if p.get('challenge') else ''}
+<h2>Approach</h2><ol>{''.join(f'<li>{E(s)}</li>' for s in p['method'])}</ol>
+<h2>Results</h2>{('<ul class="find">'+''.join(f'<li>{E(x)}</li>' for x in p['findings'])+'</ul>') if p.get('findings') else '<p>'+E(p['result'])+'</p>'}{'<p class="mono">Practice study: course and client details omitted.</p>' if p.get('study') else ''}</div>
+<aside class="side">{('<span class="mono">Data used</span><ul class="dl">'+''.join(f'<li>{E(x)}</li>' for x in p['data'])+'</ul><hr>') if p.get('data') else ''}<span class="mono">Files & data</span><p style="margin:8px 0 0"><a class="btn" href="{GH}{p['dir']}">Open on GitHub</a></p>{('<ul>'+files+'</ul>') if files else ''}</aside></div>
 <div class="next"><a href="../index.html#work">← All work</a><a href="{nxt['slug']}.html">Next: {E(nxt['title'])} →</a></div>
 </main>{FOOT}</body></html>"""
     open(os.path.join(SITE, "projects", p["slug"] + ".html"), "w").write(pg)

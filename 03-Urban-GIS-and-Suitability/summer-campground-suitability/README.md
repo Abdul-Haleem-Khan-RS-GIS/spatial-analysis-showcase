@@ -6,19 +6,30 @@
 
 > Practice study. Course and client details are omitted.
 
-![Suitable Locations for a Summer Campground](maps/summer-campground-suitability-1.jpg)
+![Suitable locations for a summer campground](maps/summer-campground-suitability-1.jpg)
+*Figure 1. Suitable locations for a summer campground*
 
 ## Overview
 Raster suitability model combining relief and other criteria to find suitable campground sites.
 
-## Approach
-1. Relief/slope from DEM
-2. Criteria reclassification
-3. Weighted overlay
-4. Suitable sites
+## Challenge
+Find suitable sites for a summer campground that are close to water and roads but not too far from emergency services.
 
-## Result
-Suitability map and relief data.
+## Data
+- Relief/DEM
+- Rivers and lakes
+- Major roads
+- Emergency services
+- Study-area boundary
+
+## Approach
+1. Derived slope and relief
+2. Reclassified each criterion
+3. Weighted overlay to find suitable cells
+4. Mapped the suitable locations
+
+## Results
+- A small set of suitable locations near rivers and roads, mapped with emergency-service coverage
 
 ## Deliverables
 

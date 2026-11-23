@@ -4,19 +4,28 @@
 **Client:** Upwork client, USA  
 **Tools & data:** ArcGIS Pro, Census ZCTA, OpenStreetMap
 
-![Sales Territory Map from ZIP Codes](maps/zip-code-territory-map-1.jpg)
+![Four ZIP code areas with a 10-mile reach and selected schools (preview rendered from the delivered data)](maps/zip-code-territory-map-1.jpg)
+*Figure 1. Four ZIP code areas with a 10-mile reach and selected schools (preview rendered from the delivered data)*
 
 ## Overview
 Built a territory around four ZIP code areas (44115, 44122, 44130, 44145) with 10-mile buffers, county, municipal and school-district boundaries, and selected the schools inside the territory from OpenStreetMap.
 
-## Approach
-1. Census ZCTA polygons for four ZIP codes
-2. 10-mile buffers
-3. County, municipal and school-district layers
-4. Select schools within the territory
+## Challenge
+Define a service territory around four ZIP codes and find the schools within reach.
 
-## Result
-Territory map and GIS data package (ZCTA boundaries, buffers, administrative layers, selected school points).
+## Data
+- Census ZCTA boundaries for 44115, 44122, 44130 and 44145
+- County, municipal and school-district boundaries
+- School locations from OpenStreetMap
+
+## Approach
+1. Selected the four ZCTAs
+2. Built 10-mile buffers around them
+3. Selected schools within the territory
+4. Packaged all layers and a map
+
+## Results
+- 371 schools selected within the 10-mile territory across the Cleveland area
 
 ## Deliverables
 

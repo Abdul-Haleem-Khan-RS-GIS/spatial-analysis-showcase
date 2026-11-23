@@ -4,7 +4,7 @@
 **Client:** Municipality of Uyun Al Jawa, Al-Qassim (GIS Engineer)  
 **Tools & data:** ArcGIS Pro, Geodatabases, GPS field survey, AutoCAD
 
-*Map images will be added here.*
+*No public map for this project: the deliverable was data or code (see Deliverables).*
 
 ## Overview
 Two years as the municipality's GIS Engineer, running its spatial databases for urban planning and infrastructure and producing the maps behind municipal decisions.
@@ -15,7 +15,7 @@ Two years as the municipality's GIS Engineer, running its spatial databases for 
 3. Spatial analysis and map production for planning and services
 4. Integrate GIS data across departments; staff and World Bank training
 
-## Result
+## Results
 Up-to-date municipal geodatabases, planning and infrastructure maps, GIS data shared across departments, and GIS training delivered to World Bank officials.
 
 *Municipal maps will be added where the municipality allows publication.*

@@ -47,13 +47,24 @@ def readme(p):
     L.append("")
     if p.get("study"):
         L += ["> Practice study. Course and client details are omitted.", ""]
-    for m in p["maps"]:
-        L += [f"![{p['title']}](maps/{q(os.path.basename(m))})", ""]
+    caps = p.get("captions", [])
+    for k, m in enumerate(p["maps"]):
+        cap = caps[k] if k < len(caps) else p["title"]
+        L += [f"![{cap}](maps/{q(os.path.basename(m))})", f"*Figure {k+1}. {cap}*", ""]
     if not p["maps"]:
-        L += ["*Map images will be added here.*", ""]
-    L += ["## Overview", p["summary"], "", "## Approach"]
+        L += ["*No public map for this project: the deliverable was data or code (see Deliverables).*", ""]
+    L += ["## Overview", p["summary"], ""]
+    if p.get("challenge"):
+        L += ["## Challenge", p["challenge"], ""]
+    if p.get("data"):
+        L += ["## Data"] + [f"- {x}" for x in p["data"]] + [""]
+    L += ["## Approach"]
     L += [f"{i}. {s}" for i, s in enumerate(p["method"], 1)]
-    L += ["", "## Result", p["result"], ""]
+    L += ["", "## Results"]
+    if p.get("findings"):
+        L += [f"- {x}" for x in p["findings"]] + [""]
+    if not p.get("findings"):
+        L += [p["result"], ""]
     if p.get("files"):
         L += ["## Deliverables", ""]
         L += [f"- {f}" for f in p["files"]]

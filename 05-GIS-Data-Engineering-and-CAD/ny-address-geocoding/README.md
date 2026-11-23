@@ -4,7 +4,7 @@
 **Client:** Upwork client, USA  
 **Tools & data:** Geocoding, Excel, Google Maps
 
-*Map images will be added here.*
+*No public map for this project: the deliverable was data or code (see Deliverables).*
 
 ## Overview
 Geocoded client address lists for New York and Long Island to coordinates.
@@ -15,7 +15,7 @@ Geocoded client address lists for New York and Long Island to coordinates.
 3. Match review
 4. Output tables
 
-## Result
+## Results
 Geocoded address tables (about 2,270 addresses). The address data is kept private because it lists individuals' addresses.
 
 ---

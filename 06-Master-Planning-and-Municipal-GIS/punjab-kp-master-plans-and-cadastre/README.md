@@ -4,7 +4,7 @@
 **Client:** Shehersaaz · supervised by PICIIP, UPU and PULSE  
 **Tools & data:** ArcGIS Pro, QGIS, ERDAS Imagine, Python
 
-*Map images will be added here.*
+*No public map for this project: the deliverable was data or code (see Deliverables).*
 
 ## Overview
 Spatial analysis, mapping and geodatabase management for city master-plan programmes in Punjab (PICIIP) and Khyber Pakhtunkhwa (Urban Policy Unit), and cadastral mapping across several Punjab cities for PULSE (May 2023 – Apr 2024).
@@ -15,7 +15,7 @@ Spatial analysis, mapping and geodatabase management for city master-plan progra
 3. Planning and cadastral mapping
 4. Workflow automation with Python
 
-## Result
+## Results
 Planning geodatabases and map sets for master-plan reports, cadastral maps for PULSE, and automated processing workflows in ArcGIS Pro, QGIS, ERDAS Imagine and Python.
 
 ---

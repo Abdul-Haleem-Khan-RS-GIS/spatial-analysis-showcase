@@ -1,28 +1,41 @@
 # Reference Mapping with Text, Icons & Labels
 
-**Category:** Cartography & Thematic Mapping &nbsp;·&nbsp; **Location:** Reference map series &nbsp;·&nbsp; **Year:** 2025  
+**Category:** Cartography & Thematic Mapping &nbsp;·&nbsp; **Location:** United States (national, Arizona and Colorado map panels) &nbsp;·&nbsp; **Year:** 2025  
 **Client:** Upwork client  
 **Tools & data:** ArcGIS Pro
 
-![Reference Mapping with Text, Icons & Labels](maps/reference-mapping-text-icons-1.jpg)
+![Urban hierarchy of U.S. cities: four labelling frames](maps/reference-mapping-text-icons-1.jpg)
+*Figure 1. Urban hierarchy of U.S. cities: four labelling frames*
 
-![Reference Mapping with Text, Icons & Labels](maps/reference-mapping-text-icons-2.jpg)
+![U.S. political and physical features: multi-frame labelling](maps/reference-mapping-text-icons-2.jpg)
+*Figure 2. U.S. political and physical features: multi-frame labelling*
 
-![Reference Mapping with Text, Icons & Labels](maps/reference-mapping-text-icons-3.jpg)
+![Labelling and symbolising cities (point features)](maps/reference-mapping-text-icons-3.jpg)
+*Figure 3. Labelling and symbolising cities (point features)*
 
-![Reference Mapping with Text, Icons & Labels](maps/reference-mapping-text-icons-4.jpg)
+![Labelling and symbolising roads (line features)](maps/reference-mapping-text-icons-4.jpg)
+*Figure 4. Labelling and symbolising roads (line features)*
 
 ## Overview
 Two cartography projects on label placement, symbol design and icon use for reference maps.
 
-## Approach
-1. Base data preparation
-2. Label classes and placement rules
-3. Icon/point symbology
-4. Reports
+## Challenge
+Find the clearest way to label and symbolise cities, rivers, lakes, political and physical areas, and roads on reference maps.
 
-## Result
-Illustrated reports on effective reference mapping and on labelling and symbolising.
+## Data
+- U.S. cities, states, rivers, lakes, mountain ranges and road networks
+
+## Approach
+1. Built four map panels, each with three or four frames that progressively improve labelling
+2. Cities: from identical symbols to a four-tier hierarchy by population and capital status
+3. Water: curved labels that follow rivers and better lake label placement
+4. Political and physical areas: label colours matched to features, letter spacing, uppercase mountain ranges and spot elevations
+5. Roads: road hierarchy, highway shields instead of text, and controlled label density
+
+## Results
+- The four-tier city hierarchy balances detail and readability best
+- Curved river labels and highway shields gave the clearest maps
+- Two illustrated reports explain the best frame in each panel
 
 ## Deliverables
 
