@@ -64,7 +64,7 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(40px,5.4vw,64px);lin
 .sheet{background:#fff;border:1px solid var(--ink);padding:14px;box-shadow:10px 10px 0 var(--ink)}
 .sheet img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center}
 .sheet.portrait{max-width:380px;margin-left:auto}.sheet.portrait img{aspect-ratio:400/512;object-position:top}
-.sheet figcaption{display:flex;justify-content:space-between;margin-top:10px}
+.sheet figcaption{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:10px}
 section{padding:80px 0;border-bottom:1px solid var(--line)}
 h2{font-family:var(--serif);font-weight:600;font-size:38px;margin:6px 0 12px;letter-spacing:-.01em}
 .sub{color:var(--muted);max-width:42em;margin:0 0 32px}
