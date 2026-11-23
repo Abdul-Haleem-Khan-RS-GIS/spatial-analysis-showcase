@@ -1,6 +1,6 @@
 # Global Mapper Script: Export Layers to CSV
 
-**Category:** GIS Data Engineering & CAD &nbsp;·&nbsp; **Location:** — &nbsp;·&nbsp; **Year:** 2024  
+**Category:** GIS Data Engineering & CAD &nbsp;·&nbsp; **Location:** United Kingdom &nbsp;·&nbsp; **Year:** 2024  
 **Client:** Futurewise Aerial  
 **Tools & data:** Global Mapper scripting
 

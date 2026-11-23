@@ -61,7 +61,7 @@ Final maps, reports and data from planning consultancy work in Pakistan and free
 | [County Dataset Integration: Scott & Dakota, MN](05-GIS-Data-Engineering-and-CAD/minnesota-county-data-merge/) | Scott and Dakota Counties, Minnesota, USA | 2024 | ArcGIS Pro |
 | [Address Geocoding: New York & Long Island](05-GIS-Data-Engineering-and-CAD/ny-address-geocoding/) | New York, USA | 2025 | Geocoding, Excel, Google Maps |
 | [Polygon & Point Digitisation (QGIS)](05-GIS-Data-Engineering-and-CAD/qgis-polygon-point-digitisation/) | Imagery tile | 2025 | QGIS |
-| [Global Mapper Script: Export Layers to CSV](05-GIS-Data-Engineering-and-CAD/global-mapper-csv-export-script/) | — | 2024 | Global Mapper scripting |
+| [Global Mapper Script: Export Layers to CSV](05-GIS-Data-Engineering-and-CAD/global-mapper-csv-export-script/) | United Kingdom | 2024 | Global Mapper scripting |
 
 ## Master Plans & Municipal GIS
 

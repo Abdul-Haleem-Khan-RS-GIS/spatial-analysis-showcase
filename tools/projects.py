@@ -259,7 +259,7 @@ add(slug="qgis-polygon-point-digitisation", cat="data",
     files=[])
 add(slug="global-mapper-csv-export-script", cat="data",
     title="Global Mapper Script: Export Layers to CSV", year="2024", client="Futurewise Aerial",
-    where="—", tools=["Global Mapper scripting"],
+    where="United Kingdom", tools=["Global Mapper scripting"],
     summary="Global Mapper script that exports multiple layers to separate CSV files, with a how-to guide.",
     result="Working script, sample CSV outputs and documentation.",
     method=["Layer loop in Global Mapper script", "CSV export per layer", "Test + guide"],
