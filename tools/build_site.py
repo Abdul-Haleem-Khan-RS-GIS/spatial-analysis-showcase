@@ -63,6 +63,7 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(40px,5.4vw,64px);lin
 .stats span{font-size:13px;color:var(--muted)}
 .sheet{background:#fff;border:1px solid var(--ink);padding:14px;box-shadow:10px 10px 0 var(--ink)}
 .sheet img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center}
+.sheet.portrait{max-width:380px;margin-left:auto}.sheet.portrait img{aspect-ratio:400/512;object-position:top}
 .sheet figcaption{display:flex;justify-content:space-between;margin-top:10px}
 section{padding:80px 0;border-bottom:1px solid var(--line)}
 h2{font-family:var(--serif);font-weight:600;font-size:38px;margin:6px 0 12px;letter-spacing:-.01em}
@@ -178,7 +179,7 @@ index = head("Abdul Haleem Khan | GIS Engineer & Remote Sensing Specialist",
 <div class="ctas"><a class="btn" href="#work">View work</a><a class="btn ghost" href="#contact">Get in touch</a><a class="btn ghost" href="{UPWORK}">Hire on Upwork</a></div>
 <div class="stats"><div><b>4+ yrs</b><span>Professional GIS</span></div><div><b>33</b><span>Upwork jobs</span></div><div><b>4.8★</b><span>14 client reviews</span></div></div>
 </div>
-<figure class="sheet"><img src="{hero['img'][0][0]}" alt="Burn severity (dNBR) map from Sentinel-2"><figcaption><span class="mono">Burn severity · dNBR</span><span class="mono">Sentinel-2 · GEE · ArcGIS Pro</span></figcaption></figure>
+<figure class="sheet portrait"><img src="assets/portrait.jpg" alt="Abdul Haleem Khan, GIS Engineer and Remote Sensing Specialist" width="400" height="512"><figcaption><span class="mono">Abdul Haleem Khan</span><span class="mono">GIS Engineer · RS Specialist</span></figcaption></figure>
 </div></section>
 
 <section id="planning"><div class="wrap">
@@ -247,6 +248,7 @@ bs.forEach(b=>b.addEventListener('click',()=>{{bs.forEach(x=>x.setAttribute('ari
 open(os.path.join(SITE, "index.html"), "w").write(index)
 os.makedirs(os.path.join(SITE, "assets"), exist_ok=True)
 open(os.path.join(SITE, "assets/site.css"), "w").write(CSS)
+shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "portrait.jpg"), os.path.join(SITE, "assets/portrait.jpg"))
 
 def cap(p, k):
     c = p.get('captions') or []
