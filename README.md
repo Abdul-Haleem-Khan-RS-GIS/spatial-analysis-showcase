@@ -43,7 +43,7 @@ Final maps, reports and data from planning consultancy work in Pakistan and free
 | [Client & Employee Strategy Maps: Switzerland](03-Urban-GIS-and-Suitability/swiss-client-employee-strategy-maps/) | Switzerland | 2023–2025 | ArcGIS, QGIS |
 | [Residential Parcels by Fire Hazard Zone: Riverside](03-Urban-GIS-and-Suitability/riverside-fire-hazard-parcels/) | Riverside, California, USA | 2024 | ArcGIS Pro |
 | [Suitable Locations for a Summer Campground](03-Urban-GIS-and-Suitability/summer-campground-suitability/) | Study area, USA | 2024 | ArcGIS Pro, DEM, Weighted overlay |
-| [Real-Estate Parcel Screening: St. Louis](03-Urban-GIS-and-Suitability/st-louis-parcel-criteria-map/) | St. Louis, Missouri, USA | 2025 | ArcGIS Pro |
+| [Real-Estate Parcel Screening: St. Louis (Interactive Web Map)](03-Urban-GIS-and-Suitability/st-louis-parcel-criteria-map/) | St. Louis, Missouri, USA | 2025 | QGIS, qgis2web, Leaflet |
 
 ## Network Analysis & Routing
 

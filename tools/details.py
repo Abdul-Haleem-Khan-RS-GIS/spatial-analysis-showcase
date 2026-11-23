@@ -361,3 +361,23 @@ D["rawd-al-jawa-investment-site-plan"] = dict(
               "Recommendations shown on the plan: grade the site following the natural north-to-south slope, drain surface water south to the existing road, link to the adjoining road slopes, and design curbs at least 20 cm high",
               "Issued as the preliminary-approval plan (مخطط الاعتماد الابتدائي) of the Planning and Government Land Allocation Department, Al-Qassim Region Municipality"],
     captions=["Preliminary-approval regulatory plan of the Rawd Al-Jawa investment site, drafted in AutoCAD from an old scanned map (1:500)"])
+
+D["st-louis-parcel-criteria-map"] = dict(
+    challenge="A real-estate investor needed to see at a glance which residential parcels in St. Louis fit their buying criteria: lots in specific size ranges, and in a second map only those lots that also have a 3,000–6,000 sq ft building. Parks had to stand out, while commercial, school and city-owned parcels had to be left blank. The client asked me to find all the data myself.",
+    data=["Parcel polygons with zoning, property address, ZIP and lot area (sq ft)",
+          "Building footprints / structure size for the lot-and-structure map",
+          "Parks from OpenStreetMap (land-use class \"park\")",
+          "OpenStreetMap basemap"],
+    method=["Sourced the parcel, zoning and building data, then joined attributes and calculated lot area in square feet",
+            "Filtered to residential parcels; commercial parcels, schools and city-owned land were kept but left without fill",
+            "Classified lot size into the client's bands: under 13,000 sq ft no colour; 13,000–15,500 blue; 15,501–17,500 purple; 17,501–21,500 orange; 21,501–43,500 yellow; 43,501–200,000 red; over 200,000 no colour",
+            "Added all parks in green as a separate layer",
+            "For the second map, kept the lot-size colours only where the parcel's building is 3,000–6,000 sq ft; parcels with smaller or larger structures stay uncoloured",
+            "Set up pop-ups showing zoning, owner, property address, ZIP and lot area, so the client can click any parcel",
+            "Exported the QGIS project to an interactive Leaflet web map with qgis2web and hosted it for the client"],
+    findings=["City-wide interactive map: zoom from the whole city down to individual lots on an OpenStreetMap base",
+              "Colour classes make larger lots immediately visible, for example blocks of orange and yellow lots south of Delmar Boulevard",
+              "Every parcel can be clicked for its zoning, address and exact lot area (for example a commercial parcel of 29,186 sq ft)",
+              "Parks such as Forest Park and North Riverfront Park are shown in green for context"],
+    captions=["Parcels colour-coded by lot size around Delmar Boulevard, with a parcel pop-up (address hidden here)",
+              "City-wide view of the parcel layer with parks in green and a park pop-up from OpenStreetMap"])

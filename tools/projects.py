@@ -197,13 +197,14 @@ add(slug="summer-campground-suitability", cat="urban", study=True,
     result="Suitability map and relief data.",
     method=["Relief/slope from DEM", "Criteria reclassification", "Weighted overlay", "Suitable sites"],
     files=["Suitable Locations for Summer Campground.pdf", "Relief Details.rar"])
-add(slug="st-louis-parcel-criteria-map", cat="urban",
-    title="Real-Estate Parcel Screening: St. Louis", year="2025", client="Upwork client, USA",
-    where="St. Louis, Missouri, USA", tools=["ArcGIS Pro"],
-    summary="Mapped St. Louis real-estate parcels that meet a client's criteria.",
-    result="Parcel screening map.",
-    method=["County parcel data", "Attribute and spatial criteria", "Filtered parcel map"],
-    files=[])
+add(slug="st-louis-parcel-criteria-map", cat="urban", featured=True,
+    title="Real-Estate Parcel Screening: St. Louis (Interactive Web Map)", year="2025", client="Upwork client, USA (real-estate investor)",
+    where="St. Louis, Missouri, USA", tools=["QGIS", "qgis2web", "Leaflet", "OpenStreetMap", "Parcel & zoning data"],
+    summary="Interactive web maps that screen St. Louis residential parcels by lot size and building size, colour-coding the parcels that fit a real-estate investor's buying criteria.",
+    result="Interactive Leaflet web map (QGIS + qgis2web) with colour-coded lot-size classes, parks in green, commercial and public parcels left blank, and a pop-up for every parcel.",
+    method=["Parcel data", "Lot-size classes", "Web map"],
+    files=["Interactive web map (shared privately with the client)"],
+    note="The live map link is confidential and is not published here.")
 
 # ---------------- 04 Network ----------------
 add(slug="bike-route-network-analysis", cat="network", featured=True,
