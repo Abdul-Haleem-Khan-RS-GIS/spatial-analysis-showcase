@@ -36,8 +36,8 @@ LOC = {
 
 # 3D "fly-to" views: label, centre (lon, lat), zoom, pitch, bearing, linked project slug
 TOURS = [
-    ("Ishkoman valley, Gilgit-Baltistan (Batswat)", (73.85, 36.33), 11.0, 70, 20, "batswat-terrain-assessment"),
-    ("Rocky Mountain National Park", (-105.68, 40.34), 10.6, 70, -20, "nps-map-redesign"),
+    ("Ishkoman valley, Gilgit-Baltistan (Batswat)", (73.84, 36.30), 10.0, 66, 25, "batswat-terrain-assessment"),
+    ("Rocky Mountain National Park", (-105.68, 40.34), 10.2, 68, -20, "nps-map-redesign"),
     ("Umluj coast, Red Sea", (37.27, 25.02), 10.8, 60, 0, "umluj-flood-risk-mcda"),
     ("Andijan Reservoir, Uzbekistan", (73.12, 40.76), 10.8, 65, 15, "lulc-andijan-reservoir"),
 ]

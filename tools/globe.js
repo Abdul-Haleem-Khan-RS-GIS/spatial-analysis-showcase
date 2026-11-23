@@ -57,7 +57,7 @@
     box.addEventListener('click', function () { map.scrollZoom.enable(); }, { once: true });
 
     map.on('load', function () {
-      var a = box.querySelector('.maplibregl-ctrl-attrib'); if (a) a.classList.remove('maplibregl-compact-show');
+      setTimeout(function(){ var a = box.querySelector('.maplibregl-ctrl-attrib'); if (a) { a.classList.remove('maplibregl-compact-show'); a.removeAttribute('open'); } }, 800);
       map.setTerrain({ source: 'dem', exaggeration: 1.4 });
       box.classList.add('globe-ready');
     });
