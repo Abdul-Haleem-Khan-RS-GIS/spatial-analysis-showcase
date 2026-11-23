@@ -65,6 +65,8 @@ def readme(p):
         L += [f"- {x}" for x in p["findings"]] + [""]
     if not p.get("findings"):
         L += [p["result"], ""]
+    if p.get("links"):
+        L += ["## Links", ""] + [f"- [{a}]({u})" for a,u in p["links"]] + [""]
     if p.get("files"):
         L += ["## Deliverables", ""]
         L += [f"- {f}" for f in p["files"]]

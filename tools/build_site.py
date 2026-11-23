@@ -304,7 +304,7 @@ for i, p in enumerate(pages):
 <div class="pbody"><div>{('<h2>Challenge</h2><p>'+E(p['challenge'])+'</p>') if p.get('challenge') else ''}
 <h2>Approach</h2><ol>{''.join(f'<li>{E(s)}</li>' for s in p['method'])}</ol>
 <h2>Results</h2>{('<ul class="find">'+''.join(f'<li>{E(x)}</li>' for x in p['findings'])+'</ul>') if p.get('findings') else '<p>'+E(p['result'])+'</p>'}{'<p class="mono">Practice study: course and client details omitted.</p>' if p.get('study') else ''}</div>
-<aside class="side">{('<span class="mono">Data used</span><ul class="dl">'+''.join(f'<li>{E(x)}</li>' for x in p['data'])+'</ul><hr>') if p.get('data') else ''}<span class="mono">Files & data</span><p style="margin:8px 0 0"><a class="btn" href="{GH}{p['dir']}">Open on GitHub</a></p>{('<ul>'+files+'</ul>') if files else ''}</aside></div>
+<aside class="side">{''.join(f'<p style="margin:0 0 10px"><a class="btn" href="{E(u)}">{E(a)}</a></p>' for a,u in p.get('links',[]))}{('<hr>' if p.get('links') else '')}{('<span class="mono">Data used</span><ul class="dl">'+''.join(f'<li>{E(x)}</li>' for x in p['data'])+'</ul><hr>') if p.get('data') else ''}<span class="mono">Files & data</span><p style="margin:8px 0 0"><a class="btn" href="{GH}{p['dir']}">Open on GitHub</a></p>{('<ul>'+files+'</ul>') if files else ''}</aside></div>
 <div class="next"><a href="../index.html#work">← All work</a><a href="{nxt['slug']}.html">Next: {E(nxt['title'])} →</a></div>
 </main>{FOOT}</body></html>"""
     open(os.path.join(SITE, "projects", p["slug"] + ".html"), "w").write(pg)

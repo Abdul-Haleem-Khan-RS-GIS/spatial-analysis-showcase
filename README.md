@@ -10,6 +10,7 @@ Final maps, reports and data from planning consultancy work in Pakistan and free
 | Project | Where | Year | Tools |
 |---|---|---|---|
 | [Burn Severity Analysis (NBR / dNBR)](01-Remote-Sensing/burn-severity-sentinel2/) | Eastern Australia (Sentinel-2, UTM zone 56S) | 2024 | Sentinel-2, QGIS, Google Earth Engine |
+| [Dixie Fire 2021: Land Surface Temperature & NDVI in Google Earth Engine](01-Remote-Sensing/gee-dixie-fire-lst-ndvi/) | Dixie Fire, Plumas County area, California, USA | 2021 fire season | Google Earth Engine (JavaScript), Landsat 8 C2 L2, LST |
 | [Land-Cover Classification: Supervised vs Unsupervised](01-Remote-Sensing/lulc-andijan-reservoir/) | Andijan Reservoir, Uzbekistan | 2024 | Sentinel-2, ArcGIS Pro, Google Earth Engine |
 | [Landsat Band 4 & Band 10 Surface Analysis](01-Remote-Sensing/landsat-band4-band10-analysis/) | Study area | 2024 | Landsat, ArcGIS Pro |
 | [Manual Land-Cover Classification of Aerial Imagery](01-Remote-Sensing/aerial-image-manual-classification/) | Aerial image tile | 2024 | ArcGIS 10.8, Visual interpretation, Digitising |

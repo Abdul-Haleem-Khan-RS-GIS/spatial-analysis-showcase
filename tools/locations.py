@@ -2,6 +2,7 @@
 # Regional-scale pins only; projects without a known place are left off the globe.
 LOC = {
     "burn-severity-sentinel2": (-30.4, 152.3, "Eastern Australia"),
+    "gee-dixie-fire-lst-ndvi": (40.05, -121.10, "Dixie Fire, California, USA"),
     "lulc-andijan-reservoir": (40.76, 73.12, "Andijan Reservoir, Uzbekistan"),
     "los-angeles-urban-land-cover": (34.05, -118.25, "Los Angeles, USA"),
     "ndvi-and-image-classification-studies": (34.05, -118.25, "Los Angeles, USA"),
