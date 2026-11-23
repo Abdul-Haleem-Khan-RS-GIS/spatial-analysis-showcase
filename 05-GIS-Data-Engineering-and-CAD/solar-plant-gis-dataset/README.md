@@ -4,7 +4,7 @@
 **Client:** Engineering firm (5.0★, $1,000)  
 **Tools & data:** ArcGIS Pro, AutoCAD, Shapefile
 
-*Map images will be added here.*
+![Solar Power Plant GIS Dataset](maps/solar-plant-gis-dataset-1.jpg)
 
 ## Overview
 Built the GIS dataset for a solar power plant from engineering drawings, in three approved milestones.
@@ -24,6 +24,8 @@ Shapefiles for project boundary, blocks (with IDs), substation, MVP components (
 - Piles_Points.zip
 - Trenches SHP.rar
 - MV_Details.rar
+
+*Map preview rendered from the delivered shapefiles.*
 
 ---
 [← All projects](../../README.md) · [Portfolio website](https://abdul-haleem-khan-rs-gis.github.io/Geospatial_Portfolio/projects/solar-plant-gis-dataset.html)

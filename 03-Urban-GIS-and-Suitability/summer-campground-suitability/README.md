@@ -6,7 +6,7 @@
 
 > Practice study. Course and client details are omitted.
 
-*Map images will be added here.*
+![Suitable Locations for a Summer Campground](maps/summer-campground-suitability-1.jpg)
 
 ## Overview
 Raster suitability model combining relief and other criteria to find suitable campground sites.

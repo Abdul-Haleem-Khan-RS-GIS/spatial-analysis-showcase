@@ -6,7 +6,7 @@
 
 > Practice study. Course and client details are omitted.
 
-*Map images will be added here.*
+![Residential Parcels by Fire Hazard Zone: Riverside](maps/riverside-fire-hazard-parcels-1.jpg)
 
 ## Overview
 Overlay of residential parcels with fire hazard severity zones in Riverside, including a neighbourhood case study (Alessandro Heights).

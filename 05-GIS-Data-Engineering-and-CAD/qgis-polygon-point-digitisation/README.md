@@ -7,7 +7,7 @@
 *Map images will be added here.*
 
 ## Overview
-Urgent polygon and point digitisation from RGB imagery in QGIS.
+Urgent digitisation in QGIS of 60 process-unit polygons and 15 emergency muster points from a georeferenced industrial site plan.
 
 ## Approach
 1. RGB imagery
@@ -15,11 +15,7 @@ Urgent polygon and point digitisation from RGB imagery in QGIS.
 3. QA and delivery
 
 ## Result
-Digitised feature layers. Client review: thanks for fast help on an urgent digitisation task.
-
-## Deliverables
-
-- RGB Digitization Data New.rar
+Digitised GeoPackage/shapefile layers. Client review: thanks for fast help on an urgent digitisation task. Maps and data are not published because they show a facility's emergency layout.
 
 ---
 [← All projects](../../README.md) · [Portfolio website](https://abdul-haleem-khan-rs-gis.github.io/Geospatial_Portfolio/projects/qgis-polygon-point-digitisation.html)

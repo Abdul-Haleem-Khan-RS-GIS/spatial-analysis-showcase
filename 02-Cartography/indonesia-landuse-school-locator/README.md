@@ -4,7 +4,9 @@
 **Client:** Upwork client  
 **Tools & data:** ArcGIS Pro
 
-*Map images will be added here.*
+![Land Use & School Locator Map: Wonosobo, Indonesia](maps/indonesia-landuse-school-locator-1.jpg)
+
+![Land Use & School Locator Map: Wonosobo, Indonesia](maps/indonesia-landuse-school-locator-2.jpg)
 
 ## Overview
 Natural land-use map with school locations for Wonosobo, set within a national locator map of Indonesia.

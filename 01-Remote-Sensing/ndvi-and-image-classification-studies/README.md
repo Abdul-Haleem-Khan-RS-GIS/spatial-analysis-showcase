@@ -6,7 +6,9 @@
 
 > Practice study. Course and client details are omitted.
 
-*Map images will be added here.*
+![NDVI, Supervised & Unsupervised Classification Studies](maps/ndvi-and-image-classification-studies-1.jpg)
+
+![NDVI, Supervised & Unsupervised Classification Studies](maps/ndvi-and-image-classification-studies-2.jpg)
 
 ## Overview
 A set of short studies computing NDVI and running unsupervised and supervised image classification, each documented step by step.

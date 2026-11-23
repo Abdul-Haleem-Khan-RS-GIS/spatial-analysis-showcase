@@ -4,7 +4,13 @@
 **Client:** Upwork client  
 **Tools & data:** ArcGIS Pro
 
-*Map images will be added here.*
+![Reference Mapping with Text, Icons & Labels](maps/reference-mapping-text-icons-1.jpg)
+
+![Reference Mapping with Text, Icons & Labels](maps/reference-mapping-text-icons-2.jpg)
+
+![Reference Mapping with Text, Icons & Labels](maps/reference-mapping-text-icons-3.jpg)
+
+![Reference Mapping with Text, Icons & Labels](maps/reference-mapping-text-icons-4.jpg)
 
 ## Overview
 Two cartography projects on label placement, symbol design and icon use for reference maps.

@@ -2,14 +2,18 @@
 
 **Category:** Remote Sensing & Earth Observation &nbsp;·&nbsp; **Location:** Los Angeles, USA &nbsp;·&nbsp; **Year:** 2024  
 **Client:** Practice study  
-**Tools & data:** ENVI, Landsat
+**Tools & data:** ENVI, Landsat, Maximum Likelihood
 
 > Practice study. Course and client details are omitted.
 
-*Map images will be added here.*
+![Urban Land-Cover Classification of Los Angeles](maps/los-angeles-urban-land-cover-1.jpg)
+
+![Urban Land-Cover Classification of Los Angeles](maps/los-angeles-urban-land-cover-2.jpg)
+
+![Urban Land-Cover Classification of Los Angeles](maps/los-angeles-urban-land-cover-3.jpg)
 
 ## Overview
-Classified urban land cover across Los Angeles with remote-sensing techniques in ENVI, presented as a report and slide deck.
+Classified urban land cover across Los Angeles for 2022 and 2024 with Maximum Likelihood classification in ENVI, with accuracy assessment, presented as a report and slide deck.
 
 ## Approach
 1. Satellite scene preparation
@@ -18,7 +22,7 @@ Classified urban land cover across Los Angeles with remote-sensing techniques in
 4. Report and slides
 
 ## Result
-Land-cover map, written report and presentation.
+Land-cover maps for 2022 and 2024, confusion-matrix accuracy assessment, written report and presentation.
 
 ## Deliverables
 

@@ -4,7 +4,7 @@
 **Client:** Upwork client (geomatics firm)  
 **Tools & data:** ArcGIS Pro, Digitising
 
-*Map images will be added here.*
+![Manual Land-Cover Classification of Aerial Imagery](maps/aerial-image-manual-classification-1.jpg)
 
 ## Overview
 Produced a land-cover map of a high-resolution aerial image by manual interpretation and digitising, delivered as a map and shapefile.

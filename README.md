@@ -13,10 +13,10 @@ Final maps, reports and data from planning consultancy work in Pakistan and free
 | [Land-Cover Classification: Supervised vs Unsupervised](01-Remote-Sensing/lulc-andijan-reservoir/) | Andijan Reservoir, Uzbekistan / Kyrgyzstan | 2024 | Sentinel-2, Google Earth Engine, Random Forest |
 | [Landsat Band 4 & Band 10 Surface Analysis](01-Remote-Sensing/landsat-band4-band10-analysis/) | Study area | 2024 | Landsat, ArcGIS Pro |
 | [Manual Land-Cover Classification of Aerial Imagery](01-Remote-Sensing/aerial-image-manual-classification/) | Aerial image tile | 2024 | ArcGIS Pro, Digitising |
-| [Urban Land-Cover Classification of Los Angeles](01-Remote-Sensing/los-angeles-urban-land-cover/) | Los Angeles, USA | 2024 | ENVI, Landsat |
+| [Urban Land-Cover Classification of Los Angeles](01-Remote-Sensing/los-angeles-urban-land-cover/) | Los Angeles, USA | 2024 | ENVI, Landsat, Maximum Likelihood |
 | [NDVI, Supervised & Unsupervised Classification Studies](01-Remote-Sensing/ndvi-and-image-classification-studies/) | Various study areas | 2024 | ENVI, ArcGIS Pro, Landsat |
-| [Landsat 9 Thermal & Image Analysis](01-Remote-Sensing/landsat-thermal-and-image-analysis/) | USA (Landsat 9 scene, June 2022) | 2024 | Landsat 9, ArcGIS Pro |
-| [NDVI Summary Map (ArcGIS Pro)](01-Remote-Sensing/ndvi-summary-arcgis-pro/) | Study area | 2025 | ArcGIS Pro, NDVI |
+| [Landsat 9 Thermal & Image Analysis](01-Remote-Sensing/landsat-thermal-and-image-analysis/) | Southern California (Landsat 9 scene, June 2022) | 2024 | Landsat 9, ArcGIS Pro |
+| [NDVI Map of Los Angeles County (Landsat 8)](01-Remote-Sensing/ndvi-summary-arcgis-pro/) | Los Angeles County, USA | 2025 | Landsat 8, ArcGIS Pro, NDVI |
 
 ## Cartography & Thematic Mapping
 
@@ -30,7 +30,7 @@ Final maps, reports and data from planning consultancy work in Pakistan and free
 | [Racehorse Training Facility Location Map](02-Cartography/racehorse-facility-location-map/) | USA | 2024 | ArcGIS Pro |
 | [Land Use & School Locator Map: Wonosobo, Indonesia](02-Cartography/indonesia-landuse-school-locator/) | Wonosobo, Indonesia | 2025 | ArcGIS Pro |
 | [New Mexico Cities Snow-Load & Elevation KMZ](02-Cartography/new-mexico-snow-load-kmz/) | New Mexico, USA | 2026 | QGIS, Google Earth, KML/KMZ |
-| [Sales Territory Map from ZIP Codes](02-Cartography/zip-code-territory-map/) | USA | 2024 | ArcGIS Pro |
+| [Sales Territory Map from ZIP Codes](02-Cartography/zip-code-territory-map/) | Cuyahoga County (Cleveland area), Ohio, USA | 2024 | ArcGIS Pro, Census ZCTA, OpenStreetMap |
 
 ## Urban GIS & Site Suitability
 

@@ -49,9 +49,9 @@ add(slug="aerial-image-manual-classification", cat="remote-sensing",
     files=["Landcover classification Map across the aerial image.jpg", "Manual Image Classification Report.pdf", "Manual_Classification SHP.rar"])
 add(slug="los-angeles-urban-land-cover", cat="remote-sensing", study=True,
     title="Urban Land-Cover Classification of Los Angeles", year="2024", client="Practice study",
-    where="Los Angeles, USA", tools=["ENVI", "Landsat"],
-    summary="Classified urban land cover across Los Angeles with remote-sensing techniques in ENVI, presented as a report and slide deck.",
-    result="Land-cover map, written report and presentation.",
+    where="Los Angeles, USA", tools=["ENVI", "Landsat", "Maximum Likelihood"],
+    summary="Classified urban land cover across Los Angeles for 2022 and 2024 with Maximum Likelihood classification in ENVI, with accuracy assessment, presented as a report and slide deck.",
+    result="Land-cover maps for 2022 and 2024, confusion-matrix accuracy assessment, written report and presentation.",
     method=["Satellite scene preparation", "Image classification in ENVI", "Accuracy review", "Report and slides"],
     files=["Classification of Urban Land Cover in Los Angeles Using Remote Sensing Techniques.pdf", "Classification of Urban Land Cover in Los Angeles.pptx"])
 add(slug="ndvi-and-image-classification-studies", cat="remote-sensing", study=True,
@@ -63,15 +63,15 @@ add(slug="ndvi-and-image-classification-studies", cat="remote-sensing", study=Tr
     files=["NDVI and Unsupervised Classification - Week 3 Lab-2.pdf", "Lab 4 Report.pdf"])
 add(slug="landsat-thermal-and-image-analysis", cat="remote-sensing", study=True,
     title="Landsat 9 Thermal & Image Analysis", year="2024", client="Practice study",
-    where="USA (Landsat 9 scene, June 2022)", tools=["Landsat 9", "ArcGIS Pro"],
+    where="Southern California (Landsat 9 scene, June 2022)", tools=["Landsat 9", "ArcGIS Pro"],
     summary="Analysed a Landsat 9 Collection 2 scene (15 June 2022): band composites, thermal band interpretation and surface analysis.",
     result="Two illustrated reports on Landsat image analysis and thermal interpretation.",
     method=["Landsat 9 C2 L2 scene", "Band composites", "Thermal band analysis", "Reports"],
     files=["Landsat 2024 Image Analysis Assignment.pdf", "Thermal Lab- Week 2-1.pdf"])
 add(slug="ndvi-summary-arcgis-pro", cat="remote-sensing",
-    title="NDVI Summary Map (ArcGIS Pro)", year="2025", client="Upwork client",
-    where="Study area", tools=["ArcGIS Pro", "NDVI"],
-    summary="Quick-turnaround NDVI computation and summary layout in ArcGIS Pro.",
+    title="NDVI Map of Los Angeles County (Landsat 8)", year="2025", client="Upwork client",
+    where="Los Angeles County, USA", tools=["Landsat 8", "ArcGIS Pro", "NDVI"],
+    summary="Quick-turnaround NDVI computation from Landsat 8 for Los Angeles County, with a summary layout in ArcGIS Pro.",
     result="NDVI summary map and short report.",
     method=["Imagery input", "NDVI raster", "Classification and layout"],
     files=["Summary of Normalized Difference Vegetation Index (NDVI).pdf"])
@@ -137,11 +137,11 @@ add(slug="new-mexico-snow-load-kmz", cat="cartography",
     files=["Final_City_with_Snow_and_Elevation.kmz", "New Mexico Snowload Extract[4-8].pdf"])
 add(slug="zip-code-territory-map", cat="cartography",
     title="Sales Territory Map from ZIP Codes", year="2024", client="Upwork client, USA",
-    where="USA", tools=["ArcGIS Pro"],
-    summary="Built territory boundaries from a client's list of ZIP codes and mapped them.",
-    result="Territory map and GIS data package.",
-    method=["ZIP code list", "Select and dissolve ZIP polygons", "Territory map"],
-    files=["Todd Project Data.rar", "GIS Data.jpg"])
+    where="Cuyahoga County (Cleveland area), Ohio, USA", tools=["ArcGIS Pro", "Census ZCTA", "OpenStreetMap"],
+    summary="Built a territory around four ZIP code areas (44115, 44122, 44130, 44145) with 10-mile buffers, county, municipal and school-district boundaries, and selected the schools inside the territory from OpenStreetMap.",
+    result="Territory map and GIS data package (ZCTA boundaries, buffers, administrative layers, selected school points).",
+    method=["Census ZCTA polygons for four ZIP codes", "10-mile buffers", "County, municipal and school-district layers", "Select schools within the territory"],
+    files=["Todd Project Data.rar"], note="Map preview rendered from the delivered shapefiles.")
 
 # ---------------- 03 Urban GIS & suitability ----------------
 add(slug="atlanta-green-space-suitability", cat="urban", featured=True,
@@ -221,7 +221,7 @@ add(slug="solar-plant-gis-dataset", cat="data", featured=True,
     summary="Built the GIS dataset for a solar power plant from engineering drawings, in three approved milestones.",
     result="Shapefiles for project boundary, blocks (with IDs), substation, MVP components (UPS, inverter, transformer, RMU), piles, trenches and MV cables. Client review: “He did very well Job delivered his project on time.”",
     method=["Engineering drawings", "Digitise and attribute assets", "Piles, trenches, MV cables", "QA and milestone delivery"],
-    files=["FINAL SHAPEFILES.zip", "Piles_Points.zip", "Trenches SHP.rar", "MV_Details.rar"])
+    files=["FINAL SHAPEFILES.zip", "Piles_Points.zip", "Trenches SHP.rar", "MV_Details.rar"], note="Map preview rendered from the delivered shapefiles.")
 add(slug="nc-contours-to-cad", cat="data", featured=True,
     title="1-ft Contours to CAD (DWG + SHP)", year="2026", client="MBH Inc., USA (5.0★)",
     where="Cherokee County, North Carolina, USA", tools=["ArcGIS Pro", "Export to CAD", "NC OneMap"],
@@ -246,16 +246,16 @@ add(slug="ny-address-geocoding", cat="data",
     title="Address Geocoding: New York & Long Island", year="2025", client="Upwork client, USA",
     where="New York, USA", tools=["Geocoding", "Excel", "Google Maps"],
     summary="Geocoded client address lists for New York and Long Island to coordinates.",
-    result="Geocoded address tables.",
+    result="Geocoded address tables (about 2,270 addresses). The address data is kept private because it lists individuals' addresses.",
     method=["Address cleaning", "Geocoding", "Match review", "Output tables"],
-    files=["1 Finals Geocoding.xlsx", "Long_Iceland_final.xlsx"])
+    files=[])
 add(slug="qgis-polygon-point-digitisation", cat="data",
     title="Polygon & Point Digitisation (QGIS)", year="2025", client="Valorian (5.0★)",
     where="Imagery tile", tools=["QGIS"],
-    summary="Urgent polygon and point digitisation from RGB imagery in QGIS.",
-    result="Digitised feature layers. Client review: thanks for fast help on an urgent digitisation task.",
+    summary="Urgent digitisation in QGIS of 60 process-unit polygons and 15 emergency muster points from a georeferenced industrial site plan.",
+    result="Digitised GeoPackage/shapefile layers. Client review: thanks for fast help on an urgent digitisation task. Maps and data are not published because they show a facility's emergency layout.",
     method=["RGB imagery", "Polygon and point digitising", "QA and delivery"],
-    files=["RGB Digitization Data New.rar"])
+    files=[])
 add(slug="global-mapper-csv-export-script", cat="data",
     title="Global Mapper Script: Export Layers to CSV", year="2024", client="Futurewise Aerial",
     where="—", tools=["Global Mapper scripting"],

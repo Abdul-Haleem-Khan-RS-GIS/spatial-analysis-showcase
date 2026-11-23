@@ -1,13 +1,13 @@
-# NDVI Summary Map (ArcGIS Pro)
+# NDVI Map of Los Angeles County (Landsat 8)
 
-**Category:** Remote Sensing & Earth Observation &nbsp;·&nbsp; **Location:** Study area &nbsp;·&nbsp; **Year:** 2025  
+**Category:** Remote Sensing & Earth Observation &nbsp;·&nbsp; **Location:** Los Angeles County, USA &nbsp;·&nbsp; **Year:** 2025  
 **Client:** Upwork client  
-**Tools & data:** ArcGIS Pro, NDVI
+**Tools & data:** Landsat 8, ArcGIS Pro, NDVI
 
-*Map images will be added here.*
+![NDVI Map of Los Angeles County (Landsat 8)](maps/ndvi-summary-arcgis-pro-1.jpg)
 
 ## Overview
-Quick-turnaround NDVI computation and summary layout in ArcGIS Pro.
+Quick-turnaround NDVI computation from Landsat 8 for Los Angeles County, with a summary layout in ArcGIS Pro.
 
 ## Approach
 1. Imagery input
