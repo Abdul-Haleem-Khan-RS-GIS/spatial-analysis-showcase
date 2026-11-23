@@ -30,13 +30,13 @@ LOC = {
     "rawd-al-jawa-investment-site-plan": (26.50, 43.68, "Uyun Al Jawa, Al-Qassim, Saudi Arabia"),
     "sahiwal-city-comprehensive-plan": (30.66, 73.11, "Sahiwal, Pakistan"),
     "sialkot-city-comprehensive-plan": (32.49, 74.53, "Sialkot, Pakistan"),
-    "batswat-terrain-assessment": (36.20, 73.80, "Batswat, Ghizer (Gilgit-Baltistan), Pakistan"),
+    "batswat-terrain-assessment": (36.35, 73.85, "Batswat, Ishkoman valley, Ghizer (Gilgit-Baltistan), Pakistan"),
     "punjab-kp-master-plans-and-cadastre": (31.52, 74.35, "Lahore, Pakistan"),
 }
 
 # 3D "fly-to" views: label, centre (lon, lat), zoom, pitch, bearing, linked project slug
 TOURS = [
-    ("Ghizer valley, Gilgit-Baltistan (Batswat)", (73.80, 36.20), 10.4, 72, 30, "batswat-terrain-assessment"),
+    ("Ishkoman valley, Gilgit-Baltistan (Batswat)", (73.85, 36.33), 11.0, 70, 20, "batswat-terrain-assessment"),
     ("Rocky Mountain National Park", (-105.68, 40.34), 10.6, 70, -20, "nps-map-redesign"),
     ("Umluj coast, Red Sea", (37.27, 25.02), 10.8, 60, 0, "umluj-flood-risk-mcda"),
     ("Andijan Reservoir, Uzbekistan", (73.12, 40.76), 10.8, 65, 15, "lulc-andijan-reservoir"),
