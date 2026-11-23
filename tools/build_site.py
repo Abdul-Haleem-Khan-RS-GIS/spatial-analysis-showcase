@@ -230,9 +230,9 @@ index = head("Abdul Haleem Khan | GIS Engineer & Remote Sensing Specialist",
 <div><span class="mono">Contact</span><h2>Let's work on your map</h2><p class="sub">Tell me about the area, the data you have and what decision the map should support. I usually reply within a few hours.</p>
 <dl><dt>Email</dt><dd><a href="mailto:{EMAIL}">{EMAIL}</a></dd><dt>Upwork</dt><dd><a href="{UPWORK}">abdulhaleemrsgis</a></dd><dt>LinkedIn</dt><dd><a href="{LINKEDIN}">abdul-haleem-khan-rs-gis-specialist</a></dd><dt>Based in</dt><dd>Lahore, Pakistan (GMT+5) · working remotely</dd></dl></div>
 <form action="https://formsubmit.co/{EMAIL}" method="POST">
-<input type="hidden" name="_subject" value="New portfolio enquiry"><input type="hidden" name="_captcha" value="true"><input type="text" name="_honey" style="display:none">
+<input type="hidden" name="_subject" value="New portfolio enquiry"><input type="hidden" name="_captcha" value="true"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="{URL}thanks.html"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 <label for="n">Name</label><input id="n" name="name" required>
-<label for="e">Email</label><input id="e" name="email" type="email" required>
+<label for="e">Email</label><input id="e" name="email" type="email" required autocomplete="email">
 <label for="s">Project / organisation</label><input id="s" name="project">
 <label for="m">Message</label><textarea id="m" name="message" rows="5" required></textarea>
 <p style="margin-top:16px"><button class="btn" type="submit">Send message</button></p></form>
@@ -276,6 +276,10 @@ for i, p in enumerate(pages):
 </main>{FOOT}</body></html>"""
     open(os.path.join(SITE, "projects", p["slug"] + ".html"), "w").write(pg)
 
+open(os.path.join(SITE, "thanks.html"), "w").write(head("Message sent | Abdul Haleem Khan", "Thank you for your message.", hero["img"][0][0]) + f"""
+<main class="wrap" style="padding:120px 0 140px;max-width:720px"><span class="mono">Message sent</span><h1 style="font-size:clamp(34px,5vw,56px)">Thank you, your message is on its way.</h1>
+<p class="lead">I usually reply within a few hours. If it is urgent, email me directly at <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
+<p style="margin-top:28px"><a class="btn" href="index.html#work">Back to my work</a></p></main>{FOOT}</body></html>""")
 open(os.path.join(SITE, "README.md"), "w").write(f"""# Geospatial Portfolio: Abdul Haleem Khan
 
 Live site: {URL}
