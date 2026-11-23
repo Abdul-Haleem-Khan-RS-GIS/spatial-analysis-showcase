@@ -4,10 +4,10 @@
 **Client:** Upwork client, USA  
 **Tools & data:** ArcGIS Pro
 
-*Map images will be added here.*
+![County Dataset Integration: Scott & Dakota, MN](maps/minnesota-county-data-merge-1.jpg)
 
 ## Overview
-Combined multiple county GIS datasets into clean, consistent layers for two Minnesota counties.
+Combined county parcel, address and assessment datasets into one clean, consistent table for each of two Minnesota counties, with coordinates for every parcel.
 
 ## Approach
 1. Source datasets
@@ -16,12 +16,9 @@ Combined multiple county GIS datasets into clean, consistent layers for two Minn
 4. Package per county
 
 ## Result
-Integrated geodata packages for Scott County and Dakota County.
+Integrated parcel tables for Scott County (60,713 parcels) and Dakota County (146,596 parcels) with assessed values and coordinates. The tables are not published because they include owners' names and addresses.
 
-## Deliverables
-
-- Scott_County.zip
-- Dakota_County.zip
+*Map preview rendered from the delivered data.*
 
 ---
 [← All projects](../../README.md) · [Portfolio website](https://abdul-haleem-khan-rs-gis.github.io/Geospatial_Portfolio/projects/minnesota-county-data-merge.html)

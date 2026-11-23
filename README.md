@@ -38,7 +38,7 @@ Final maps, reports and data from planning consultancy work in Pakistan and free
 |---|---|---|---|
 | [Site Suitability for Urban Green Space: Atlanta](03-Urban-GIS-and-Suitability/atlanta-green-space-suitability/) | Atlanta, Georgia, USA | 2025 | ArcGIS Pro, 2020 U.S. Census, Buffer analysis |
 | [Multi-Criteria Flood Risk Map: Umluj](03-Urban-GIS-and-Suitability/umluj-flood-risk-mcda/) | Umluj, Saudi Arabia | 2025 | ArcGIS Pro, MCDA, DEM |
-| [Employment Density (KDE): Dübendorf](03-Urban-GIS-and-Suitability/dubendorf-employment-density/) | Dübendorf, Switzerland | 2024 | ArcGIS, QGIS, Kernel Density |
+| [Employment Density on a 100 m Grid: Dübendorf](03-Urban-GIS-and-Suitability/dubendorf-employment-density/) | Dübendorf, Switzerland | 2024 | ArcGIS, QGIS, Swiss 100 m grid |
 | [Daycare Centres of Zurich](03-Urban-GIS-and-Suitability/zurich-daycare-centres/) | Zurich, Switzerland | 2023 | ArcGIS |
 | [Client & Employee Strategy Maps: Switzerland](03-Urban-GIS-and-Suitability/swiss-client-employee-strategy-maps/) | Switzerland | 2023–2025 | ArcGIS, QGIS |
 | [Residential Parcels by Fire Hazard Zone: Riverside](03-Urban-GIS-and-Suitability/riverside-fire-hazard-parcels/) | Riverside, California, USA | 2024 | ArcGIS Pro |
