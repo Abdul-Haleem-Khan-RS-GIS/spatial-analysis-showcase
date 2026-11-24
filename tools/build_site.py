@@ -96,6 +96,7 @@ h2{font-family:var(--serif);font-weight:600;font-size:38px;margin:6px 0 12px;let
 .skills h3{margin:0 0 10px;font-family:var(--serif);font-weight:600;font-size:18px}
 .skills p{margin:0;color:var(--muted);font-size:15px}
 .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.esri{margin-top:8px;font-size:14px}.esri summary{cursor:pointer;color:var(--ink,#1a1a1a)}.esri p{margin:6px 0 0 16px;color:var(--muted);line-height:1.5}
 blockquote{margin:0;background:#fff;border:1px solid var(--line);padding:20px;font-family:var(--serif);font-size:18px;line-height:1.4}
 blockquote cite{display:block;margin-top:12px;font:13px var(--sans);color:var(--muted);font-style:normal}
 .contact{display:grid;grid-template-columns:1fr 1.2fr;gap:48px}
@@ -244,6 +245,7 @@ index = head("Abdul Haleem Khan | GIS Engineer & Remote Sensing Specialist",
 <span class="mono">Certifications</span>
 <ul class="tl" style="margin-top:12px"><li><h3 style="font-size:16px">Teaming@BCG Job Simulation</h3><p>BCG via Forage · Apr 2026 · Effective teaming as a project leader, managing an unanticipated request</p></li>
 <li><h3 style="font-size:16px">Data Analytics Job Simulation</h3><p>Deloitte via Forage · Feb 2026 · Data analysis, forensic technology</p></li>
+<li><h3 style="font-size:16px">Esri Training: 24 web courses in 3 learning series</h3><p>Esri · 2024–2025 · ArcGIS Pro</p><details class="esri"><summary><b>Spatial Analysis</b> · 10 courses · Dec 2024</summary><p>Getting Started with Spatial Analysis · Getting Started with Geoprocessing · Building Geoprocessing Models Using ArcGIS Pro · Summarizing Data by Spatial Relationships · Calculating Density Using ArcGIS · Distance Analysis: Creating Cost Surfaces · Distance Analysis: Using Distance Accumulation and Distance Allocation · Distance Analysis: Creating Optimal Region Connections · Performing Line of Sight Analysis · Terrain Analysis Using ArcGIS Pro</p></details><details class="esri"><summary><b>Advanced Spatial Analysis</b> · 8 courses · Jan 2025</summary><p>Mapping Clusters: Introduction to Statistical Cluster Analysis · Mapping Clusters: Hot Spot and Cluster and Outlier Analysis · Mapping Clusters: Optimized Hot Spot and Optimized Outlier Analysis · Introduction to Space-Time Analysis · Creating a Space-Time Cube · Space-Time Analysis: Finding Temporal Trends · Suitability Modeling: Introduction · Suitability Modeling: Creating a Weighted Suitability Model</p></details><details class="esri"><summary><b>Visualization and Cartography</b> · 6 courses · Feb 2025</summary><p>Labeling Map Features · Creating a Map Series in ArcGIS Pro · Creating a Web Map in ArcGIS Pro · Creating Vector Tiles in ArcGIS Pro · Introduction to 3D Visualization · Creating and Sharing Animation in ArcGIS Pro</p></details></li>
 <li><h3 style="font-size:16px">GeoPandas Fundamentals</h3><p>Spatial Lab · Nov 2025</p></li>
 <li><h3 style="font-size:16px">Advanced Diploma in Geographic Information Systems</h3><p>Alison · Feb 2025</p></li>
 <li><h3 style="font-size:16px">Remote Sensing Technology and Data Processing Applications</h3><p>DQGAST & PIESAT · Feb 2022</p></li></ul>
