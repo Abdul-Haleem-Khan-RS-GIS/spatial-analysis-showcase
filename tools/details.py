@@ -650,7 +650,7 @@ D["indonesia-landuse-school-locator"].update(
 D["scanned-contours-to-kmz"] = dict(
     title="1-ft Contours to SHP, KMZ & CAD: Cherokee County, NC",
     where="Cherokee County, North Carolina, USA",
-    tools=["ArcMap", "Export to CAD", "Shapefile", "KMZ", "DWG"],
+    tools=["ArcMap", "AutoCAD 2023", "Export to CAD", "Shapefile", "KMZ", "DWG"],
     summary="Clipped 1-ft contours to a client's area of interest in Cherokee County, North Carolina, and delivered them as an attributed shapefile, a KMZ for Google Earth and an AutoCAD file.",
     challenge="The client needed detailed 1-ft contours for a site near the Hiwassee River and Apalachia Lake, in formats they could use in GIS, in Google Earth and in AutoCAD. The full delivery came to more than 700 MB.",
     data=["1-ft contour data for Cherokee County, North Carolina (vector contours and a raster contour layer)",
@@ -659,11 +659,13 @@ D["scanned-contours-to-kmz"] = dict(
     method=["Plotted the client's centre point and built a one-mile buffer and an area-of-interest box around it",
             "Clipped the contours to the AOI, keeping the elevation (Contour) and index-contour (Index) attributes",
             "Checked contour continuity and elevation labels at large scale",
-            "Exported the clipped contours as a shapefile, as a KMZ for Google Earth and as an AutoCAD file with Export to CAD"],
+            "Exported the clipped contours as a shapefile, as a KMZ for Google Earth and as an AutoCAD file with Export to CAD",
+            "Checked the DWG in AutoCAD 2023: contours sit on an AOI Contours layer as polylines carrying their elevation (for example 1,278 ft)"],
     findings=["9,986 contour lines in the area of interest at a 1-ft interval, with every fifth foot flagged as an index contour",
               "Elevations run from about 1,277 ft near the lake shore to over 1,650 ft on the ridges",
               "Delivered as SHP, KMZ and CAD, more than 700 MB in total"],
     result="Attributed 1-ft contour shapefile, KMZ and AutoCAD file (9,986 lines) for the client's area of interest, more than 700 MB in total.",
     note="The delivered files are not published here because the package is more than 700 MB.",
     captions=["Area of interest (red box) over the Hiwassee River and Apalachia Lake, Cherokee County, NC",
-              "Clipped 1-ft contours with elevation labels and the contour attribute table (9,986 features)"])
+              "Clipped 1-ft contours with elevation labels and the contour attribute table (9,986 features)",
+              "Delivered DWG (AOI Contours.dwg) open in AutoCAD 2023, with each contour polyline carrying its elevation"])
