@@ -274,8 +274,8 @@ index = head("Abdul Haleem Khan | GIS Engineer & Remote Sensing Specialist",
 const bs=document.querySelectorAll('.filters button'),cs=document.querySelectorAll('#cards .card');
 bs.forEach(b=>b.addEventListener('click',()=>{{bs.forEach(x=>x.setAttribute('aria-pressed',x===b));const f=b.dataset.f;cs.forEach(c=>c.style.display=(f==='all'||c.dataset.cat===f)?'':'none')}}));
 </script>
-<script src="assets/globe.js" defer></script>
-<script src="assets/contact.js" defer></script>
+<script src="assets/globe.js?v=3" defer></script>
+<script src="assets/contact.js?v=3" defer></script>
 <script type="application/ld+json">{json.dumps({"@context":"https://schema.org","@type":"Person","name":"Abdul Haleem Khan","jobTitle":"GIS Engineer & Remote Sensing Specialist","url":URL,"email":"mailto:"+EMAIL,"address":{"@type":"PostalAddress","addressLocality":"Lahore","addressCountry":"PK"},"sameAs":[LINKEDIN,GITHUB,UPWORK]})}</script>
 </body></html>"""
 
