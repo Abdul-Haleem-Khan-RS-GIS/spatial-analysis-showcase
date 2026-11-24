@@ -112,7 +112,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);background:#fff;margin:24px 0 32px}
 .facts div{padding:14px 16px;border-right:1px solid var(--line)}.facts div:last-child{border-right:0}
 .facts dd{margin:4px 0 0;font-size:15px}
-.mapfull{background:#fff;border:1px solid var(--line);padding:12px;margin-bottom:20px}
+.mapfull{background:#fff;border:1px solid var(--line);padding:12px;margin:0 0 20px}
 .mapfull a{cursor:zoom-in}.mapfull img{max-height:82vh;width:auto;margin:0 auto}
 .pbody{display:grid;grid-template-columns:1.6fr 1fr;gap:48px;padding:24px 0 72px}
 .pbody h2{font-size:26px;margin-top:0}.pbody ol{padding-left:20px;color:var(--muted)}
@@ -142,7 +142,7 @@ def head(title, desc, ogimg, depth=""):
 <meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:image" content="{URL}{ogimg}"><meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{depth}assets/site.css?v=4"></head><body>
+<link rel="stylesheet" href="{depth}assets/site.css?v=5"></head><body>
 <header class="nav"><div class="wrap"><a class="logo" href="{depth}index.html">Abdul Haleem <span>Khan</span></a>
 <nav><a href="{depth}index.html#map">Map</a><a href="{depth}index.html#planning">Master plans</a><a href="{depth}index.html#work">Work</a><a href="{depth}index.html#experience">Experience</a><a href="{depth}index.html#education">Education</a><a href="{depth}index.html#skills">Skills</a><a href="{depth}index.html#testimonials">Testimonials</a><a class="btn" href="{depth}index.html#contact">Contact</a></nav></div></header>"""
 
