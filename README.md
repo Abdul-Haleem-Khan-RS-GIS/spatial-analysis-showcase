@@ -74,7 +74,6 @@ Final maps, reports and data from planning consultancy work in Pakistan and free
 | [Sahiwal Land-Use City Comprehensive Plan (2022–2042)](06-Master-Planning-and-Municipal-GIS/sahiwal-city-comprehensive-plan/) | Municipal Committee Sahiwal, Punjab, Pakistan | 2022–2024 | ArcGIS, Land-use survey, Suitability analysis |
 | [Sialkot Land-Use City Comprehensive Plan](06-Master-Planning-and-Municipal-GIS/sialkot-city-comprehensive-plan/) | Sialkot, Punjab, Pakistan | 2022–2024 | ArcGIS, Land-use survey |
 | [Batswat Habitat Planning: Terrain Assessment](06-Master-Planning-and-Municipal-GIS/batswat-terrain-assessment/) | Batswat, Pakistan | 2022–2024 | ArcGIS, DEM, Slope & contour analysis |
-| [City Master Plans & Cadastral Mapping: Punjab and KP](06-Master-Planning-and-Municipal-GIS/punjab-kp-master-plans-and-cadastre/) | Cities in Punjab and Khyber Pakhtunkhwa, Pakistan | 2022–2024 | ArcGIS Pro, QGIS, ERDAS Imagine |
 
 ---
 Practice studies are anonymised: course and client details are omitted.

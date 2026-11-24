@@ -33,7 +33,6 @@ LOC = {
     "sahiwal-city-comprehensive-plan": (30.66, 73.11, "Sahiwal, Pakistan"),
     "sialkot-city-comprehensive-plan": (32.49, 74.53, "Sialkot, Pakistan"),
     "batswat-terrain-assessment": (36.35, 73.85, "Batswat, Ishkoman valley, Ghizer (Gilgit-Baltistan), Pakistan"),
-    "punjab-kp-master-plans-and-cadastre": (31.52, 74.35, "Lahore, Pakistan"),
 }
 
 # 3D "fly-to" views: label, centre (lon, lat), zoom, pitch, bearing, linked project slug

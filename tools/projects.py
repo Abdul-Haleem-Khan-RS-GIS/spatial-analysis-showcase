@@ -321,13 +321,6 @@ add(slug="batswat-terrain-assessment", cat="planning", pro=True,
     result="Location, slope (in degrees) and contour maps used to read terrain constraints and the river corridor for habitat planning.",
     method=["DEM processing", "Slope in degrees, classified", "Contour generation", "Location and land-use map with inset maps"],
     catalog=["ish32lzdwtxa4dtobvel", "shbpxha7ujqe2uom5utt", "ovy3p2rvbze6fstpe7xi"])
-add(slug="punjab-kp-master-plans-and-cadastre", cat="planning", pro=True,
-    title="City Master Plans & Cadastral Mapping: Punjab and KP", year="2022–2024", client="Shehersaaz · supervised by PICIIP, UPU and PULSE",
-    where="Cities in Punjab and Khyber Pakhtunkhwa, Pakistan", tools=["ArcGIS Pro", "QGIS", "ERDAS Imagine", "Python"],
-    summary="Spatial analysis, mapping and geodatabase management for city master-plan programmes in Punjab (PICIIP) and Khyber Pakhtunkhwa (Urban Policy Unit), and cadastral mapping across several Punjab cities for PULSE (May 2023 – Apr 2024).",
-    result="Planning geodatabases and map sets for master-plan reports, cadastral maps for PULSE, and automated processing workflows in ArcGIS Pro, QGIS, ERDAS Imagine and Python.",
-    method=["Base data and imagery processing", "Geodatabase design and management", "Planning and cadastral mapping", "Workflow automation with Python"],
-    files=[])
 
 # ---- merge detailed case-study content ----
 try:
