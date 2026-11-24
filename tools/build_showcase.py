@@ -68,8 +68,12 @@ def readme(p):
     if p.get("links"):
         L += ["## Links", ""] + [f"- [{a}]({u if u.startswith('http') else SITE + 'projects/' + u})" for a,u in p["links"]] + [""]
     if p.get("files"):
-        L += ["## Deliverables", ""]
-        L += [f"- {f}" for f in p["files"]]
+        from projects import split_files
+        pub, unpub = split_files(p, REPO)
+        if pub:
+            L += ["## Deliverables", ""] + [f"- {f}" for f in pub]
+        if unpub:
+            L += ["", "*Also delivered to the client (not published here):*", ""] + [f"- {f}" for f in unpub]
         L.append("")
     if p.get("note"):
         L += [f"*{p['note']}*", ""]

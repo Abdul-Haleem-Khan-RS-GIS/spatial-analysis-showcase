@@ -26,7 +26,8 @@ Show where jobs are concentrated in Dübendorf for planners and businesses.
 - Most cells hold 1–175 employees; a few hotspots reach 843–2,468 employees per cell
 - Employment clusters in the north and centre of the city, with a secondary cluster in the south-west
 
-## Deliverables
+
+*Also delivered to the client (not published here):*
 
 - Employment Density Map Of Dübendorf City.pdf
 

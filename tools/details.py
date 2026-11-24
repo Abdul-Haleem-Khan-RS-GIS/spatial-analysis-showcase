@@ -272,9 +272,14 @@ D["swiss-client-employee-strategy-maps"] = dict(
 D["riverside-fire-hazard-parcels"] = dict(
     challenge="Identify residential parcels in Riverside that fall within classified fire hazard severity zones.",
     data=["Riverside residential parcels", "Fire hazard severity zones (moderate, high, very high)"],
-    method=["Overlaid parcels with the hazard zones", "Summarised parcels by zone", "Neighbourhood case study of Alessandro Heights"],
-    findings=["Very-high hazard zones run along the city's western and southern edges next to open land"],
-    captions=["Residential parcels by fire hazard zone in Riverside, California"])
+    method=["Overlaid parcels with the hazard zones", "Summarised parcels by zone",
+            "Calculated, for every Riverside neighbourhood, the share of its area inside classified fire hazard zones, and mapped it in four classes (0–11%, 12–41%, 42–63%, 64–100%)",
+            "Neighbourhood case study of Alessandro Heights"],
+    findings=["Very-high hazard zones run along the city's western and southern edges next to open land",
+              "Alessandro Heights has the highest exposure: 88.2% of its area lies in classified fire hazard zones",
+              "La Sierra Hills and Sycamore Canyon Park are also in the highest class (64–100%), and University, Canyon Crest and Sycamore Canyon/Canyon Springs fall in the 42–63% class; the central neighbourhoods are mostly below 11%"],
+    captions=["Residential parcels by fire hazard zone in Riverside, California",
+              "Riverside neighbourhoods by share of area within classified fire hazard zones; Alessandro Heights 88.20%"])
 
 D["summer-campground-suitability"] = dict(
     challenge="Find suitable sites for a summer campground that are close to water and roads but not too far from emergency services.",

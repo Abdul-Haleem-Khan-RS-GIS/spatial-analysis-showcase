@@ -48,11 +48,14 @@ Southern and western Atlanta have limited access to public parks. The study set 
 
 ## Deliverables
 
-- Distribution of Existing Parks and 500-Meter.pdf
 - Population Density by Census Tract in Atlanta, Georgia (2020 Census Data).pdf
+- A GIS-Based Site Suitability Analysis for Urban Green Spaces in Atlanta, Georgia.pdf
+
+*Also delivered to the client (not published here):*
+
+- Distribution of Existing Parks and 500-Meter.pdf
 - Underserved Urban Areas Lacking Green Space.pdf
 - Suitable Land Parcels for New Green Space.pdf
-- A GIS-Based Site Suitability Analysis for Urban Green Spaces in Atlanta, Georgia.pdf
 
 ---
 [← All projects](../../README.md) · [Portfolio website](https://abdul-haleem-khan-rs-gis.github.io/Geospatial_Portfolio/projects/atlanta-green-space-suitability.html)

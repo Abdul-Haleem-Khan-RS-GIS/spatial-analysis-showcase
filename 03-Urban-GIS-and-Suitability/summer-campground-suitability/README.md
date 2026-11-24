@@ -34,6 +34,9 @@ Find suitable sites for a summer campground that are close to water and roads bu
 ## Deliverables
 
 - Suitable Locations for Summer Campground.pdf
+
+*Also delivered to the client (not published here):*
+
 - Relief Details.rar
 
 ---

@@ -36,6 +36,9 @@ Sadeem International needed to know where flooding is most likely around Umluj, 
 ## Deliverables
 
 - Multi-Criteria Flood Risk Map – Umluj City and Surroundings.pdf
+
+*Also delivered to the client (not published here):*
+
 - Compersion Map of Study Area Boundary and Without Boundary.pdf
 - Project Outline.pdf
 

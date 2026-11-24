@@ -118,7 +118,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .side{background:#fff;border:1px solid var(--line);padding:20px;align-self:start}
 .mapfull figcaption{font-size:14px;color:var(--muted);padding-top:10px;text-align:center}.mapfull figcaption .mono{margin-right:6px}
 .find{padding-left:0;list-style:none}.find li{border-left:3px solid var(--accent);padding:6px 0 6px 14px;margin:0 0 10px;background:#fff}
-.side hr{border:0;border-top:1px solid var(--line);margin:18px 0}.side .dl{margin-bottom:0}
+.side hr{border:0;border-top:1px solid var(--line);margin:18px 0}.side .dl{margin-bottom:0}.side .muted{color:var(--muted)}
 .globe-sec{background:#0e1517;color:#e9ecea;padding:88px 0}.globe-sec h2{color:#fff}.globe-sec .lead{color:#b9c2c0}.globe-sec .mono{color:#9fb3b0}
 .tours{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 18px}.tours button{font:500 14px Inter,sans-serif;background:transparent;color:#e9ecea;border:1px solid #3b4a4c;padding:9px 14px;cursor:pointer}
 .tours button:hover,.tours button[aria-pressed=true]{background:#f5b700;color:#16181a;border-color:#f5b700}
@@ -295,7 +295,10 @@ for i, p in enumerate(pages):
     nxt = pages[(i + 1) % len(pages)]
     imgs = "".join(f'<figure class="mapfull"><a href="../{b}"><img src="../{b}" alt="{E(cap(p,k))}" width="{w}" height="{h}"></a><figcaption><span class="mono">Fig. {k}</span> {E(cap(p,k))}</figcaption></figure>'
                    for k, (b, t, (w, h)) in enumerate(p["img"], 1))
-    files = "".join(f"<li>{E(f)}</li>" for f in p.get("files", []))
+    from projects import split_files
+    _pub, _unpub = split_files(p, SHOW)
+    files = "".join(f"<li>{E(f)}</li>" for f in _pub)
+    unfiles = ('<span class="mono" style="display:block;margin-top:16px">Also delivered to the client</span><ul class="dl muted">' + "".join(f"<li>{E(f)}</li>" for f in _unpub) + '</ul>') if _unpub else ""
     og = p["img"][0][0] if p["img"] else hero["img"][0][0]
     pg = head(f"{p['title']} | Abdul Haleem Khan", p["summary"], og, "../") + f"""
 <main class="wrap">
@@ -307,7 +310,7 @@ for i, p in enumerate(pages):
 <div class="pbody"><div>{('<h2>Challenge</h2><p>'+E(p['challenge'])+'</p>') if p.get('challenge') else ''}
 <h2>Approach</h2><ol>{''.join(f'<li>{E(s)}</li>' for s in p['method'])}</ol>
 <h2>Results</h2>{('<ul class="find">'+''.join(f'<li>{E(x)}</li>' for x in p['findings'])+'</ul>') if p.get('findings') else '<p>'+E(p['result'])+'</p>'}{'<p class="mono">Practice study: course and client details omitted.</p>' if p.get('study') else ''}</div>
-<aside class="side">{''.join(f'<p style="margin:0 0 10px"><a class="btn" href="{E(u)}">{E(a)}</a></p>' for a,u in p.get('links',[]))}{('<hr>' if p.get('links') else '')}{('<span class="mono">Data used</span><ul class="dl">'+''.join(f'<li>{E(x)}</li>' for x in p['data'])+'</ul><hr>') if p.get('data') else ''}<span class="mono">Files & data</span><p style="margin:8px 0 0"><a class="btn" href="{GH}{p['dir']}">Open on GitHub</a></p>{('<ul>'+files+'</ul>') if files else ''}</aside></div>
+<aside class="side">{''.join(f'<p style="margin:0 0 10px"><a class="btn" href="{E(u)}">{E(a)}</a></p>' for a,u in p.get('links',[]))}{('<hr>' if p.get('links') else '')}{('<span class="mono">Data used</span><ul class="dl">'+''.join(f'<li>{E(x)}</li>' for x in p['data'])+'</ul><hr>') if p.get('data') else ''}<span class="mono">Files & data</span><p style="margin:8px 0 0"><a class="btn" href="{GH}{p['dir']}">Open on GitHub</a></p>{('<ul>'+files+'</ul>') if files else ''}{unfiles}</aside></div>
 <div class="next"><a href="../index.html#work">← All work</a><a href="{nxt['slug']}.html">Next: {E(nxt['title'])} →</a></div>
 </main>{FOOT}</body></html>"""
     open(os.path.join(SITE, "projects", p["slug"] + ".html"), "w").write(pg)

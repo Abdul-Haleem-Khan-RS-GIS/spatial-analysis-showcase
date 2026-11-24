@@ -26,7 +26,8 @@ Give the client a single, clear map of every daycare centre (Kita) in the city o
 ## Results
 - City-wide daycare map delivered as a print-ready PDF
 
-## Deliverables
+
+*Also delivered to the client (not published here):*
 
 - Daycare Center Map Of Zurich City_compressed.pdf
 

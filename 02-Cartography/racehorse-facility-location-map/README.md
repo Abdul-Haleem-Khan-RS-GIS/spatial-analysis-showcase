@@ -25,7 +25,8 @@ Create a marketing graphic that shows at a glance how close a racehorse training
 ## Results
 - High-resolution location graphic (20 MB PNG and 16 MB PDF) ready for marketing
 
-## Deliverables
+
+*Also delivered to the client (not published here):*
 
 - Strategic Location of Racehorse Training Facility Near Top Race Tracks.jpg
 - Strategic Location of Racehorse Training Facility Near Top Race PNG.png

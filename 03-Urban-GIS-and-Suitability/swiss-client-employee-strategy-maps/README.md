@@ -25,7 +25,8 @@ A Swiss cleaning company wanted to see where its clients and staff are, so it co
 - Clients and staff concentrate around Zurich, with smaller clusters elsewhere in Switzerland
 - The map showed where service areas and recruitment could be optimised
 
-## Deliverables
+
+*Also delivered to the client (not published here):*
 
 - 4Postalcode base Strategic Locator Map.pdf
 

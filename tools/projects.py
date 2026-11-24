@@ -207,7 +207,7 @@ add(slug="riverside-fire-hazard-parcels", cat="urban", study=True,
     summary="Overlay of residential parcels with fire hazard severity zones in Riverside, including a neighbourhood case study (Alessandro Heights).",
     result="Map and data package of residential parcels by fire hazard zone.",
     method=["Parcel and hazard-zone layers", "Spatial join / overlay", "Summary by zone", "Maps"],
-    files=["Residential Parcels by Fire Hazard Zone in Riverside.rar", "Alessandro Heights - 88.20 %.rar"])
+    files=["Residential Parcels by Fire Hazard Zone in Riverside.rar", "Riverside neighbourhoods by share of area in fire hazard zones.pdf"])
 add(slug="summer-campground-suitability", cat="urban", study=True,
     title="Suitable Locations for a Summer Campground", year="2024", client="Practice study",
     where="Study area, USA", tools=["ArcGIS Pro", "DEM", "Weighted overlay"],
@@ -321,6 +321,24 @@ add(slug="batswat-terrain-assessment", cat="planning", pro=True,
     result="Location, slope (in degrees) and contour maps used to read terrain constraints and the river corridor for habitat planning.",
     method=["DEM processing", "Slope in degrees, classified", "Contour generation", "Location and land-use map with inset maps"],
     catalog=["ish32lzdwtxa4dtobvel", "shbpxha7ujqe2uom5utt", "ovy3p2rvbze6fstpe7xi"])
+
+
+def split_files(p, repo):
+    """Return (published, unpublished): which listed deliverables are actually in the repo folder."""
+    import os, glob
+    d = glob.glob(os.path.join(repo, "0*", p["slug"]))
+    have = []
+    if d:
+        for root, _, fs in os.walk(d[0]):
+            have += [f for f in fs if f != ".gitkeep"]
+    pub, unpub = [], []
+    for f in p.get("files", []):
+        name = os.path.basename(f.split(" (")[0].split(" + ")[0])
+        if "." not in name or any(name in h or h in name for h in have):
+            pub.append(f)
+        else:
+            unpub.append(f)
+    return pub, unpub
 
 # ---- merge detailed case-study content ----
 try:
