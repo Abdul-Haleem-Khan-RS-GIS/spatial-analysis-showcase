@@ -77,7 +77,8 @@ def readme(p):
         L.append("")
     if p.get("note"):
         L += [f"*{p['note']}*", ""]
-    L += ["---", f"[← All projects](../../README.md) · [Portfolio website]({SITE}projects/{p['slug']}.html)", ""]
+    _url = f"{SITE}projects/{p['slug']}.html" if (p.get("pro") or p.get("maps") or p.get("challenge")) else SITE
+    L += ["---", f"[← All projects](../../README.md) · [Portfolio website]({_url})", ""]
     return "\n".join(L)
 
 for p in P:

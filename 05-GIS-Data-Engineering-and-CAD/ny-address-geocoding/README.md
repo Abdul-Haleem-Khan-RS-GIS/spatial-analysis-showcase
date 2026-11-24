@@ -19,4 +19,4 @@ Geocoded client address lists for New York and Long Island to coordinates.
 Geocoded address tables (about 2,270 addresses). The address data is kept private because it lists individuals' addresses.
 
 ---
-[← All projects](../../README.md) · [Portfolio website](https://abdul-haleem-khan-rs-gis.github.io/Geospatial_Portfolio/projects/ny-address-geocoding.html)
+[← All projects](../../README.md) · [Portfolio website](https://abdul-haleem-khan-rs-gis.github.io/Geospatial_Portfolio/)
