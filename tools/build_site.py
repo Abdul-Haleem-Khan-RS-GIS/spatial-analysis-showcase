@@ -141,7 +141,7 @@ def head(title, desc, ogimg, depth=""):
 <meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:image" content="{URL}{ogimg}"><meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{depth}assets/site.css"></head><body>
+<link rel="stylesheet" href="{depth}assets/site.css?v=3"></head><body>
 <header class="nav"><div class="wrap"><a class="logo" href="{depth}index.html">Abdul Haleem <span>Khan</span></a>
 <nav><a href="{depth}index.html#map">Map</a><a href="{depth}index.html#planning">Master plans</a><a href="{depth}index.html#work">Work</a><a href="{depth}index.html#experience">Experience</a><a href="{depth}index.html#skills">Skills</a><a href="{depth}index.html#about">About</a><a class="btn" href="{depth}index.html#contact">Contact</a></nav></div></header>"""
 
@@ -281,7 +281,7 @@ bs.forEach(b=>b.addEventListener('click',()=>{{bs.forEach(x=>x.setAttribute('ari
 
 open(os.path.join(SITE, "index.html"), "w").write(index)
 os.makedirs(os.path.join(SITE, "assets"), exist_ok=True)
-open(os.path.join(SITE, "assets/site.css"), "w").write(CSS)
+open(os.path.join(SITE, "assets/site.css?v=3"), "w").write(CSS)
 shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "contact.js"), os.path.join(SITE, "assets/contact.js"))
 shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "globe.js"), os.path.join(SITE, "assets/globe.js"))
 shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "portrait.jpg"), os.path.join(SITE, "assets/portrait.jpg"))
