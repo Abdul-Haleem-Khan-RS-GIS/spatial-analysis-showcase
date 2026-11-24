@@ -23,9 +23,9 @@
   }
   function fallback() {
     var link = mailtoLink();
-    show('The message service could not be reached from your network. Your email app should open with the message ready to send. ' +
-         'If it does not, <a href="' + link + '">click here to send it by email</a> or write to <a href="mailto:' + to + '">' + to + '</a>.', 'warn');
-    window.location.href = link;
+    show('Your network blocked the message service, but your message is ready. Tap the button to send it from your email app:' +
+         '<br><a class="btn" style="margin-top:10px;display:inline-block" href="' + link + '">Send by email</a>' +
+         '<br><span style="font-size:14px">Or write directly to <a href="mailto:' + to + '">' + to + '</a>.</span>', 'warn');
   }
 
   form.addEventListener('submit', function (e) {
