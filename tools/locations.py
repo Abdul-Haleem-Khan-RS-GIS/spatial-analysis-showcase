@@ -22,6 +22,8 @@ LOC = {
     "atlanta-green-space-suitability": (33.75, -84.39, "Atlanta, USA"),
     "umluj-flood-risk-mcda": (25.02, 37.27, "Umluj, Saudi Arabia"),
     "umluj-flood-susceptibility-ahp": (25.02, 37.27, "Umluj, Saudi Arabia"),
+    "summer-campground-suitability": (32.95, -116.55, "Eastern San Diego County, California, USA"),
+    "bike-route-network-analysis": (47.80, 13.11, "Gaisberg, Salzburg, Austria"),
     "riverside-fire-hazard-parcels": (33.95, -117.40, "Riverside, California, USA"),
     "st-louis-parcel-criteria-map": (38.63, -90.24, "St. Louis, USA"),
     "qgis-polygon-point-digitisation": (29.38, -94.92, "Texas City, USA"),

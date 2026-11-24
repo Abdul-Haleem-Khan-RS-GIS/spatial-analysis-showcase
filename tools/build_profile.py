@@ -31,7 +31,7 @@ I turn satellite imagery and spatial data into maps and analysis people can act 
 
 <table>{rows}</table>
 
-Also: {" · ".join(f"[{p['title']}]({GH}{p['dir']})" for p in others)}
+{("Also: " + " · ".join(f"[{p['title']}]({GH}{p['dir']})" for p in others)) if others else ""}
 
 **All {len(P)} projects by category:** [spatial-analysis-showcase](https://github.com/Abdul-Haleem-Khan-RS-GIS/spatial-analysis-showcase)
 
