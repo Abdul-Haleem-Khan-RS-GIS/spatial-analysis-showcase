@@ -242,7 +242,10 @@ index = head("Abdul Haleem Khan | GIS Engineer & Remote Sensing Specialist",
 <li><span class="mono">Master's</span><h3>Geographical Information System</h3><div class="org">University of the Punjab</div><p>Thesis: urban sprawl trend in Mardan City, Pakistan (image classification in ERDAS Imagine and ArcMap).</p></li>
 </ul>
 <span class="mono">Certifications</span>
-<ul class="tl" style="margin-top:12px"><li><h3 style="font-size:16px">Advanced Diploma in Geographic Information Systems</h3><p>Alison · Feb 2025</p></li>
+<ul class="tl" style="margin-top:12px"><li><h3 style="font-size:16px">Teaming@BCG Job Simulation</h3><p>BCG via Forage · Apr 2026 · Effective teaming as a project leader, managing an unanticipated request</p></li>
+<li><h3 style="font-size:16px">Data Analytics Job Simulation</h3><p>Deloitte via Forage · Feb 2026 · Data analysis, forensic technology</p></li>
+<li><h3 style="font-size:16px">GeoPandas Fundamentals</h3><p>Spatial Lab · Nov 2025</p></li>
+<li><h3 style="font-size:16px">Advanced Diploma in Geographic Information Systems</h3><p>Alison · Feb 2025</p></li>
 <li><h3 style="font-size:16px">Remote Sensing Technology and Data Processing Applications</h3><p>DQGAST & PIESAT · Feb 2022</p></li></ul>
 </div></div></section>
 
