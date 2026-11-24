@@ -281,7 +281,7 @@ bs.forEach(b=>b.addEventListener('click',()=>{{bs.forEach(x=>x.setAttribute('ari
 
 open(os.path.join(SITE, "index.html"), "w").write(index)
 os.makedirs(os.path.join(SITE, "assets"), exist_ok=True)
-open(os.path.join(SITE, "assets/site.css?v=3"), "w").write(CSS)
+open(os.path.join(SITE, "assets/site.css"), "w").write(CSS)
 shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "contact.js"), os.path.join(SITE, "assets/contact.js"))
 shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "globe.js"), os.path.join(SITE, "assets/globe.js"))
 shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "portrait.jpg"), os.path.join(SITE, "assets/portrait.jpg"))
