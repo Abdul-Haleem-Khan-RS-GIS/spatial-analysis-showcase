@@ -144,7 +144,7 @@ def head(title, desc, ogimg, depth=""):
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{depth}assets/site.css?v=3"></head><body>
 <header class="nav"><div class="wrap"><a class="logo" href="{depth}index.html">Abdul Haleem <span>Khan</span></a>
-<nav><a href="{depth}index.html#map">Map</a><a href="{depth}index.html#planning">Master plans</a><a href="{depth}index.html#work">Work</a><a href="{depth}index.html#experience">Experience</a><a href="{depth}index.html#skills">Skills</a><a href="{depth}index.html#about">About</a><a class="btn" href="{depth}index.html#contact">Contact</a></nav></div></header>"""
+<nav><a href="{depth}index.html#map">Map</a><a href="{depth}index.html#planning">Master plans</a><a href="{depth}index.html#work">Work</a><a href="{depth}index.html#experience">Experience</a><a href="{depth}index.html#education">Education</a><a href="{depth}index.html#skills">Skills</a><a href="{depth}index.html#testimonials">Testimonials</a><a class="btn" href="{depth}index.html#contact">Contact</a></nav></div></header>"""
 
 FOOT = f"""<footer><div class="wrap"><span>© 2026 Abdul Haleem Khan · GIS Engineer & Remote Sensing Specialist</span>
 <span><a href="{LINKEDIN}">LinkedIn</a> · <a href="{GITHUB}">GitHub</a> · <a href="{UPWORK}">Upwork</a> · <a href="mailto:{EMAIL}">Email</a></span></div></footer>"""
@@ -238,7 +238,7 @@ index = head("Abdul Haleem Khan | GIS Engineer & Remote Sensing Specialist",
 <li><span class="mono">May 2022 – Mar 2024 · Lahore</span><h3>GIS Analyst</h3><div class="org">Shehersaaz Urban Planning Consultancy</div><p>Spatial analysis and mapping for Land Use Focused City Comprehensive Plans (Sahiwal, Sialkot) and terrain studies for the Aga Khan Agency for Habitat.</p></li>
 <li><span class="mono">2023 – present · Remote</span><h3>Freelance GIS & Remote Sensing</h3><div class="org">Upwork</div><p>33 jobs for clients in the USA, Saudi Arabia, Switzerland and elsewhere: remote sensing, cartography, suitability analysis and GIS-to-CAD data work.</p></li>
 </ul></div>
-<div id="about"><span class="mono">About</span><h2>Education</h2>
+<div id="education" style="scroll-margin-top:100px"><span class="mono">Education</span><h2>Degree and certifications</h2>
 <ul class="tl">
 <li><span class="mono">Master's</span><h3>Geographical Information System</h3><div class="org">University of the Punjab</div><p>Thesis: urban sprawl trend in Mardan City, Pakistan (image classification in ERDAS Imagine and ArcMap).</p></li>
 </ul>
@@ -260,7 +260,7 @@ index = head("Abdul Haleem Khan | GIS Engineer & Remote Sensing Specialist",
 <div><h3>Programming</h3><p>Python (ArcPy, GeoPandas, Rasterio, GDAL), GEE JavaScript, Global Mapper scripting</p></div>
 <div><h3>Cartography</h3><p>Print and web map layout, symbology and labelling, terrain and hillshade, thematic and reference maps</p></div>
 </div>
-<span class="mono" style="display:block;margin-top:64px">Testimonials</span><h2>What clients say</h2>
+<span id="testimonials" class="mono" style="display:block;margin-top:64px;scroll-margin-top:100px">Testimonials</span><h2>What clients say</h2>
 <div class="reviews" style="margin-top:24px">{''.join(f'<blockquote>“{E(q)}”<cite>{E(c)}</cite></blockquote>' for q, c in REVIEWS)}</div>
 </div></section>
 
