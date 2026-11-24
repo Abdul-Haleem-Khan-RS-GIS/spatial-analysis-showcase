@@ -466,11 +466,11 @@ D["uyun-al-jawa-municipal-gis"] = dict(
             "Merged all transferred plans into the municipal geodatabase, keeping topology clean so neighbouring plans meet without overlaps or gaps",
             "Built the Municipal Lands Plans Document from this database (ArcMap 10.9, 2025): land use in 11 classes, municipal lands allocated or reserved for investment, urban and development boundaries and the road hierarchy, with definitions, general rules and the approval block for the municipality, the Al-Qassim Region Municipality and the Ministry of Municipalities and Housing",
             "Mapped the areas reserved for municipal investments (2026) from the same database, classifying each site as new or existing and overlaying the new subdivision plans and the development boundary",
-            "Coordinated GPS field collection, shared GIS data across departments and trained staff and World Bank officials"]
+            "Coordinated GPS field collection, shared GIS data across departments and trained staff and World Bank officials"],
     findings=["A complete CAD-to-GIS workflow: every plan is drawn in AutoCAD, transferred into GIS at its true location, and becomes part of one municipal database",
               "One approved reference map of land use and municipal land for the whole governorate, built from the transferred plans and signed off up to the Amanah and the Ministry",
               "A clear inventory of the municipality's investment land, separating new reservations from existing ones",
-              "Plans linked to the GIS by plan and plot number, so planners can move between the AutoCAD drawing and the map for any parcel"]
+              "Plans linked to the GIS by plan and plot number, so planners can move between the AutoCAD drawing and the map for any parcel"],
     captions=["Municipal Lands Plans Document, Uyun Al Jawa Governorate: land use, municipal investment lands, urban boundaries and roads (ArcMap, 2025)",
               "Areas reserved for municipal investments, classified as new or existing, with new subdivision plans and the development boundary (ArcMap, 2026)",
               "Government Residential Plan 2505/ق (amended), Uyun Al Jawa, 1:5000: final AutoCAD drawing with plot tables, road cross-sections, notes and title block",
