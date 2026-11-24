@@ -39,7 +39,7 @@ Final maps, reports and data from planning consultancy work in Pakistan and free
 |---|---|---|---|
 | [Site Suitability for Urban Green Space: Atlanta](03-Urban-GIS-and-Suitability/atlanta-green-space-suitability/) | Atlanta, Georgia, USA | 2025 | ArcGIS 10.8, 2020 U.S. Census, Buffer & overlay analysis |
 | [Multi-Criteria Flood Risk Map: Umluj](03-Urban-GIS-and-Suitability/umluj-flood-risk-mcda/) | Umluj, Saudi Arabia | 2025 | ArcGIS Pro, MCDA, DEM |
-| [Flood Susceptibility with AHP: Umluj Coastal Catchments (Google Earth Engine)](03-Urban-GIS-and-Suitability/umluj-flood-susceptibility-ahp/) | Umluj, Red Sea coast, Saudi Arabia | 2026 | Google Earth Engine (JavaScript), AHP, MCDA |
+| [Flood Susceptibility with AHP: Umluj Coastal Catchments (Google Earth Engine)](03-Urban-GIS-and-Suitability/umluj-flood-susceptibility-ahp/) | Umluj city and surroundings, Saudi Arabia | 2025 project · AHP extension 2026 | Google Earth Engine (JavaScript), AHP, MCDA |
 | [Employment Density on a 100 m Grid: Dübendorf](03-Urban-GIS-and-Suitability/dubendorf-employment-density/) | Dübendorf, Switzerland | 2024 | ArcGIS, QGIS, Swiss 100 m grid |
 | [Daycare Centres of Zurich](03-Urban-GIS-and-Suitability/zurich-daycare-centres/) | Zurich, Switzerland | 2023 | ArcGIS |
 | [Client & Employee Strategy Maps: Switzerland](03-Urban-GIS-and-Suitability/swiss-client-employee-strategy-maps/) | Switzerland | 2023–2025 | ArcGIS, QGIS |

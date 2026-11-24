@@ -1,7 +1,7 @@
 # Flood Susceptibility with AHP: Umluj Coastal Catchments (Google Earth Engine)
 
-**Category:** Urban GIS & Site Suitability &nbsp;·&nbsp; **Location:** Umluj, Red Sea coast, Saudi Arabia &nbsp;·&nbsp; **Year:** 2026  
-**Client:** Independent extension of my Umluj flood-risk work  
+**Category:** Urban GIS & Site Suitability &nbsp;·&nbsp; **Location:** Umluj city and surroundings, Saudi Arabia &nbsp;·&nbsp; **Year:** 2025 project · AHP extension 2026  
+**Client:** Based on my project for Sadeem International Company, Saudi Arabia (5.0★ review)  
 **Tools & data:** Google Earth Engine (JavaScript), AHP, MCDA, MERIT Hydro HAND, Copernicus DEM, ESA WorldCover
 
 ![Flood susceptibility of the Umluj coastal catchments from the AHP weighted overlay](maps/umluj-flood-susceptibility-ahp-1.jpg)
@@ -20,7 +20,7 @@
 Flood susceptibility map of the Umluj coastal catchments built with the Analytic Hierarchy Process (AHP): five factors weighted by pairwise comparison (CR = 0.018), combined in Google Earth Engine from open global data, with a sensitivity test against equal weights.
 
 ## Challenge
-My original Umluj flood-risk map, delivered to Sadeem International, combined flood factors in a weighted overlay. Weights chosen by judgement are hard to defend, so I rebuilt the analysis with the Analytic Hierarchy Process (AHP). It gives every weight a documented pairwise comparison and a consistency check, and the whole model runs from open global data that anyone can reproduce.
+Purpose of the original 2025 project for Sadeem International Company: an environmental assessment to decide where to install flood sensors around Umluj. That map combined flood factors in a weighted overlay. Weights chosen by judgement are hard to defend, so I rebuilt the analysis with the Analytic Hierarchy Process (AHP). It gives every weight a documented pairwise comparison and a consistency check, and the whole model runs from open global data that anyone can reproduce.
 
 ## Data
 - Study area: the five HydroSHEDS level-8 basins draining to the coast at and around Umluj (1,999 km²); the original client AOI file was not delivered, so a watershed boundary is used
