@@ -13,6 +13,13 @@ Existing land-use mapping of the Sialkot study area for Output A-1 of the PICIIP
 ## Challenge
 Map the existing land use of the Sialkot study area as the base for its land-use focused city comprehensive plan.
 
+## Data
+- Land-use survey of the Sialkot study area (14 land-use classes)
+- M11 motorway, railway, primary and secondary roads
+- Upper Chenab Canal, Marala Ravi Link Canal and the city's nullahs
+- MC, cantonment and study-area boundaries
+- Esri/Maxar imagery basemap
+
 ## Approach
 1. Land-use survey data
 2. Classify and digitise parcels by use
@@ -20,7 +27,9 @@ Map the existing land use of the Sialkot study area as the base for its land-use
 4. Plan-standard map layout
 
 ## Results
-Existing land-use map of the study area showing residential, commercial, industrial, agricultural, education and religious uses with the M11 motorway, railway, road hierarchy, MC and cantonment boundaries.
+- A dense residential and commercial core around the old city, with the cantonment occupying the north-east
+- Industry is scattered along the main radial roads, notably towards Wazirabad and Daska
+- Agriculture still surrounds the city inside the study-area boundary, the land the plan must manage for growth
 
 ---
 [← All projects](../../README.md) · [Portfolio website](https://abdul-haleem-khan-rs-gis.github.io/Geospatial_Portfolio/projects/sialkot-city-comprehensive-plan.html)

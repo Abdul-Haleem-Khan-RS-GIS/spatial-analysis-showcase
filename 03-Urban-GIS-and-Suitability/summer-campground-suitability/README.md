@@ -1,6 +1,6 @@
 # Suitable Locations for a Summer Campground
 
-**Category:** Urban GIS & Site Suitability &nbsp;·&nbsp; **Location:** Study area, USA &nbsp;·&nbsp; **Year:** 2024  
+**Category:** Urban GIS & Site Suitability &nbsp;·&nbsp; **Location:** Eastern San Diego County, California, USA &nbsp;·&nbsp; **Year:** 2024  
 **Client:** Practice study  
 **Tools & data:** ArcGIS Pro, DEM, Weighted overlay
 
@@ -18,7 +18,7 @@ Find suitable sites for a summer campground that are close to water and roads bu
 ## Data
 - Relief/DEM
 - Rivers and lakes
-- Major roads
+- Major roads (I-8, SR-78, SR-79 and local roads)
 - Emergency services
 - Study-area boundary
 
@@ -29,7 +29,9 @@ Find suitable sites for a summer campground that are close to water and roads bu
 4. Mapped the suitable locations
 
 ## Results
-- A small set of suitable locations near rivers and roads, mapped with emergency-service coverage
+- The largest group of suitable sites lies in the south-east of the study area, along Sunrise Highway
+- Smaller groups sit near SR-79 in the north, at San Felipe, and next to I-8 and Old Highway 80 in the south
+- Most suitable sites lie close to a road and within a few miles of one of the six emergency-service points
 
 ## Deliverables
 

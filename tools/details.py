@@ -482,3 +482,166 @@ D["uyun-al-jawa-municipal-gis"] = dict(
               "Plan 2505 detail: central mosque square, schools, health centre, parks and walkways, parking and numbered plots",
               "Government Residential Plan 3045/ق, east of Uyun Al Jawa, 1:1500: 72 plots, 2 mosques, a boys' school, road cross-sections, plot tables and building regulations (final AutoCAD drawing)",
               "Structural plan of Al-Jawa city from the national informal-settlements study (Ministry of Municipal and Rural Affairs; Talal Adham & Partners), used as a planning reference"])
+
+# ---- 2026-11 audit: details expanded from the delivered data, maps and reports ----
+D["riyadh-postcode-map"].update(
+    data=["Postal-code reference boundaries for Riyadh", "District names for every zone", "Satellite basemap for checking"],
+    method=["Delineated the postal-code zones in QGIS and ArcGIS Pro, in WGS 84 / UTM zone 38N (EPSG:32638)",
+            "Attached the district name (Dist_Name) and postal code (Zip_Code) to every polygon",
+            "Checked attributes and topology so neighbouring zones share edges, with no gaps or overlaps",
+            "Exported to GeoJSON and shapefile for web and GIS use"],
+    findings=["996 postal-code polygons carrying 988 distinct postal codes across 177 named districts",
+              "The layer covers about 3,760 km² of Riyadh, from roughly 46.3°E to 47.1°E and 24.3°N to 25.2°N",
+              "Delivered as GeoJSON and shapefile, ready for web maps and GIS platforms"],
+    result="Postal-code polygon dataset for the whole city (996 zones, 988 postal codes, 177 districts) in GeoJSON and shapefile, plus a map.")
+
+D["zip-code-territory-map"].update(
+    summary="Built a territory around four ZIP code areas in the Cleveland area (44115, 44122, 44130, 44145) with a 10-mile reach, added county, municipal and school-district boundaries, and selected the schools and public facilities inside it from OpenStreetMap.",
+    data=["Census 2020 ZCTA boundaries for 44115, 44122, 44130 and 44145",
+          "Boundaries of seven counties (Cuyahoga, Lorain, Medina, Summit, Portage, Geauga, Lake), 59 Cuyahoga municipalities and 31 school districts",
+          "53,130 OpenStreetMap points of 187 types for the area"],
+    method=["Selected the four ZCTAs and created a centroid point for each",
+            "Built a 10-mile buffer around them and dissolved it into one territory (about 2,900 km²)",
+            "Added county, municipal and school-district boundaries for context",
+            "Filtered the 53,130 OpenStreetMap points down to schools and public facilities inside the territory",
+            "Packaged all layers with the map"],
+    findings=["371 facilities selected inside the territory: 236 schools, 48 post offices, 44 social facilities, 30 police stations, 11 hospitals, 1 university and 1 public building",
+              "The territory spans parts of seven counties around Cleveland, not just Cuyahoga",
+              "Every layer was delivered as a shapefile so the client can redraw or extend the territory"])
+
+D["solar-plant-gis-dataset"].update(
+    where="Solar power plant site, Saudi Arabia",
+    data=["Engineering layout drawings (CAD) supplied by the client",
+          "All layers built in WGS 84 / UTM zone 38N (EPSG:32638)"],
+    method=["Milestone 1 (approved): fenced project boundary, 240 PV block boundaries with Block IDs, 2 substations and 960 MV power-station components (240 each of RMU, transformer, inverter and UPS)",
+            "Pile layer: 547,055 pile points with easting, northing and Block ID",
+            "LV/DC trench layers split by trench width (350, 425, 550, 675, 1,300, 1,550 and 1,800 mm, all 900 mm deep), plus PV trenches and 12-in-1 and 16-in-1 DC combiner-box trenches",
+            "Milestone 2 (approved): MV cable layer, 624 segments in 12 MV trench circuits",
+            "Milestone 3 (approved): all review comments closed"],
+    findings=["A plant of about 38 km² inside the fence, laid out in 240 blocks covering about 32.6 km²",
+              "Cable network: about 295 km of MV cable routes and about 149 km of LV trenches, each attributed to its block",
+              "Full set of attributed shapefiles delivered across three approved milestones ($1,000 contract)",
+              "Client review: “He did very well Job delivered his project on time.”"])
+
+D["global-mapper-csv-export-script"].update(
+    data=["Four shapefile layers (Layer1 to Layer4) supplied by the client", "Point features in England, around 53.3°N, 1.0°W"],
+    findings=["One script replaces four manual exports: each layer is imported, written to its own CSV and unloaded",
+              "Each CSV holds 99 points with longitude and latitude in degrees-minutes-seconds and in decimal degrees (X, Y), plus elevation, name and label fields",
+              "Delivered the script, four sample CSV outputs and a step-by-step guide to every command"])
+
+D["aerial-image-manual-classification"].update(
+    data=["Aerial image supplied by the client (not georeferenced)", "Interpretation key built for the job (colour, texture, structure, size, shape, context)"],
+    findings=["80 digitised polygons: 65 buildings, 6 meadows, 5 parking lots, 2 agricultural fields, 1 forest/tree area and 1 road",
+              "Complete land-cover map with attributed polygons delivered as a shapefile",
+              "Interpretation key and ambiguity table make the classification reproducible",
+              "Recommended georeferencing the image first and a second-reviewer check for ambiguous areas"])
+
+D["nps-map-redesign"].update(
+    findings=["Colour: a brighter but balanced palette separates dense forest, meadows and water, and clearer elevation shading makes terrain readable at a glance",
+              "Symbols: simplified icons with a subtle shadow stay visible over forest and rugged terrain; solid, dashed and dotted lines separate paved roads, trails and minor paths",
+              "Labels: hierarchy by type size and style, contour labels following the terrain, and no text over important features",
+              "Finished map plus a written report recommending these changes for future NPS maps"])
+
+D["zurich-population-density"].update(
+    method=["Joined population counts for ages 25–45 to the 100 m × 100 m grid",
+            "Clipped the grid to the Zurich city boundary",
+            "Classified residents per cell into three classes (0–28.3, 28.4–48.9 and 49–100)",
+            "Designed a clean thematic layout with legend, north arrow and scale"],
+    findings=["Density peaks in a band running through the centre and north of the city",
+              "Grid cells follow the built-up valleys; forested hills and the lake have no residents",
+              "The highest class (49–100 residents aged 25–45 per hectare) clusters in the inner districts"],
+    result="Print-ready map of residents aged 25–45 per 100 m cell, in three classes.")
+
+D["racehorse-facility-location-map"].update(
+    where="Texas and Louisiana, USA",
+    data=["Property location supplied by the client",
+          "Five race tracks: Sam Houston Race Park, Delta Downs, Louisiana Downs, Evangeline Downs and Fair Grounds Race Course",
+          "U.S. state boundaries for the main map and a national inset"],
+    method=["Plotted the property and the five tracks with distinct symbols",
+            "Added leader lines, track icons and labels to each track",
+            "Added a U.S. inset map highlighting the region, plus a scale bar in kilometres",
+            "Exported high-resolution PNG, JPG and PDF"],
+    findings=["One graphic shows the property's position relative to all five tracks across Texas and Louisiana",
+              "High-resolution location graphic (20 MB PNG and 16 MB PDF) ready for marketing"])
+
+D["swiss-client-employee-strategy-maps"].update(
+    summary="Strategy maps for a Swiss cleaning company: clients (red) and employees (green) by postal code, with circle size by count, over city population and water bodies, and a later postal-code map shaded by client count.",
+    data=["Client and employee address lists (Excel)", "Swiss postal-code points, district, canton and country boundaries",
+          "City population (10,019 to 421,878) and water bodies"],
+    method=["Geocoded clients and employees and aggregated them by postal code",
+            "Sized client symbols in five classes (1 to 32 clients per postal code) and employee symbols from 1 to 5",
+            "Added city population circles, lakes and administrative boundaries for context"],
+    findings=["Clients concentrate in and around Zurich, with smaller clusters around Lucerne and Bern",
+              "Employees live mostly in the Zurich area, close to the main client cluster",
+              "Large cities such as Geneva, Basel and Lausanne show few or no clients on the map"])
+
+D["zurich-daycare-centres"].update(
+    method=["Geocoded every daycare centre (Kita) address to a point",
+            "Added buildings, roads, Lake Zurich and other water bodies as context",
+            "Designed a print-ready city map with legend, north arrow and scale"],
+    findings=["Kitas spread across all the built-up districts of the city",
+              "No Kitas in the forested hills and the lake, which frame the city's coverage",
+              "City-wide daycare map delivered as a print-ready PDF"])
+
+D["summer-campground-suitability"].update(
+    where="Eastern San Diego County, California, USA",
+    data=["Relief/DEM", "Rivers and lakes", "Major roads (I-8, SR-78, SR-79 and local roads)", "Emergency services", "Study-area boundary"],
+    findings=["The largest group of suitable sites lies in the south-east of the study area, along Sunrise Highway",
+              "Smaller groups sit near SR-79 in the north, at San Felipe, and next to I-8 and Old Highway 80 in the south",
+              "Most suitable sites lie close to a road and within a few miles of one of the six emergency-service points"],
+    result="Suitability map of campground locations, with emergency services, roads and water, at a 12-mile scale.")
+
+D["bike-route-network-analysis"].update(
+    where="Gaisberg, Salzburg, Austria",
+    data=["OpenStreetMap road and path network", "Hillshade/DEM", "Reference GPS track from a test ride",
+          "Start and end points: the Natural Sciences Faculty and Gaisberg"],
+    findings=["Route A is the shortest at 6.8 km but the slowest, at 7 h 39 min, because it climbs the steepest ground",
+              "Route B: 12.5 km in 2 h 08 min; Route C: 14.5 km in 1 h 58 min; Route D: 15.2 km in 2 h 00 min",
+              "Longer routes on gentler gradients were up to about four times faster than the shortest path",
+              "This shows why distance-based routing fails in steep terrain and slope has to be in the cost"],
+    result="Four alternative routes from the Natural Sciences Faculty to Gaisberg compared by length and travel time against a test ride.")
+
+D["sahiwal-city-comprehensive-plan"].update(
+    data=["Land-use survey of MC Sahiwal (17 land-use classes)", "Road hierarchy, GT Road, Sahiwal Bypass and railway",
+          "MC (2013 and 2019), EBA boundaries, state land and approved housing societies",
+          "Proposed water supply and sewerage system (NESPAK)", "Imagery"],
+    method=["Mapped existing land use across 17 classes, from residential, commercial and industry to orchards, graveyards and vacant land",
+            "Residential suitability analysis, classed as highly, marginally or not suitable",
+            "Industrial suitability analysis with the same three classes",
+            "Development scenarios to 2042; for Scenario III, laid out residential zones 1–4, commercial and infill mixed-use zones, proposed industry, reserved agriculture and a proposed ring road",
+            "Overlaid the proposed water supply and sewerage network on the development zones"],
+    findings=["The built-up core sits along GT Road and the railway, surrounded by agricultural land inside the MC boundary",
+              "The most suitable land for new housing lies in the west and north, with marginal land in the north-east",
+              "Highly suitable industrial land is limited, mainly in the west near Harappa Road",
+              "Scenario III directs growth into four residential zones inside a proposed ring road, with industry in the east and south-west and agriculture reserved to the west"])
+
+D["sialkot-city-comprehensive-plan"].update(
+    data=["Land-use survey of the Sialkot study area (14 land-use classes)",
+          "M11 motorway, railway, primary and secondary roads",
+          "Upper Chenab Canal, Marala Ravi Link Canal and the city's nullahs",
+          "MC, cantonment and study-area boundaries", "Esri/Maxar imagery basemap"],
+    findings=["A dense residential and commercial core around the old city, with the cantonment occupying the north-east",
+              "Industry is scattered along the main radial roads, notably towards Wazirabad and Daska",
+              "Agriculture still surrounds the city inside the study-area boundary, the land the plan must manage for growth"])
+
+D["batswat-terrain-assessment"].update(
+    where="Batswat, Ishkoman valley, Ghizer, Gilgit-Baltistan, Pakistan",
+    data=["DEM of the study area", "Land-use survey (agriculture, cattle sheds, sloping barren and vegetated land, community buildings, school, Jamat Khana, wood factory and others)",
+          "Ishkoman River, Ishkoman Road and Batswat Link Road", "Pakistan, Gilgit-Baltistan and Ghizer boundaries for the insets"],
+    method=["Mapped land use in the study area, including a GLOF (glacial lake outburst flood) zone",
+            "Processed the DEM and calculated slope in degrees, in 10 classes from under 3.2° to 45°",
+            "Generated contours across the study area",
+            "Built a location map with insets for Pakistan, Gilgit-Baltistan and Ghizer"],
+    findings=["Flat land (under about 3°) is limited to the river terrace along the Ishkoman River in the north-west",
+              "Slopes rise steeply to the south-east, up to about 45°, which limits where new homes can go",
+              "A GLOF hazard area at the south-west end of the valley was mapped as a constraint for habitat planning"])
+
+D["indonesia-landuse-school-locator"].update(
+    data=["Natural land-use features: beach, cave, cliff, peak, spring and glacier", "School locations", "Primary roads, water bodies and the national boundary", "World boundaries for the inset"],
+    method=["Built a national map of Indonesia with primary roads, water bodies and the country boundary",
+            "Mapped natural land-use features in six classes and school locations as point symbols",
+            "Added a world inset that highlights Indonesia, plus a separate location map at 0–2,000 km scale",
+            "Produced a district-level version for Wonosobo, Central Java"],
+    findings=["School points concentrate on Java, with further clusters in Sumatra, Bali and the Lesser Sunda islands",
+              "Road density follows the same pattern: dense on Java and Sumatra, sparse in Kalimantan and Papua",
+              "Two layouts delivered: a national land-use and school locator map and a location map of Indonesia"])

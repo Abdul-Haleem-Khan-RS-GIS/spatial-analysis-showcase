@@ -17,17 +17,21 @@ Natural land-use map with school locations for Wonosobo, set within a national l
 Show natural land use and school locations for Wonosobo, Central Java, together with where the district sits within Indonesia.
 
 ## Data
-- Natural land-use polygons (beach, forest, grassland, water and others)
+- Natural land-use features: beach, cave, cliff, peak, spring and glacier
 - School locations
-- Road network and administrative boundaries
+- Primary roads, water bodies and the national boundary
+- World boundaries for the inset
 
 ## Approach
-1. Built a national locator map of Indonesia
-2. Mapped land-use classes and schools for the district
-3. Combined both in one layout with a world inset
+1. Built a national map of Indonesia with primary roads, water bodies and the country boundary
+2. Mapped natural land-use features in six classes and school locations as point symbols
+3. Added a world inset that highlights Indonesia, plus a separate location map at 0–2,000 km scale
+4. Produced a district-level version for Wonosobo, Central Java
 
 ## Results
-- Two-map layout: national locator, plus land use and schools
+- School points concentrate on Java, with further clusters in Sumatra, Bali and the Lesser Sunda islands
+- Road density follows the same pattern: dense on Java and Sumatra, sparse in Kalimantan and Papua
+- Two layouts delivered: a national land-use and school locator map and a location map of Indonesia
 
 ## Deliverables
 

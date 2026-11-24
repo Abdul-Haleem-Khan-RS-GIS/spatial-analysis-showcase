@@ -19,11 +19,13 @@ Give the client a single, clear map of every daycare centre (Kita) in the city o
 - Zurich city boundary
 
 ## Approach
-1. Geocoded and mapped every daycare centre
-2. Added buildings, roads and water as context
-3. Designed a print-ready city map
+1. Geocoded every daycare centre (Kita) address to a point
+2. Added buildings, roads, Lake Zurich and other water bodies as context
+3. Designed a print-ready city map with legend, north arrow and scale
 
 ## Results
+- Kitas spread across all the built-up districts of the city
+- No Kitas in the forested hills and the lake, which frame the city's coverage
 - City-wide daycare map delivered as a print-ready PDF
 
 

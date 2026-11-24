@@ -13,7 +13,8 @@ Global Mapper script that exports multiple layers to separate CSV files, with a 
 The client needed to export several shapefile layers to separate CSV files in one go instead of by hand.
 
 ## Data
-- Four shapefile layers
+- Four shapefile layers (Layer1 to Layer4) supplied by the client
+- Point features in England, around 53.3°N, 1.0°W
 
 ## Approach
 1. Wrote a Global Mapper script: SET_DIR, then IMPORT → EXPORT_VECTOR TYPE=CSV → UNLOAD_ALL for each layer
@@ -21,7 +22,9 @@ The client needed to export several shapefile layers to separate CSV files in on
 3. Wrote a step-by-step guide explaining every command
 
 ## Results
-- Working script, four sample CSV outputs and documentation
+- One script replaces four manual exports: each layer is imported, written to its own CSV and unloaded
+- Each CSV holds 99 points with longitude and latitude in degrees-minutes-seconds and in decimal degrees (X, Y), plus elevation, name and label fields
+- Delivered the script, four sample CSV outputs and a step-by-step guide to every command
 
 ## Deliverables
 

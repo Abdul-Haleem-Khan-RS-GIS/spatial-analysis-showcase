@@ -24,7 +24,10 @@ Replicate a National Park Service map of Rocky Mountain National Park and improv
 4. Labels: larger sans-serif type for major features, italics for trails and elevations, contour labels following terrain, no overlaps
 
 ## Results
-- Finished map plus a written report on cartographic improvements for future NPS maps
+- Colour: a brighter but balanced palette separates dense forest, meadows and water, and clearer elevation shading makes terrain readable at a glance
+- Symbols: simplified icons with a subtle shadow stay visible over forest and rugged terrain; solid, dashed and dotted lines separate paved roads, trails and minor paths
+- Labels: hierarchy by type size and style, contour labels following the terrain, and no text over important features
+- Finished map plus a written report recommending these changes for future NPS maps
 
 ## Deliverables
 

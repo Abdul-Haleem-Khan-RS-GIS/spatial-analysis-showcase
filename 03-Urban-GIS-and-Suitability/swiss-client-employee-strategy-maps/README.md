@@ -8,22 +8,25 @@
 *Figure 1. Clients and employees strategic locator map, by postal code*
 
 ## Overview
-Strategy maps for a Swiss cleaning company: client and employee clusters by postal code (clients red, employees blue, circle size by count), and a later postal-code map shaded by client count.
+Strategy maps for a Swiss cleaning company: clients (red) and employees (green) by postal code, with circle size by count, over city population and water bodies, and a later postal-code map shaded by client count.
 
 ## Challenge
 A Swiss cleaning company wanted to see where its clients and staff are, so it could plan service areas and recruitment.
 
 ## Data
 - Client and employee address lists (Excel)
-- Swiss postal-code boundaries and population
+- Swiss postal-code points, district, canton and country boundaries
+- City population (10,019 to 421,878) and water bodies
 
 ## Approach
 1. Geocoded clients and employees and aggregated them by postal code
-2. Showed clients in red and employees in green, with symbol size by count, over population and water bodies
+2. Sized client symbols in five classes (1 to 32 clients per postal code) and employee symbols from 1 to 5
+3. Added city population circles, lakes and administrative boundaries for context
 
 ## Results
-- Clients and staff concentrate around Zurich, with smaller clusters elsewhere in Switzerland
-- The map showed where service areas and recruitment could be optimised
+- Clients concentrate in and around Zurich, with smaller clusters around Lucerne and Bern
+- Employees live mostly in the Zurich area, close to the main client cluster
+- Large cities such as Geneva, Basel and Lausanne show few or no clients on the map
 
 
 *Also delivered to the client (not published here):*

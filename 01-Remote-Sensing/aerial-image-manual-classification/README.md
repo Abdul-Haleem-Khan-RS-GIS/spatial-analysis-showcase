@@ -15,6 +15,7 @@ Classify land cover on a non-georeferenced aerial photo by eye, consistently and
 
 ## Data
 - Aerial image supplied by the client (not georeferenced)
+- Interpretation key built for the job (colour, texture, structure, size, shape, context)
 
 ## Approach
 1. Built an interpretation key for six classes (meadow, agriculture, buildings, roads, parking lots, forest/trees) using colour, texture, structure, size, shape and context
@@ -23,6 +24,7 @@ Classify land cover on a non-georeferenced aerial photo by eye, consistently and
 4. Logged ambiguous polygons (for example road vs parking lot) in a separate table with the reasoning for each decision
 
 ## Results
+- 80 digitised polygons: 65 buildings, 6 meadows, 5 parking lots, 2 agricultural fields, 1 forest/tree area and 1 road
 - Complete land-cover map with attributed polygons delivered as a shapefile
 - Interpretation key and ambiguity table make the classification reproducible
 - Recommended georeferencing the image first and a second-reviewer check for ambiguous areas

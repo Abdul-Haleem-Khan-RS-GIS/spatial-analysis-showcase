@@ -1,6 +1,6 @@
 # Racehorse Training Facility Location Map
 
-**Category:** Cartography & Thematic Mapping &nbsp;·&nbsp; **Location:** Texas and the U.S. Gulf states &nbsp;·&nbsp; **Year:** 2024  
+**Category:** Cartography & Thematic Mapping &nbsp;·&nbsp; **Location:** Texas and Louisiana, USA &nbsp;·&nbsp; **Year:** 2024  
 **Client:** Upwork client, USA  
 **Tools & data:** ArcGIS Pro
 
@@ -14,15 +14,18 @@ Strategic location graphic showing a racehorse training facility relative to the
 Create a marketing graphic that shows at a glance how close a racehorse training property is to the region's top race tracks.
 
 ## Data
-- Property location and race-track locations supplied by the client
-- U.S. state boundaries
+- Property location supplied by the client
+- Five race tracks: Sam Houston Race Park, Delta Downs, Louisiana Downs, Evangeline Downs and Fair Grounds Race Course
+- U.S. state boundaries for the main map and a national inset
 
 ## Approach
-1. Plotted the property and tracks with distinct symbols
-2. Added leader lines and labels to each track
-3. Exported high-resolution PNG, JPG and PDF
+1. Plotted the property and the five tracks with distinct symbols
+2. Added leader lines, track icons and labels to each track
+3. Added a U.S. inset map highlighting the region, plus a scale bar in kilometres
+4. Exported high-resolution PNG, JPG and PDF
 
 ## Results
+- One graphic shows the property's position relative to all five tracks across Texas and Louisiana
 - High-resolution location graphic (20 MB PNG and 16 MB PDF) ready for marketing
 
 

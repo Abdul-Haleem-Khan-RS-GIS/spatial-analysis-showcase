@@ -15,15 +15,19 @@ The client needed Riyadh's postal-code boundaries as a clean dataset that works 
 
 ## Data
 - Postal-code reference boundaries for Riyadh
+- District names for every zone
 - Satellite basemap for checking
 
 ## Approach
-1. Delineated the postal-code zones in QGIS and ArcGIS Pro
-2. Checked attributes and topology so neighbouring zones share edges
-3. Exported to GeoJSON (and shapefile) for web and GIS use
+1. Delineated the postal-code zones in QGIS and ArcGIS Pro, in WGS 84 / UTM zone 38N (EPSG:32638)
+2. Attached the district name (Dist_Name) and postal code (Zip_Code) to every polygon
+3. Checked attributes and topology so neighbouring zones share edges, with no gaps or overlaps
+4. Exported to GeoJSON and shapefile for web and GIS use
 
 ## Results
-- Postal-code polygon layer for the whole city, delivered as GeoJSON and shapefile
+- 996 postal-code polygons carrying 988 distinct postal codes across 177 named districts
+- The layer covers about 3,760 km² of Riyadh, from roughly 46.3°E to 47.1°E and 24.3°N to 25.2°N
+- Delivered as GeoJSON and shapefile, ready for web maps and GIS platforms
 
 ## Deliverables
 

@@ -28,7 +28,7 @@ Final maps, reports and data from planning consultancy work in Pakistan and free
 | [Reference Mapping with Text, Icons & Labels](02-Cartography/reference-mapping-text-icons/) | United States (national, Arizona and Colorado map panels) | 2025 | ArcGIS Pro |
 | [Riyadh Postal Code Boundaries (GeoJSON)](02-Cartography/riyadh-postcode-map/) | Riyadh, Saudi Arabia | 2025 | QGIS, ArcGIS Pro, GeoJSON |
 | [Zurich Population Density, Ages 25–45](02-Cartography/zurich-population-density/) | Zurich, Switzerland | 2023 | ArcGIS |
-| [Racehorse Training Facility Location Map](02-Cartography/racehorse-facility-location-map/) | Texas and the U.S. Gulf states | 2024 | ArcGIS Pro |
+| [Racehorse Training Facility Location Map](02-Cartography/racehorse-facility-location-map/) | Texas and Louisiana, USA | 2024 | ArcGIS Pro |
 | [Land Use & School Locator Map: Wonosobo, Indonesia](02-Cartography/indonesia-landuse-school-locator/) | Wonosobo, Indonesia | 2025 | ArcGIS Pro |
 | [New Mexico Cities Snow-Load & Elevation KMZ](02-Cartography/new-mexico-snow-load-kmz/) | New Mexico, USA | 2026 | QGIS, Google Earth, KML/KMZ |
 | [Sales Territory Map from ZIP Codes](02-Cartography/zip-code-territory-map/) | Cuyahoga County (Cleveland area), Ohio, USA | 2024 | ArcGIS Pro, Census ZCTA, OpenStreetMap |
@@ -44,20 +44,20 @@ Final maps, reports and data from planning consultancy work in Pakistan and free
 | [Daycare Centres of Zurich](03-Urban-GIS-and-Suitability/zurich-daycare-centres/) | Zurich, Switzerland | 2023 | ArcGIS |
 | [Client & Employee Strategy Maps: Switzerland](03-Urban-GIS-and-Suitability/swiss-client-employee-strategy-maps/) | Switzerland | 2023–2025 | ArcGIS, QGIS |
 | [Residential Parcels by Fire Hazard Zone: Riverside](03-Urban-GIS-and-Suitability/riverside-fire-hazard-parcels/) | Riverside, California, USA | 2024 | ArcGIS Pro |
-| [Suitable Locations for a Summer Campground](03-Urban-GIS-and-Suitability/summer-campground-suitability/) | Study area, USA | 2024 | ArcGIS Pro, DEM, Weighted overlay |
+| [Suitable Locations for a Summer Campground](03-Urban-GIS-and-Suitability/summer-campground-suitability/) | Eastern San Diego County, California, USA | 2024 | ArcGIS Pro, DEM, Weighted overlay |
 | [Real-Estate Parcel Screening: St. Louis (Interactive Web Map)](03-Urban-GIS-and-Suitability/st-louis-parcel-criteria-map/) | St. Louis, Missouri, USA | 2025 | QGIS, qgis2web, Leaflet |
 
 ## Network Analysis & Routing
 
 | Project | Where | Year | Tools |
 |---|---|---|---|
-| [Bike Route Network Analysis](04-Network-Analysis/bike-route-network-analysis/) | Mountainous region | 2024 | ArcGIS Pro, Network Analyst, OpenStreetMap |
+| [Bike Route Network Analysis](04-Network-Analysis/bike-route-network-analysis/) | Gaisberg, Salzburg, Austria | 2024 | ArcGIS Pro, Network Analyst, OpenStreetMap |
 
 ## GIS Data Engineering & CAD
 
 | Project | Where | Year | Tools |
 |---|---|---|---|
-| [Solar Power Plant GIS Dataset](05-GIS-Data-Engineering-and-CAD/solar-plant-gis-dataset/) | Solar power plant site | 2026 | ArcGIS Pro, AutoCAD, Shapefile |
+| [Solar Power Plant GIS Dataset](05-GIS-Data-Engineering-and-CAD/solar-plant-gis-dataset/) | Solar power plant site, Saudi Arabia | 2026 | ArcGIS Pro, AutoCAD, Shapefile |
 | [1-ft Contours to CAD (DWG + SHP)](05-GIS-Data-Engineering-and-CAD/nc-contours-to-cad/) | Cherokee County, North Carolina, USA | 2026 | ArcGIS Pro, Export to CAD, NC OneMap |
 | [Vectorised Contours from Scanned Maps (KMZ)](05-GIS-Data-Engineering-and-CAD/scanned-contours-to-kmz/) | USA | 2026 | ArcGIS Pro, Georeferencing, KMZ |
 | [County Dataset Integration: Scott & Dakota, MN](05-GIS-Data-Engineering-and-CAD/minnesota-county-data-merge/) | Scott and Dakota Counties, Minnesota, USA | 2024 | ArcGIS Pro |
@@ -73,7 +73,7 @@ Final maps, reports and data from planning consultancy work in Pakistan and free
 | [Rawd Al-Jawa Municipal Investment Site: AutoCAD Regulatory Plan](06-Master-Planning-and-Municipal-GIS/rawd-al-jawa-investment-site-plan/) | Rawd Al-Jawa, Uyun Al Jawa, Al-Qassim, Saudi Arabia | 2024–2026 | AutoCAD 2023, Scanned-map digitising, Google Earth |
 | [Sahiwal Land-Use City Comprehensive Plan (2022–2042)](06-Master-Planning-and-Municipal-GIS/sahiwal-city-comprehensive-plan/) | Municipal Committee Sahiwal, Punjab, Pakistan | 2022–2024 | ArcGIS, Land-use survey, Suitability analysis |
 | [Sialkot Land-Use City Comprehensive Plan](06-Master-Planning-and-Municipal-GIS/sialkot-city-comprehensive-plan/) | Sialkot, Punjab, Pakistan | 2022–2024 | ArcGIS, Land-use survey |
-| [Batswat Habitat Planning: Terrain Assessment](06-Master-Planning-and-Municipal-GIS/batswat-terrain-assessment/) | Batswat, Pakistan | 2022–2024 | ArcGIS, DEM, Slope & contour analysis |
+| [Batswat Habitat Planning: Terrain Assessment](06-Master-Planning-and-Municipal-GIS/batswat-terrain-assessment/) | Batswat, Ishkoman valley, Ghizer, Gilgit-Baltistan, Pakistan | 2022–2024 | ArcGIS, DEM, Slope & contour analysis |
 
 ---
 Practice studies are anonymised: course and client details are omitted.
