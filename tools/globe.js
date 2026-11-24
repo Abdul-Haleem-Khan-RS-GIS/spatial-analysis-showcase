@@ -28,6 +28,8 @@
 
   function init() {
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var touch = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+    var small = window.innerWidth < 700;
     var map = new maplibregl.Map({
       container: 'globe-map',
       style: {
@@ -50,7 +52,11 @@
           { id: 'pin', type: 'circle', source: 'pins', paint: { 'circle-radius': ['+', 5, ['get', 'n']], 'circle-color': '#f5b700', 'circle-stroke-color': '#16181a', 'circle-stroke-width': 1.5 } }
         ]
       },
-      center: [45, 25], zoom: 1.6, attributionControl: { compact: true }, maxPitch: 80
+      center: [45, 25], zoom: small ? 0.9 : 1.6, attributionControl: { compact: true }, maxPitch: 80,
+      // phones: one finger scrolls the page, two fingers move the globe
+      cooperativeGestures: touch,
+      pixelRatio: Math.min(window.devicePixelRatio || 1, touch ? 1.5 : 2),
+      fadeDuration: touch ? 0 : 300
     });
     map.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), 'top-right');
     map.scrollZoom.disable();
@@ -58,14 +64,21 @@
 
     map.on('load', function () {
       setTimeout(function(){ var a = box.querySelector('.maplibregl-ctrl-attrib'); if (a) { a.classList.remove('maplibregl-compact-show'); a.removeAttribute('open'); } }, 800);
-      map.setTerrain({ source: 'dem', exaggeration: 1.4 });
+      if (!touch) map.setTerrain({ source: 'dem', exaggeration: 1.4 });
       box.classList.add('globe-ready');
     });
 
     // gentle spin until the visitor interacts
-    var spinning = !reduce;
+    var spinning = !reduce, visible = true;
+    // pause the spin while the globe is off screen so scrolling stays smooth
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) {
+        visible = es[es.length - 1].isIntersecting;
+        if (visible) spin(); else map.stop();
+      }).observe(box);
+    }
     function spin() {
-      if (!spinning || map.getZoom() > 3) return;
+      if (!spinning || !visible || map.getZoom() > 3) return;
       var c = map.getCenter(); c.lng -= 6;
       map.easeTo({ center: c, duration: 1000, easing: function (t) { return t; } });
     }
@@ -87,6 +100,7 @@
       b.addEventListener('click', function () {
         spinning = false;
         var t = data.tours[+b.dataset.tour];
+        if (touch && !map.getTerrain()) map.setTerrain({ source: 'dem', exaggeration: 1.4 });
         document.querySelectorAll('[data-tour]').forEach(function (x) { x.setAttribute('aria-pressed', x === b); });
         map.flyTo({ center: t.c, zoom: t.z, pitch: t.p, bearing: t.b, duration: reduce ? 0 : 6000, essential: true });
         var link = document.getElementById('globe-link');
@@ -97,7 +111,8 @@
     if (home) home.addEventListener('click', function () {
       document.querySelectorAll('[data-tour]').forEach(function (x) { x.setAttribute('aria-pressed', false); });
       document.getElementById('globe-link').hidden = true;
-      map.flyTo({ center: [45, 25], zoom: 1.6, pitch: 0, bearing: 0, duration: reduce ? 0 : 3000 });
+      if (touch && map.getTerrain()) map.setTerrain(null);
+      map.flyTo({ center: [45, 25], zoom: small ? 0.9 : 1.6, pitch: 0, bearing: 0, duration: reduce ? 0 : 3000 });
     });
   }
 })();

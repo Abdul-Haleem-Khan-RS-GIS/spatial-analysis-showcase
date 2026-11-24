@@ -125,14 +125,14 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .tours button:hover,.tours button[aria-pressed=true]{background:#f5b700;color:#16181a;border-color:#f5b700}
 .globe{position:relative;height:min(72vh,640px);border:1px solid #2a3739;background:radial-gradient(circle at 50% 45%,#16302f,#0b1112 70%)}#globe-map{position:absolute;inset:0}
 .globe-msg{display:none;position:absolute;inset:0;margin:0;align-items:center;justify-content:center;text-align:center;padding:24px}.globe-off .globe-msg{display:flex}.globe-msg a{color:#f5b700}
-.globe-foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:12px}.globe-foot a{color:#f5b700}
+.g-hint-touch{display:none}@media(pointer:coarse){.g-hint-desk{display:none}.g-hint-touch{display:inline}}.globe-foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:12px}.globe-foot a{color:#f5b700}
 .gpop{font:14px/1.45 Inter,sans-serif;color:#16181a}.gpop .mono{color:#5b6668;font-size:11px}.gpop ul{margin:6px 0 0;padding-left:16px}.gpop a{color:#0f5257}
 .maplibregl-popup-content{border-radius:0;padding:12px 14px}
 .form-status{margin:14px 0 0;padding:12px 14px;font-size:15px;line-height:1.5;border-left:3px solid var(--accent);background:#fff}.form-status.ok{border-color:#1a9641}.form-status.warn{border-color:#e08a00}.form-status a{color:var(--accent)}.form-status a.btn{color:#fff;text-decoration:none}
 .side ul{padding-left:18px;margin:8px 0 0;font-size:14px;color:var(--muted)}
 .next{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0 64px}
 .next a{text-decoration:none}
-@media(max-width:900px){.sheet.portrait{margin:0 auto;max-width:340px}.mapfull{padding:6px}.mapfull img{width:100%;max-height:none;height:auto}.hero .grid,.two,.contact,.pbody{grid-template-columns:1fr}.cards,.skills,.reviews{grid-template-columns:1fr 1fr}.facts{grid-template-columns:1fr 1fr}nav a:not(.btn){display:none}}
+@media(max-width:900px){header.nav{backdrop-filter:none;background:#f6f5f1}.globe{height:min(52vh,400px)}.globe-sec{padding:56px 0}.sheet.portrait{margin:0 auto;max-width:340px}.mapfull{padding:6px}.mapfull img{width:100%;max-height:none;height:auto}.hero .grid,.two,.contact,.pbody{grid-template-columns:1fr}.cards,.skills,.reviews{grid-template-columns:1fr 1fr}.facts{grid-template-columns:1fr 1fr}nav a:not(.btn){display:none}}
 @media(max-width:600px){.morelist th:nth-child(2),.morelist td:nth-child(2),.morelist th:nth-child(3),.morelist td:nth-child(3){display:none}.ctas .btn{flex:1;text-align:center}.facts{grid-template-columns:1fr}.facts div{border-right:0;border-bottom:1px solid var(--line)}.cards,.skills,.reviews{grid-template-columns:1fr}.stats{gap:20px}h2{font-size:30px}}
 """
 
@@ -142,7 +142,7 @@ def head(title, desc, ogimg, depth=""):
 <meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:image" content="{URL}{ogimg}"><meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{depth}assets/site.css?v=5"></head><body>
+<link rel="stylesheet" href="{depth}assets/site.css?v=6"></head><body>
 <header class="nav"><div class="wrap"><a class="logo" href="{depth}index.html">Abdul Haleem <span>Khan</span></a>
 <nav><a href="{depth}index.html#map">Map</a><a href="{depth}index.html#planning">Master plans</a><a href="{depth}index.html#work">Work</a><a href="{depth}index.html#experience">Experience</a><a href="{depth}index.html#education">Education</a><a href="{depth}index.html#skills">Skills</a><a href="{depth}index.html#testimonials">Testimonials</a><a class="btn" href="{depth}index.html#contact">Contact</a></nav></div></header>"""
 
@@ -152,7 +152,7 @@ FOOT = f"""<footer><div class="wrap"><span>© 2026 Abdul Haleem Khan · GIS Engi
 def card(p, depth=""):
     b, t, _ = p["img"][0]
     return f"""<a class="card" href="{depth}projects/{p['slug']}.html" data-cat="{p['cat']}">
-<div class="ph"><img src="{depth}{t}" alt="{E(p['title'])} map" loading="lazy"></div>
+<div class="ph"><img src="{depth}{t}" alt="{E(p['title'])} map" loading="lazy" decoding="async"></div>
 <div class="bd"><span class="mono">{E(CATS[p['cat']][1])} · {E(p['year'])}</span><h3>{E(p['title'])}</h3><p>{E(p['where'])}</p>
 <div class="tags">{''.join(f'<span>{E(x)}</span>' for x in p['tools'][:3])}</div></div></a>"""
 
@@ -212,7 +212,7 @@ index = head("Abdul Haleem Khan | GIS Engineer & Remote Sensing Specialist",
 <p class="lead" style="max-width:760px">{N_PLACES} project locations in {N_COUNTRIES} countries on a 3D globe built with MapLibre GL, Sentinel-2 cloud-free imagery and real terrain elevation. Click a pin to open its case study, or fly into one of the landscapes below in 3D.</p>
 <div class="tours">{TOUR_BTNS}<button type="button" id="globe-home">↺ Whole globe</button></div>
 <div id="globe" class="globe"><div id="globe-map"></div><p class="globe-msg">The 3D globe needs WebGL. <a href="#work">Browse the projects instead →</a></p></div>
-<p class="globe-foot"><a id="globe-link" class="mono" hidden href="#"></a><span class="mono">Drag to rotate · right-drag or Ctrl+drag to tilt · click the map, then scroll to zoom</span></p>
+<p class="globe-foot"><a id="globe-link" class="mono" hidden href="#"></a><span class="mono g-hint-desk">Drag to rotate · right-drag or Ctrl+drag to tilt · click the map, then scroll to zoom</span><span class="mono g-hint-touch">Use two fingers to move, zoom and tilt the globe</span></p>
 </div></section>
 <script type="application/json" id="globe-data">{GLOBE_DATA}</script>
 <section id="planning"><div class="wrap">
@@ -280,7 +280,7 @@ index = head("Abdul Haleem Khan | GIS Engineer & Remote Sensing Specialist",
 const bs=document.querySelectorAll('.filters button'),cs=document.querySelectorAll('#cards .card');
 bs.forEach(b=>b.addEventListener('click',()=>{{bs.forEach(x=>x.setAttribute('aria-pressed',x===b));const f=b.dataset.f;cs.forEach(c=>c.style.display=(f==='all'||c.dataset.cat===f)?'':'none')}}));
 </script>
-<script src="assets/globe.js?v=3" defer></script>
+<script src="assets/globe.js?v=4" defer></script>
 <script src="assets/contact.js?v=3" defer></script>
 <script type="application/ld+json">{json.dumps({"@context":"https://schema.org","@type":"Person","name":"Abdul Haleem Khan","jobTitle":"GIS Engineer & Remote Sensing Specialist","url":URL,"email":"mailto:"+EMAIL,"address":{"@type":"PostalAddress","addressLocality":"Lahore","addressCountry":"PK"},"sameAs":[LINKEDIN,GITHUB,UPWORK]})}</script>
 </body></html>"""
@@ -299,7 +299,7 @@ def cap(p, k):
 pages = pro + shown + [p for p in more if p.get('challenge')]
 for i, p in enumerate(pages):
     nxt = pages[(i + 1) % len(pages)]
-    imgs = "".join(f'<figure class="mapfull"><a href="../{b}"><img src="../{b}" alt="{E(cap(p,k))}" width="{w}" height="{h}"></a><figcaption><span class="mono">Fig. {k}</span> {E(cap(p,k))}</figcaption></figure>'
+    imgs = "".join(f'<figure class="mapfull"><a href="../{b}"><img src="../{b}" srcset="../{t} 900w, ../{b} {w}w" sizes="(max-width: 900px) 100vw, 1100px" alt="{E(cap(p,k))}" width="{w}" height="{h}" decoding="async"{'' if k == 1 else ' loading="lazy"'}></a><figcaption><span class="mono">Fig. {k}</span> {E(cap(p,k))}</figcaption></figure>'
                    for k, (b, t, (w, h)) in enumerate(p["img"], 1))
     from projects import split_files
     _pub, _unpub = split_files(p, SHOW)
