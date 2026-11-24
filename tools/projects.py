@@ -248,12 +248,6 @@ add(slug="nc-contours-to-cad", cat="data", featured=True,
     result="Validated SHP + DWG package with documented coordinate system. Client review: “Abdul delivered exactly what we needed with a complex GIS to CAD conversion.”",
     method=["NC OneMap 1-ft contour FGDB", "Clip to AOI", "Export to CAD", "Verify in AutoCAD"],
     files=[], note="Large files delivered via Google Drive.")
-add(slug="scanned-contours-to-kmz", cat="data",
-    title="Vectorised Contours from Scanned Maps (KMZ)", year="2026", client="Upwork client (5.0★)",
-    where="USA", tools=["ArcGIS Pro", "Georeferencing", "KMZ"],
-    summary="Georeferenced scanned maps, vectorised the contours and delivered attributed KMZ polygons.",
-    result="Attributed contour polygons in KMZ.",
-    method=["Georeference scans", "Vectorise contours", "Build polygons + attributes", "KMZ export"], files=[])
 add(slug="minnesota-county-data-merge", cat="data",
     title="County Dataset Integration: Scott & Dakota, MN", year="2024", client="Upwork client, USA",
     where="Scott and Dakota Counties, Minnesota, USA", tools=["ArcGIS Pro"],

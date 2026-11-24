@@ -310,16 +310,6 @@ D["solar-plant-gis-dataset"] = dict(
               "Client review: “He did very well Job delivered his project on time.”"],
     captions=["Project boundary, PV blocks, trenches, MV cables, power stations and substation (preview rendered from the delivered shapefiles)"])
 
-D["nc-contours-to-cad"] = dict(
-    challenge="A fixed-scope, pass/fail task: clip North Carolina 1-ft contours to a one-mile area and deliver working DWG and shapefile versions, or no payment.",
-    data=["NC OneMap 1-ft raster contours (from 3-ft DEMs), file geodatabase", "One-mile area of interest in Cherokee County, NC, reaching the Tennessee state line"],
-    method=["Downloaded the contour FGDB and clipped it to the AOI (adjusted to the client's marked area)",
-            "Exported to shapefile and to DWG with ArcGIS Export to CAD",
-            "Documented the coordinate system and software in a text note and checked that both files open"],
-    findings=["Delivered SHP + DWG + projection note; accepted and paid",
-              "Noted that the dataset covers North Carolina only, so the part of the AOI in Tennessee has no contours",
-              "Client review: “Abdul delivered exactly what we needed with a complex GIS to CAD conversion.”"])
-
 D["minnesota-county-data-merge"] = dict(
     challenge="Combine several county datasets into one consistent parcel table per county, with coordinates and assessed values.",
     data=["Scott County and Dakota County parcel, address and assessment data"],
@@ -646,25 +636,27 @@ D["indonesia-landuse-school-locator"].update(
               "Road density follows the same pattern: dense on Java and Sumatra, sparse in Kalimantan and Papua",
               "Two layouts delivered: a national land-use and school locator map and a location map of Indonesia"])
 
-
-D["scanned-contours-to-kmz"] = dict(
-    title="1-ft Contours to SHP, KMZ & CAD: Cherokee County, NC",
+D["nc-contours-to-cad"] = dict(
+    title="1-ft Contours to CAD, SHP & KMZ: Cherokee County, NC",
     where="Cherokee County, North Carolina, USA",
     tools=["ArcMap", "AutoCAD 2023", "Export to CAD", "Shapefile", "KMZ", "DWG"],
-    summary="Clipped 1-ft contours to a client's area of interest in Cherokee County, North Carolina, and delivered them as an attributed shapefile, a KMZ for Google Earth and an AutoCAD file.",
-    challenge="The client needed detailed 1-ft contours for a site near the Hiwassee River and Apalachia Lake, in formats they could use in GIS, in Google Earth and in AutoCAD. The full delivery came to more than 700 MB.",
-    data=["1-ft contour data for Cherokee County, North Carolina (vector contours and a raster contour layer)",
+    summary="Clipped NC OneMap 1-ft contours to a one-mile area of interest in Cherokee County, North Carolina, and delivered them as an AutoCAD DWG, an attributed shapefile and a KMZ for Google Earth.",
+    challenge="A fixed-scope, pass/fail task for MBH Inc.: clip North Carolina 1-ft contours to a one-mile area near the Hiwassee River and Apalachia Lake and deliver working files for GIS, Google Earth and AutoCAD, or no payment. The full delivery came to more than 700 MB.",
+    data=["NC OneMap 1-ft contours (from 3-ft DEMs) for Cherokee County, North Carolina, as vector contours and a raster contour layer",
           "Client's centre point, used to build a one-mile buffer and the area-of-interest box",
           "Esri World Street Map basemap for checking"],
     method=["Plotted the client's centre point and built a one-mile buffer and an area-of-interest box around it",
             "Clipped the contours to the AOI, keeping the elevation (Contour) and index-contour (Index) attributes",
             "Checked contour continuity and elevation labels at large scale",
             "Exported the clipped contours as a shapefile, as a KMZ for Google Earth and as an AutoCAD file with Export to CAD",
-            "Checked the DWG in AutoCAD 2023: contours sit on an AOI Contours layer as polylines carrying their elevation (for example 1,278 ft)"],
+            "Checked the DWG in AutoCAD 2023: contours sit on an AOI Contours layer as polylines carrying their elevation (for example 1,278 ft)",
+            "Documented the coordinate system and software in a text note"],
     findings=["9,986 contour lines in the area of interest at a 1-ft interval, with every fifth foot flagged as an index contour",
               "Elevations run from about 1,277 ft near the lake shore to over 1,650 ft on the ridges",
-              "Delivered as SHP, KMZ and CAD, more than 700 MB in total"],
-    result="Attributed 1-ft contour shapefile, KMZ and AutoCAD file (9,986 lines) for the client's area of interest, more than 700 MB in total.",
+              "Delivered as CAD (DWG), SHP and KMZ with a projection note, more than 700 MB in total; accepted and paid",
+              "Noted that the dataset covers North Carolina only, so the part of the AOI in Tennessee has no contours",
+              "Client review: “Abdul delivered exactly what we needed with a complex GIS to CAD conversion.”"],
+    result="AutoCAD DWG, shapefile and KMZ of 9,986 attributed 1-ft contour lines for the client's area of interest, more than 700 MB in total. Client review: “Abdul delivered exactly what we needed with a complex GIS to CAD conversion.”",
     note="The delivered files are not published here because the package is more than 700 MB.",
     captions=["Area of interest (red box) over the Hiwassee River and Apalachia Lake, Cherokee County, NC",
               "Clipped 1-ft contours with elevation labels and the contour attribute table (9,986 features)",
