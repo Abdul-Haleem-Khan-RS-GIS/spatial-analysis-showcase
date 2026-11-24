@@ -132,7 +132,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .side ul{padding-left:18px;margin:8px 0 0;font-size:14px;color:var(--muted)}
 .next{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0 64px}
 .next a{text-decoration:none}
-@media(max-width:900px){.hero .grid,.two,.contact,.pbody{grid-template-columns:1fr}.cards,.skills,.reviews{grid-template-columns:1fr 1fr}.facts{grid-template-columns:1fr 1fr}nav a:not(.btn){display:none}}
+@media(max-width:900px){.sheet.portrait{margin:0 auto;max-width:340px}.mapfull{padding:6px}.mapfull img{width:100%;max-height:none;height:auto}.hero .grid,.two,.contact,.pbody{grid-template-columns:1fr}.cards,.skills,.reviews{grid-template-columns:1fr 1fr}.facts{grid-template-columns:1fr 1fr}nav a:not(.btn){display:none}}
 @media(max-width:600px){.morelist th:nth-child(2),.morelist td:nth-child(2),.morelist th:nth-child(3),.morelist td:nth-child(3){display:none}.ctas .btn{flex:1;text-align:center}.facts{grid-template-columns:1fr}.facts div{border-right:0;border-bottom:1px solid var(--line)}.cards,.skills,.reviews{grid-template-columns:1fr}.stats{gap:20px}h2{font-size:30px}}
 """
 
@@ -142,7 +142,7 @@ def head(title, desc, ogimg, depth=""):
 <meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:image" content="{URL}{ogimg}"><meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{depth}assets/site.css?v=3"></head><body>
+<link rel="stylesheet" href="{depth}assets/site.css?v=4"></head><body>
 <header class="nav"><div class="wrap"><a class="logo" href="{depth}index.html">Abdul Haleem <span>Khan</span></a>
 <nav><a href="{depth}index.html#map">Map</a><a href="{depth}index.html#planning">Master plans</a><a href="{depth}index.html#work">Work</a><a href="{depth}index.html#experience">Experience</a><a href="{depth}index.html#education">Education</a><a href="{depth}index.html#skills">Skills</a><a href="{depth}index.html#testimonials">Testimonials</a><a class="btn" href="{depth}index.html#contact">Contact</a></nav></div></header>"""
 
