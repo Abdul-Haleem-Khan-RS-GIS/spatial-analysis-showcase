@@ -646,19 +646,23 @@ D["indonesia-landuse-school-locator"].update(
               "Road density follows the same pattern: dense on Java and Sumatra, sparse in Kalimantan and Papua",
               "Two layouts delivered: a national land-use and school locator map and a location map of Indonesia"])
 
-D["nc-contours-to-cad"].update(
-    tools=["ArcMap / ArcGIS Pro", "Export to CAD", "NC OneMap"],
-    data=["NC OneMap 1-ft raster contours (from 3-ft DEMs), file geodatabase",
-          "One-mile area of interest in Cherokee County, NC, around the Hiwassee River and Apalachia Lake, reaching the Tennessee state line",
+
+D["scanned-contours-to-kmz"] = dict(
+    title="1-ft Contours to SHP & KMZ: Cherokee County, NC",
+    where="Cherokee County, North Carolina, USA",
+    tools=["ArcMap", "Contour data", "Shapefile", "KMZ"],
+    summary="Clipped 1-ft contours to a client's area of interest in Cherokee County, North Carolina, and delivered them as an attributed shapefile and a KMZ for Google Earth.",
+    challenge="The client needed detailed 1-ft contours for a site near the Hiwassee River and Apalachia Lake, in formats they could use both in GIS and in Google Earth. The full delivery came to more than 700 MB.",
+    data=["1-ft contour data for Cherokee County, North Carolina (vector contours and a raster contour layer)",
+          "Client's centre point, used to build a one-mile buffer and the area-of-interest box",
           "Esri World Street Map basemap for checking"],
-    method=["Downloaded the contour FGDB and built the AOI box from the client's centre point and a one-mile buffer (adjusted to the client's marked area)",
+    method=["Plotted the client's centre point and built a one-mile buffer and an area-of-interest box around it",
             "Clipped the contours to the AOI, keeping the elevation (Contour) and index-contour (Index) attributes",
-            "Exported to shapefile and to DWG with Export to CAD",
-            "Checked the labels at large scale, documented the coordinate system (State Plane, US feet) in a text note and confirmed that both files open"],
-    findings=["9,986 contour lines in the clipped area at a 1-ft interval, with every fifth foot flagged as an index contour",
+            "Checked contour continuity and elevation labels at large scale",
+            "Exported the clipped contours as a shapefile and as a KMZ for Google Earth"],
+    findings=["9,986 contour lines in the area of interest at a 1-ft interval, with every fifth foot flagged as an index contour",
               "Elevations run from about 1,277 ft near the lake shore to over 1,650 ft on the ridges",
-              "Delivered SHP + DWG + projection note; accepted and paid",
-              "Noted that the dataset covers North Carolina only, so the part of the AOI in Tennessee has no contours",
-              "Client review: “Abdul delivered exactly what we needed with a complex GIS to CAD conversion.”"],
+              "Delivered as SHP and KMZ, more than 700 MB in total"],
+    result="Attributed 1-ft contour shapefile and KMZ (9,986 lines) for the client's area of interest, more than 700 MB in total.",
     captions=["Area of interest (red box) over the Hiwassee River and Apalachia Lake, Cherokee County, NC",
               "Clipped 1-ft contours with elevation labels and the contour attribute table (9,986 features)"])

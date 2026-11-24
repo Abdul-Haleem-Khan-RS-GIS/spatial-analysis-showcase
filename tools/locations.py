@@ -27,6 +27,7 @@ LOC = {
     "qgis-polygon-point-digitisation": (29.38, -94.92, "Texas City, USA"),
     "minnesota-county-data-merge": (44.70, -93.20, "Scott & Dakota counties, Minnesota, USA"),
     "nc-contours-to-cad": (35.13, -84.06, "Cherokee County, North Carolina, USA"),
+    "scanned-contours-to-kmz": (35.17, -84.0, "Cherokee County, North Carolina, USA"),
     "global-mapper-csv-export-script": (52.6, -1.5, "United Kingdom"),
     "uyun-al-jawa-municipal-gis": (26.50, 43.68, "Uyun Al Jawa, Al-Qassim, Saudi Arabia"),
     "rawd-al-jawa-investment-site-plan": (26.50, 43.68, "Uyun Al Jawa, Al-Qassim, Saudi Arabia"),
