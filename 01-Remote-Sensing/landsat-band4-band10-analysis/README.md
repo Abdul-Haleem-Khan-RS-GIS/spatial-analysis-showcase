@@ -16,6 +16,9 @@
 ## Overview
 Analysed Band 4 (red) and Band 10 (thermal) pixel values to tell apart clouds, water, snow and land-cover types including forest, mountains and slopes.
 
+## Challenge
+Show how visible red (Band 4) and thermal infrared (Band 10) values can be used to tell clouds, water, snow, forest, mountains and slopes apart.
+
 ## Data
 - Landsat 8 scene: Band 4 (visible red) and Band 10 (thermal infrared)
 - 32 sample points in five classes: 3 cloud, 5 forest, 11 lake, 7 mountain and 6 slope

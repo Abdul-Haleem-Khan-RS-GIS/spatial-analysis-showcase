@@ -679,3 +679,6 @@ D["landsat-band4-band10-analysis"] = dict(
     captions=["Band 4 and Band 10 side by side (Landsat 8) with the 32 sample points by class",
               "Total pixel values by land-cover class in Band 4 and Band 10",
               "Band 4 and Band 10 pixel value at each of the 32 sample points"])
+D["landsat-band4-band10-analysis"].update(
+    challenge="Show how visible red (Band 4) and thermal infrared (Band 10) values can be used to tell clouds, water, snow, forest, mountains and slopes apart.",
+    result="Report explaining temperature differences, cloud vs water separation and snow vs cloud discrimination, backed by pixel statistics from 32 sample points.")
