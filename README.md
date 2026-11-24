@@ -69,7 +69,7 @@ Final maps, reports and data from planning consultancy work in Pakistan and free
 
 | Project | Where | Year | Tools |
 |---|---|---|---|
-| [Municipal GIS: Uyun Al Jawa, Saudi Arabia](06-Master-Planning-and-Municipal-GIS/uyun-al-jawa-municipal-gis/) | Uyun Al Jawa, Al-Qassim, Saudi Arabia | Jun 2024 – Jun 2026 | ArcGIS Pro, Geodatabases, GPS field survey |
+| [Municipal GIS: Uyun Al Jawa, Saudi Arabia](06-Master-Planning-and-Municipal-GIS/uyun-al-jawa-municipal-gis/) | Uyun Al Jawa Governorate, Al-Qassim, Saudi Arabia | Jun 2024 – Jun 2026 | ArcMap 10.9, ArcGIS Pro, AutoCAD |
 | [Rawd Al-Jawa Municipal Investment Site: AutoCAD Regulatory Plan](06-Master-Planning-and-Municipal-GIS/rawd-al-jawa-investment-site-plan/) | Rawd Al-Jawa, Uyun Al Jawa, Al-Qassim, Saudi Arabia | 2024–2026 | AutoCAD 2023, Scanned-map digitising, Google Earth |
 | [Sahiwal Land-Use City Comprehensive Plan (2022–2042)](06-Master-Planning-and-Municipal-GIS/sahiwal-city-comprehensive-plan/) | Municipal Committee Sahiwal, Punjab, Pakistan | 2022–2024 | ArcGIS, Land-use survey, Suitability analysis |
 | [Sialkot Land-Use City Comprehensive Plan](06-Master-Planning-and-Municipal-GIS/sialkot-city-comprehensive-plan/) | Sialkot, Punjab, Pakistan | 2022–2024 | ArcGIS, Land-use survey |

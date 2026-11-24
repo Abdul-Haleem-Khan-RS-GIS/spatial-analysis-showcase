@@ -286,11 +286,12 @@ add(slug="global-mapper-csv-export-script", cat="data",
 # ---------------- 06 Master plans & municipal GIS ----------------
 add(slug="uyun-al-jawa-municipal-gis", cat="planning", featured=True, pro=True,
     title="Municipal GIS: Uyun Al Jawa, Saudi Arabia", year="Jun 2024 – Jun 2026", client="Municipality of Uyun Al Jawa, Al-Qassim (GIS Engineer)",
-    where="Uyun Al Jawa, Al-Qassim, Saudi Arabia", tools=["ArcGIS Pro", "Geodatabases", "GPS field survey", "AutoCAD"],
-    summary="Two years as the municipality's GIS Engineer, running its spatial databases for urban planning and infrastructure and producing the maps behind municipal decisions.",
-    result="Up-to-date municipal geodatabases, planning and infrastructure maps, GIS data shared across departments, and GIS training delivered to World Bank officials.",
+    where="Uyun Al Jawa Governorate, Al-Qassim, Saudi Arabia", tools=["ArcMap 10.9", "ArcGIS Pro", "AutoCAD", "Geodatabases", "GPS field survey"],
+    summary="Two years as the municipality's GIS Engineer: the official Municipal Lands Plans Document for the governorate, the map of areas reserved for municipal investments, subdivision plans in AutoCAD, and the spatial databases behind municipal planning decisions.",
+    result="Approved municipal maps (land use, municipal investment lands, urban boundaries, road network), an inventory map of reserved investment areas, AutoCAD subdivision plans and maintained municipal geodatabases; GIS training delivered to World Bank officials.",
     method=["Maintain municipal geodatabases (planning, parcels, infrastructure)", "Coordinate GPS field data collection", "Spatial analysis and map production for planning and services", "Integrate GIS data across departments; staff and World Bank training"],
-    files=[], note="See also the Rawd Al-Jawa investment site plan, drafted in AutoCAD for the municipality.")
+    files=["Uyun Al Jawa - Municipal Lands Plans Document.pdf", "Uyun Al Jawa - Areas Reserved for Municipal Investments (58).pdf", "Plan 3045 - subdivision plan (AutoCAD).dwg"],
+    note="See also the Rawd Al-Jawa investment site plan, drafted in AutoCAD for the municipality.")
 add(slug="rawd-al-jawa-investment-site-plan", cat="planning", featured=True, pro=True,
     title="Rawd Al-Jawa Municipal Investment Site: AutoCAD Regulatory Plan", year="2024–2026",
     client="Municipality of Uyun Al Jawa · Al-Qassim Region Municipality (Amanah)",
