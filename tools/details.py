@@ -233,6 +233,7 @@ D["atlanta-green-space-suitability"] = dict(
               "Underserved high-density areas without green-space access", "Suitable parcels for new green space by priority"])
 
 D["umluj-flood-risk-mcda"] = dict(
+    links=[("See the AHP extension of this study", "umluj-flood-susceptibility-ahp.html")],
     challenge="Sadeem International needed to know where flooding is most likely around Umluj, on Saudi Arabia's Red Sea coast, to decide where to install flood sensors.",
     data=["Elevation and terrain derivatives for the Umluj area", "Drainage network", "Study-area (AOI) boundary agreed with the client"],
     method=["Defined and compared study-area boundaries with the client",
@@ -421,3 +422,26 @@ D["gee-dixie-fire-lst-ndvi"] = dict(
               "Summer means inside the burn perimeter vs the unburned 5 km ring, 2019, 2020 and 2022",
               "Vegetation change (NDVI), summer 2022 minus summer 2020",
               "Land surface temperature in the first summer after the fire (2022)"])
+
+D["umluj-flood-susceptibility-ahp"] = dict(
+    challenge="My original Umluj flood-risk map, delivered to Sadeem International, combined flood factors in a weighted overlay. Weights chosen by judgement are hard to defend, so I rebuilt the analysis with the Analytic Hierarchy Process (AHP). It gives every weight a documented pairwise comparison and a consistency check, and the whole model runs from open global data that anyone can reproduce.",
+    data=["Study area: the five HydroSHEDS level-8 basins draining to the coast at and around Umluj (1,999 km²); the original client AOI file was not delivered, so a watershed boundary is used",
+          "Copernicus GLO-30 DEM (30 m): elevation and slope",
+          "MERIT Hydro (90 m): HAND (height above nearest drainage) and upstream area; channels draining at least 5 km²",
+          "ESA WorldCover 2021 (10 m): land cover",
+          "Sentinel-2 2023 composite as the map background"],
+    method=["Delineated the study area from HydroSHEDS level-8 basins, so it follows real catchments rather than an arbitrary box",
+            "Derived five flood factors: HAND, distance to drainage, slope, elevation and land cover",
+            "Reclassified each factor to a 1–5 susceptibility score with breaks set from its distribution in the study area (for example HAND under 3 m = 5, over 35 m = 1)",
+            "Built the AHP pairwise comparison matrix on Saaty's 1–9 scale and derived the weights: HAND 43.4%, distance to drainage 27.1%, slope 17.1%, elevation 7.5%, land cover 4.8%",
+            "Checked consistency: λmax 5.079, CI 0.020, CR 0.018, well below the 0.10 limit",
+            "Combined the factors in a weighted overlay and classified the index into five classes, from very low to very high",
+            "Ran a sensitivity test with equal weights, measured built-up exposure with WorldCover, and set up 30 m GeoTIFF and shapefile exports"],
+    findings=["Very high susceptibility covers 238 km² (12%) and high 436 km² (22%), concentrated along the wadi network and the low coastal plain around Umluj",
+              "68% of built-up land in the catchments (10.9 of 16.1 km²) falls in the high or very high classes",
+              "Sensitivity: AHP and equal weights give the same class for 71% of the area, but AHP identifies about 3× more very-high land (238 vs 75 km²) along the drainage lines, where flash floods actually run",
+              "Consistent with the original client map: wadi channels and the coastal plain are the highest-risk zones, and the elevated eastern ground is lowest"],
+    captions=["Flood susceptibility of the Umluj coastal catchments from the AHP weighted overlay",
+              "The five flood factors with their AHP weights, and the 1–5 reclassification rules",
+              "AHP pairwise comparison matrix with consistency check, and area by susceptibility class (AHP vs equal weights)",
+              "Sensitivity test: AHP weights vs equal weights"])

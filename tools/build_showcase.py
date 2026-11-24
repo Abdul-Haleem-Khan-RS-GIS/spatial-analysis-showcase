@@ -66,7 +66,7 @@ def readme(p):
     if not p.get("findings"):
         L += [p["result"], ""]
     if p.get("links"):
-        L += ["## Links", ""] + [f"- [{a}]({u})" for a,u in p["links"]] + [""]
+        L += ["## Links", ""] + [f"- [{a}]({u if u.startswith('http') else SITE + 'projects/' + u})" for a,u in p["links"]] + [""]
     if p.get("files"):
         L += ["## Deliverables", ""]
         L += [f"- {f}" for f in p["files"]]

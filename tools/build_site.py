@@ -249,7 +249,7 @@ index = head("Abdul Haleem Khan | GIS Engineer & Remote Sensing Specialist",
 <div class="skills">
 <div><h3>GIS software</h3><p>ArcGIS Pro, ArcMap, ArcGIS Online, QGIS, Global Mapper, AutoCAD (GIS–CAD exchange), Google Earth / KMZ</p></div>
 <div><h3>Remote sensing</h3><p>Google Earth Engine, ENVI, ERDAS Imagine, SNAP; Sentinel-2, Landsat 8/9; NDVI, NBR/dNBR, supervised and unsupervised classification, change detection</p></div>
-<div><h3>Analysis</h3><p>Multi-criteria suitability (MCDA), flood risk, kernel density, buffers and service areas, network routing, choropleth classification</p></div>
+<div><h3>Analysis</h3><p>Multi-criteria suitability (MCDA, AHP weighting), flood risk and susceptibility, kernel density, buffers and service areas, network routing, choropleth classification</p></div>
 <div><h3>Data engineering</h3><p>Geodatabases, digitising, georeferencing, topology QA, geocoding, GeoJSON / SHP / DWG / KMZ conversion, PostGIS</p></div>
 <div><h3>Programming</h3><p>Python (ArcPy, GeoPandas, Rasterio, GDAL), GEE JavaScript, Global Mapper scripting</p></div>
 <div><h3>Cartography</h3><p>Print and web map layout, symbology and labelling, terrain and hillshade, thematic and reference maps</p></div>

@@ -21,6 +21,7 @@ LOC = {
     "zip-code-territory-map": (41.45, -81.70, "Cleveland area, Ohio, USA"),
     "atlanta-green-space-suitability": (33.75, -84.39, "Atlanta, USA"),
     "umluj-flood-risk-mcda": (25.02, 37.27, "Umluj, Saudi Arabia"),
+    "umluj-flood-susceptibility-ahp": (25.02, 37.27, "Umluj, Saudi Arabia"),
     "riverside-fire-hazard-parcels": (33.95, -117.40, "Riverside, California, USA"),
     "st-louis-parcel-criteria-map": (38.63, -90.24, "St. Louis, USA"),
     "qgis-polygon-point-digitisation": (29.38, -94.92, "Texas City, USA"),

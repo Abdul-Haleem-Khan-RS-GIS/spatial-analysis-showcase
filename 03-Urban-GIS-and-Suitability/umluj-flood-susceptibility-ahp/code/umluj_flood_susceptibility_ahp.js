@@ -1,5 +1,6 @@
 // Flood Susceptibility Mapping with AHP - Umluj, Saudi Arabia (Red Sea coast)
 // Google Earth Engine Code Editor script by Abdul Haleem Khan
+// Open in the Code Editor: https://code.earthengine.google.com/d24d6fb92d7d0dfc0040e81da7baff01
 //
 // An AHP (Analytic Hierarchy Process) extension of my multi-criteria flood risk work for Umluj.
 // Built entirely from open global data, so anyone with an Earth Engine account can run it.

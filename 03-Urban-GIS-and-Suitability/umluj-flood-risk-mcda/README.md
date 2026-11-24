@@ -29,6 +29,10 @@ Sadeem International needed to know where flooding is most likely around Umluj, 
 - Elevated ground in the north-east is lowest risk
 - The map gave the client a basis for siting flood sensors
 
+## Links
+
+- [See the AHP extension of this study](https://abdul-haleem-khan-rs-gis.github.io/Geospatial_Portfolio/projects/umluj-flood-susceptibility-ahp.html)
+
 ## Deliverables
 
 - Multi-Criteria Flood Risk Map – Umluj City and Surroundings.pdf
