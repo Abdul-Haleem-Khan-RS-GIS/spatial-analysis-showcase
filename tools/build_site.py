@@ -332,3 +332,12 @@ Live site: {URL}
 Static portfolio site (HTML/CSS, no build step) deployed with GitHub Pages. Map images live in `assets/maps/`; each case study page links to its folder in [spatial-analysis-showcase]({GITHUB}/spatial-analysis-showcase), which holds the full maps, write-up and data.
 """)
 print("site:", len(pro), "professional,", len(shown), "case studies,", len(more), "listed")
+
+# ---- redirects for renamed/merged project pages ----
+REDIRECTS = {"scanned-contours-to-kmz": "nc-contours-to-cad"}
+for old, new in REDIRECTS.items():
+    open(os.path.join(SITE, "projects", old + ".html"), "w").write(
+        f'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Moved</title>'
+        f'<meta http-equiv="refresh" content="0; url={new}.html"><link rel="canonical" href="{URL}projects/{new}.html">'
+        f'<meta name="robots" content="noindex"></head><body><p>This project has moved: <a href="{new}.html">open it here</a>.</p>'
+        f'<script>location.replace("{new}.html")</script></body></html>')
