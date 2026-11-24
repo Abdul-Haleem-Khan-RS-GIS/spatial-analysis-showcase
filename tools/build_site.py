@@ -255,7 +255,8 @@ index = head("Abdul Haleem Khan | GIS Engineer & Remote Sensing Specialist",
 <div><h3>Programming</h3><p>Python (ArcPy, GeoPandas, Rasterio, GDAL), GEE JavaScript, Global Mapper scripting</p></div>
 <div><h3>Cartography</h3><p>Print and web map layout, symbology and labelling, terrain and hillshade, thematic and reference maps</p></div>
 </div>
-<div class="reviews">{''.join(f'<blockquote>“{E(q)}”<cite>{E(c)}</cite></blockquote>' for q, c in REVIEWS)}</div>
+<span class="mono" style="display:block;margin-top:64px">Testimonials</span><h2>What clients say</h2>
+<div class="reviews" style="margin-top:24px">{''.join(f'<blockquote>“{E(q)}”<cite>{E(c)}</cite></blockquote>' for q, c in REVIEWS)}</div>
 </div></section>
 
 <section id="contact"><div class="wrap contact">
