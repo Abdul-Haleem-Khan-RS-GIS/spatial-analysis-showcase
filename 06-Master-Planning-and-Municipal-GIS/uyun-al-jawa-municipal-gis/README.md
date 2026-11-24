@@ -43,7 +43,7 @@ Uyun Al Jawa Governorate in Al-Qassim is growing around several settlements, inc
 5. Merged all transferred plans into the municipal geodatabase, keeping topology clean so neighbouring plans meet without overlaps or gaps
 6. Built the Municipal Lands Plans Document from this database (ArcMap 10.9, 2025): land use in 11 classes, municipal lands allocated or reserved for investment, urban and development boundaries and the road hierarchy, with definitions, general rules and the approval block for the municipality, the Al-Qassim Region Municipality and the Ministry of Municipalities and Housing
 7. Mapped the areas reserved for municipal investments (2026) from the same database, classifying each site as new or existing and overlaying the new subdivision plans and the development boundary
-8. Coordinated GPS field collection, shared GIS data across departments and trained staff and World Bank officials
+8. Coordinated GPS field collection, shared GIS data across departments and delivered GIS training to Uyun Al Jawa staff
 
 ## Results
 - A complete CAD-to-GIS workflow: every plan is drawn in AutoCAD, transferred into GIS at its true location, and becomes part of one municipal database

@@ -471,7 +471,7 @@ D["uyun-al-jawa-municipal-gis"] = dict(
             "Merged all transferred plans into the municipal geodatabase, keeping topology clean so neighbouring plans meet without overlaps or gaps",
             "Built the Municipal Lands Plans Document from this database (ArcMap 10.9, 2025): land use in 11 classes, municipal lands allocated or reserved for investment, urban and development boundaries and the road hierarchy, with definitions, general rules and the approval block for the municipality, the Al-Qassim Region Municipality and the Ministry of Municipalities and Housing",
             "Mapped the areas reserved for municipal investments (2026) from the same database, classifying each site as new or existing and overlaying the new subdivision plans and the development boundary",
-            "Coordinated GPS field collection, shared GIS data across departments and trained staff and World Bank officials"],
+            "Coordinated GPS field collection, shared GIS data across departments and delivered GIS training to Uyun Al Jawa staff"],
     findings=["A complete CAD-to-GIS workflow: every plan is drawn in AutoCAD, transferred into GIS at its true location, and becomes part of one municipal database",
               "One approved reference map of land use and municipal land for the whole governorate, built from the transferred plans and signed off up to the Amanah and the Ministry",
               "A clear inventory of the municipality's investment land, separating new reservations from existing ones",

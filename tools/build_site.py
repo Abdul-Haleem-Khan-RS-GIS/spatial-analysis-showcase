@@ -232,7 +232,7 @@ index = head("Abdul Haleem Khan | GIS Engineer & Remote Sensing Specialist",
 <section id="experience"><div class="wrap two">
 <div><span class="mono">Experience</span><h2>Where I've worked</h2>
 <ul class="tl">
-<li><span class="mono">Jun 2024 – Jun 2026 · Saudi Arabia</span><h3>GIS Engineer</h3><div class="org">Municipality of Uyun Al Jawa, Al-Qassim</div><p>Managed municipal spatial databases and urban-planning and infrastructure datasets, produced planning maps, coordinated GPS field data collection, and delivered GIS training to World Bank officials.</p></li>
+<li><span class="mono">Jun 2024 – Jun 2026 · Saudi Arabia</span><h3>GIS Engineer</h3><div class="org">Municipality of Uyun Al Jawa, Al-Qassim</div><p>Managed municipal spatial databases and urban-planning and infrastructure datasets, produced planning maps, coordinated GPS field data collection, and delivered GIS training to Uyun Al Jawa staff.</p></li>
 <li><span class="mono">Apr – May 2024 · Lahore</span><h3>Junior GIS Expert</h3><div class="org">NESPAK</div><p>Collected, managed and processed imagery, survey and vector data for engineering and infrastructure projects.</p></li>
 <li><span class="mono">May 2022 – Mar 2024 · Lahore</span><h3>GIS Analyst</h3><div class="org">Shehersaaz Urban Planning Consultancy</div><p>Spatial analysis and mapping for Land Use Focused City Comprehensive Plans (Sahiwal, Sialkot) and terrain studies for the Aga Khan Agency for Habitat.</p></li>
 <li><span class="mono">2023 – present · Remote</span><h3>Freelance GIS & Remote Sensing</h3><div class="org">Upwork</div><p>33 jobs for clients in the USA, Saudi Arabia, Switzerland and elsewhere: remote sensing, cartography, suitability analysis and GIS-to-CAD data work.</p></li>
