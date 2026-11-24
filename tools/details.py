@@ -424,7 +424,7 @@ D["gee-dixie-fire-lst-ndvi"] = dict(
               "Land surface temperature in the first summer after the fire (2022)"])
 
 D["umluj-flood-susceptibility-ahp"] = dict(
-    challenge="Purpose of the original 2025 project for Sadeem International Company: an environmental assessment to decide where to install flood sensors around Umluj. That map combined flood factors in a weighted overlay. Weights chosen by judgement are hard to defend, so I rebuilt the analysis with the Analytic Hierarchy Process (AHP). It gives every weight a documented pairwise comparison and a consistency check, and the whole model runs from open global data that anyone can reproduce.",
+    challenge="In 2025, Sadeem International Company asked me for an environmental assessment of Umluj city and its surroundings, to decide where to install flood sensors. That meant answering one question: where is flooding most likely? I delivered a multi-criteria flood risk map, rated 5.0★. In any weighted overlay, the weights drive the result, and sensor placement depends on them, so they need to be explained and defended. This extension rebuilds the analysis with the Analytic Hierarchy Process (AHP), so every weight comes from a documented pairwise comparison with a consistency check. The whole model runs in Google Earth Engine from open global data that anyone can reproduce.",
     data=["Study area: the five HydroSHEDS level-8 basins draining to the coast at and around Umluj (1,999 km²); the original client AOI file was not delivered, so a watershed boundary is used",
           "Copernicus GLO-30 DEM (30 m): elevation and slope",
           "MERIT Hydro (90 m): HAND (height above nearest drainage) and upstream area; channels draining at least 5 km²",
