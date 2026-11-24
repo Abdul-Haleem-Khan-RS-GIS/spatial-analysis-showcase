@@ -453,21 +453,24 @@ D["umluj-flood-susceptibility-ahp"] = dict(
               "Sensor sites with coordinates, drainage area, distance to built-up land and channel distance"])
 
 D["uyun-al-jawa-municipal-gis"] = dict(
-    challenge="Uyun Al Jawa Governorate in Al-Qassim is growing around several settlements, including Uyun Al Jawa city, Al-Jawa, Rawd Al-Jawa and Ghaf Al-Jawa. The municipality needed one reliable, approved picture of its land: what each area is zoned for, which land belongs to the municipality and is reserved for investment, where the urban boundary runs, and how new subdivisions fit in. These are the maps planners, the Amanah and the Ministry sign off on.",
+    challenge="Uyun Al Jawa Governorate in Al-Qassim is growing around several settlements, including Uyun Al Jawa city, Al-Jawa, Rawd Al-Jawa and Ghaf Al-Jawa. The municipality needed one reliable, approved picture of its land: what each area is zoned for, which land belongs to the municipality and is reserved for investment, where the urban boundary runs, and how new subdivisions fit in. Most plans existed only as AutoCAD drawings, so they had to be brought accurately into GIS before they could be mapped together. These are the maps planners, the Amanah and the Ministry sign off on.",
     data=["Municipal parcel and subdivision plans (approved plan numbers, e.g. 3045/ق)",
           "Land-use survey and municipal land records (allocated and reserved investment lands)",
           "Urban boundary, development-limit and municipal-services boundaries",
           "Road network by class (30 m secondary and main, 40 m arterial, 100 m ring road)",
           "High-resolution satellite imagery as the map base"],
-    method=["Maintained the municipal geodatabases: parcels, subdivision plans, land use, municipal lands and infrastructure",
-            "Produced the Municipal Lands Plans Document (ArcMap 10.9, 2025): land use in 11 classes, municipal lands allocated or reserved for investment, urban and development boundaries and the road hierarchy, with definitions, general rules and the approval block for the municipality, the Al-Qassim Region Municipality and the Ministry of Municipalities and Housing",
-            "Mapped the areas reserved for municipal investments (2026), classifying each site as new or existing and overlaying the new subdivision plans and the development boundary",
-            "Prepared the final AutoCAD drawing of Government Residential Plan 2505/ق (amended) at 1:5000, a full neighbourhood plan produced by the municipality's Technical Department: plot layout and area tables, mosques, boys' and girls' schools, a health centre, parks and walkways, parking, sports grounds, government sites, street-lighting poles and road cross-sections",
-            "Redrew the approved Government Residential Plan 3045/ق (east of Uyun Al Jawa) as a final AutoCAD sheet at 1:1500: 72 plots, 2 mosques, a boys' school complex, a car park, a roundabout on King Fahd Road, road cross-sections of 15–40 m, plot tables, building regulations and the location map",
-            "Coordinated GPS field collection, shared GIS data across departments and trained staff and World Bank officials"],
-    findings=["One approved reference map of land use and municipal land for the whole governorate, signed off up to the Amanah and the Ministry",
+    method=["Drew municipal subdivision plans in AutoCAD to Ministry drafting standards: plot boundaries, regulation lines, roads with their widths, services and land-use tables (e.g. Government Residential Plans 2505 and 3045)",
+            "Transferred each AutoCAD plan into GIS accurately: cleaned the drawing (closed plot polygons, removed duplicates and gaps), set the correct coordinate system (UTM) and placed it on its true location",
+            "Checked the positional accuracy of each transferred plan against high-resolution satellite imagery, survey points and neighbouring approved plans, adjusting it until plot and road edges matched",
+            "Converted the CAD layers into GIS feature classes (plots, blocks, roads, services, boundaries) and attached attributes: plan number, plot number, land use, area and ownership status",
+            "Merged all transferred plans into the municipal geodatabase, keeping topology clean so neighbouring plans meet without overlaps or gaps",
+            "Built the Municipal Lands Plans Document from this database (ArcMap 10.9, 2025): land use in 11 classes, municipal lands allocated or reserved for investment, urban and development boundaries and the road hierarchy, with definitions, general rules and the approval block for the municipality, the Al-Qassim Region Municipality and the Ministry of Municipalities and Housing",
+            "Mapped the areas reserved for municipal investments (2026) from the same database, classifying each site as new or existing and overlaying the new subdivision plans and the development boundary",
+            "Coordinated GPS field collection, shared GIS data across departments and trained staff and World Bank officials"]
+    findings=["A complete CAD-to-GIS workflow: every plan is drawn in AutoCAD, transferred into GIS at its true location, and becomes part of one municipal database",
+              "One approved reference map of land use and municipal land for the whole governorate, built from the transferred plans and signed off up to the Amanah and the Ministry",
               "A clear inventory of the municipality's investment land, separating new reservations from existing ones",
-              "Government residential plans 2505 and 3045 delivered as final AutoCAD drawings and plots to Ministry drafting standards, ready for the Amanah's approval chain and linked to the GIS through their plan numbers"],
+              "Plans linked to the GIS by plan and plot number, so planners can move between the AutoCAD drawing and the map for any parcel"]
     captions=["Municipal Lands Plans Document, Uyun Al Jawa Governorate: land use, municipal investment lands, urban boundaries and roads (ArcMap, 2025)",
               "Areas reserved for municipal investments, classified as new or existing, with new subdivision plans and the development boundary (ArcMap, 2026)",
               "Government Residential Plan 2505/ق (amended), Uyun Al Jawa, 1:5000: final AutoCAD drawing with plot tables, road cross-sections, notes and title block",
