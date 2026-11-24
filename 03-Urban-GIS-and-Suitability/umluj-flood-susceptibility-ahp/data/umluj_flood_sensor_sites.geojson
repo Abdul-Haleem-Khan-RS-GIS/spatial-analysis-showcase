@@ -1,0 +1,178 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     37.2294,
+     25.2023
+    ]
+   },
+   "properties": {
+    "id": "T1",
+    "role": "town gauge",
+    "drainage_km2": 871,
+    "dist_builtup_m": 300,
+    "elev_m": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     37.2643,
+     25.1158
+    ]
+   },
+   "properties": {
+    "id": "T2",
+    "role": "town gauge",
+    "drainage_km2": 792,
+    "dist_builtup_m": 30,
+    "elev_m": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     37.2851,
+     24.9678
+    ]
+   },
+   "properties": {
+    "id": "T3",
+    "role": "town gauge",
+    "drainage_km2": 350,
+    "dist_builtup_m": 60,
+    "elev_m": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     37.3084,
+     25.1807
+    ]
+   },
+   "properties": {
+    "id": "T4",
+    "role": "town gauge",
+    "drainage_km2": 174,
+    "dist_builtup_m": 1165,
+    "elev_m": 54
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     37.2751,
+     24.9486
+    ]
+   },
+   "properties": {
+    "id": "T5",
+    "role": "town gauge",
+    "drainage_km2": 158,
+    "dist_builtup_m": 108,
+    "elev_m": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     37.2909,
+     24.9411
+    ]
+   },
+   "properties": {
+    "id": "T6",
+    "role": "town gauge",
+    "drainage_km2": 148,
+    "dist_builtup_m": 150,
+    "elev_m": 16
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     37.2593,
+     25.0842
+    ]
+   },
+   "properties": {
+    "id": "T7",
+    "role": "town gauge",
+    "drainage_km2": 127,
+    "dist_builtup_m": 30,
+    "elev_m": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     37.2646,
+     25.2878
+    ]
+   },
+   "properties": {
+    "id": "E1",
+    "role": "early-warning gauge for T1",
+    "drainage_km2": 830,
+    "dist_builtup_m": 124,
+    "elev_m": 70,
+    "channel_km_to_town_gauge": 15.5
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     37.4773,
+     25.1091
+    ]
+   },
+   "properties": {
+    "id": "E2",
+    "role": "early-warning gauge for T2",
+    "drainage_km2": 645,
+    "dist_builtup_m": 2002,
+    "elev_m": 282,
+    "channel_km_to_town_gauge": 33.5
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     37.4482,
+     24.9984
+    ]
+   },
+   "properties": {
+    "id": "E3",
+    "role": "early-warning gauge for T3",
+    "drainage_km2": 273,
+    "dist_builtup_m": 2001,
+    "elev_m": 234,
+    "channel_km_to_town_gauge": 23.9
+   }
+  }
+ ]
+}

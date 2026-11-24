@@ -193,3 +193,43 @@ Export.image.toDrive({
 Export.table.toDrive({
   collection: basins, description: 'Umluj_coastal_catchments', fileFormat: 'SHP'
 });
+
+// ---------------------------------------------------------------------------
+// 10. FLOOD-SENSOR SITING (answers the original question: where should sensors go?)
+// ---------------------------------------------------------------------------
+// Step 1 (Earth Engine): candidate sensor cells = main wadi channels (MERIT upstream area
+//   >= 10 km2 for town gauges, >= 40 km2 for early-warning gauges) in the HIGH or VERY HIGH
+//   AHP class, with distance to the nearest built-up pixel (ESA WorldCover class 50).
+var builtDistance = landcover.eq(50).selfMask().reproject('EPSG:4326', null, 30)
+  .fastDistanceTransform(512).sqrt().multiply(30).unmask(99999).rename('dist_builtup_m');
+var classMax = fsiClass.reduceNeighborhood({reducer: ee.Reducer.max(), kernel: ee.Kernel.square(1)});
+var townCandidates = merit.select('upa').gte(10).and(classMax.gte(4)).and(builtDistance.lte(3000)).selfMask();
+Map.addLayer(townCandidates.clip(aoi), {palette: ['#ffd400']}, 'Town-gauge candidate cells', false);
+//
+// Step 2 (selection, done on the exported candidates):
+//   * Town gauges: in each wadi system, the candidate with the largest drainage area
+//     (the point where the wadi reaches built-up land); sites closer than 1.5 km merged;
+//     wadis draining >= 50 km2 kept -> 7 town gauges, ranked by drainage area.
+//   * Early-warning gauges: on the 3 largest wadis, a candidate at least 2 km from built-up
+//     land whose flow path (traced cell by cell on the MERIT Hydro D8 flow-direction grid)
+//     reaches that wadi's town gauge, with drainage area closest to half of the town gauge's.
+//     Wadi 1 collects most of its water outside the study basins, so its gauge sits where
+//     the channel enters the study area.
+//
+// Result: recommended network (WGS 84). Drainage area from MERIT Hydro, km2.
+var sensors = ee.FeatureCollection([
+  ee.Feature(ee.Geometry.Point([37.2294, 25.2023]), {id: 'T1', role: 'town gauge', drainage_km2: 871}),
+  ee.Feature(ee.Geometry.Point([37.2643, 25.1158]), {id: 'T2', role: 'town gauge', drainage_km2: 792}),
+  ee.Feature(ee.Geometry.Point([37.2851, 24.9678]), {id: 'T3', role: 'town gauge', drainage_km2: 350}),
+  ee.Feature(ee.Geometry.Point([37.3084, 25.1807]), {id: 'T4', role: 'town gauge', drainage_km2: 174}),
+  ee.Feature(ee.Geometry.Point([37.2751, 24.9486]), {id: 'T5', role: 'town gauge', drainage_km2: 158}),
+  ee.Feature(ee.Geometry.Point([37.2909, 24.9411]), {id: 'T6', role: 'town gauge', drainage_km2: 148}),
+  ee.Feature(ee.Geometry.Point([37.2593, 25.0842]), {id: 'T7', role: 'town gauge', drainage_km2: 127}),
+  ee.Feature(ee.Geometry.Point([37.2646, 25.2878]), {id: 'E1', role: 'early warning for T1', drainage_km2: 830, channel_km_to_town_gauge: 15.5}),
+  ee.Feature(ee.Geometry.Point([37.4773, 25.1091]), {id: 'E2', role: 'early warning for T2', drainage_km2: 645, channel_km_to_town_gauge: 33.5}),
+  ee.Feature(ee.Geometry.Point([37.4482, 24.9984]), {id: 'E3', role: 'early warning for T3', drainage_km2: 273, channel_km_to_town_gauge: 23.9})
+]);
+Map.addLayer(sensors.filter(ee.Filter.stringStartsWith('id', 'T')), {color: 'FFD400'}, 'Town gauges (T1-T7)');
+Map.addLayer(sensors.filter(ee.Filter.stringStartsWith('id', 'E')), {color: '00E5FF'}, 'Early-warning gauges (E1-E3)');
+print('Recommended flood-sensor sites', sensors);
+Export.table.toDrive({collection: sensors, description: 'Umluj_flood_sensor_sites', fileFormat: 'SHP'});
