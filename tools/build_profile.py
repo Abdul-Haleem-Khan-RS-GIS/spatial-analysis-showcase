@@ -21,7 +21,7 @@ md = f"""# Abdul Haleem Khan
 
 [Portfolio]({SITE}) · [Upwork](https://www.upwork.com/freelancers/abdulhaleemrsgis) · [LinkedIn](https://www.linkedin.com/in/abdul-haleem-khan-rs-gis-specialist) · [Email](mailto:abdulhaleemk03@gmail.com)
 
-I turn satellite imagery and spatial data into maps and analysis people can act on. I have 4+ years in GIS: municipal GIS engineer in Al-Qassim, Saudi Arabia; GIS analyst for city comprehensive plans at Shehersaaz; NESPAK; and 33 freelance jobs on Upwork (4.8★ from 14 reviews). I founded [Spatial Nexus](https://spatialnexus.org) and have trained World Bank officials in GIS.
+I turn satellite imagery and spatial data into maps and analysis people can act on. I have 4+ years in GIS: municipal GIS engineer in Al-Qassim, Saudi Arabia; GIS analyst for city comprehensive plans at Shehersaaz; NESPAK; and 33 freelance jobs on Upwork (4.8★ from 14 reviews).
 
 **Work I do:** satellite image analysis (Sentinel-2, Landsat; NDVI, NBR/dNBR, land-cover classification) · site suitability and flood-risk MCDA · cartography and thematic mapping · GIS data engineering (digitising, geocoding, GIS↔CAD, KMZ/GeoJSON)
 
