@@ -127,6 +127,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .globe-foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:12px}.globe-foot a{color:#f5b700}
 .gpop{font:14px/1.45 Inter,sans-serif;color:#16181a}.gpop .mono{color:#5b6668;font-size:11px}.gpop ul{margin:6px 0 0;padding-left:16px}.gpop a{color:#0f5257}
 .maplibregl-popup-content{border-radius:0;padding:12px 14px}
+.form-status{margin:14px 0 0;padding:12px 14px;font-size:15px;line-height:1.5;border-left:3px solid var(--accent);background:#fff}.form-status.ok{border-color:#1a9641}.form-status.warn{border-color:#e08a00}.form-status a{color:var(--accent)}
 .side ul{padding-left:18px;margin:8px 0 0;font-size:14px;color:var(--muted)}
 .next{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0 64px}
 .next a{text-decoration:none}
@@ -260,13 +261,13 @@ index = head("Abdul Haleem Khan | GIS Engineer & Remote Sensing Specialist",
 <section id="contact"><div class="wrap contact">
 <div><span class="mono">Contact</span><h2>Let's work on your map</h2><p class="sub">Tell me about the area, the data you have and what decision the map should support. I usually reply within a few hours.</p>
 <dl><dt>Email</dt><dd><a href="mailto:{EMAIL}">{EMAIL}</a></dd><dt>Upwork</dt><dd><a href="{UPWORK}">abdulhaleemrsgis</a></dd><dt>LinkedIn</dt><dd><a href="{LINKEDIN}">abdul-haleem-khan-rs-gis-specialist</a></dd><dt>Based in</dt><dd>Lahore, Pakistan (GMT+5) · working remotely</dd></dl></div>
-<form action="https://formsubmit.co/{EMAIL}" method="POST">
+<form id="contact-form" data-email="{EMAIL}" action="https://formsubmit.co/{EMAIL}" method="POST">
 <input type="hidden" name="_subject" value="New portfolio enquiry"><input type="hidden" name="_captcha" value="true"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="{URL}thanks.html"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 <label for="n">Name</label><input id="n" name="name" required>
 <label for="e">Email</label><input id="e" name="email" type="email" required autocomplete="email">
 <label for="s">Project / organisation</label><input id="s" name="project">
 <label for="m">Message</label><textarea id="m" name="message" rows="5" required></textarea>
-<p style="margin-top:16px"><button class="btn" type="submit">Send message</button></p></form>
+<p style="margin-top:16px"><button class="btn" type="submit">Send message</button></p><p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p></form>
 </div></section>
 </main>{FOOT}
 <script>
@@ -274,12 +275,14 @@ const bs=document.querySelectorAll('.filters button'),cs=document.querySelectorA
 bs.forEach(b=>b.addEventListener('click',()=>{{bs.forEach(x=>x.setAttribute('aria-pressed',x===b));const f=b.dataset.f;cs.forEach(c=>c.style.display=(f==='all'||c.dataset.cat===f)?'':'none')}}));
 </script>
 <script src="assets/globe.js" defer></script>
+<script src="assets/contact.js" defer></script>
 <script type="application/ld+json">{json.dumps({"@context":"https://schema.org","@type":"Person","name":"Abdul Haleem Khan","jobTitle":"GIS Engineer & Remote Sensing Specialist","url":URL,"email":"mailto:"+EMAIL,"address":{"@type":"PostalAddress","addressLocality":"Lahore","addressCountry":"PK"},"sameAs":[LINKEDIN,GITHUB,UPWORK]})}</script>
 </body></html>"""
 
 open(os.path.join(SITE, "index.html"), "w").write(index)
 os.makedirs(os.path.join(SITE, "assets"), exist_ok=True)
 open(os.path.join(SITE, "assets/site.css"), "w").write(CSS)
+shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "contact.js"), os.path.join(SITE, "assets/contact.js"))
 shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "globe.js"), os.path.join(SITE, "assets/globe.js"))
 shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "portrait.jpg"), os.path.join(SITE, "assets/portrait.jpg"))
 
