@@ -59,7 +59,7 @@ Final maps, reports and data from planning consultancy work in Pakistan and free
 |---|---|---|---|
 | [Solar Power Plant GIS Dataset](05-GIS-Data-Engineering-and-CAD/solar-plant-gis-dataset/) | Solar power plant site, Saudi Arabia | 2026 | ArcGIS Pro, AutoCAD, Shapefile |
 | [1-ft Contours to CAD (DWG + SHP)](05-GIS-Data-Engineering-and-CAD/nc-contours-to-cad/) | Cherokee County, North Carolina, USA | 2026 | ArcGIS Pro, Export to CAD, NC OneMap |
-| [1-ft Contours to SHP & KMZ: Cherokee County, NC](05-GIS-Data-Engineering-and-CAD/scanned-contours-to-kmz/) | Cherokee County, North Carolina, USA | 2026 | ArcMap, Contour data, Shapefile |
+| [1-ft Contours to SHP, KMZ & CAD: Cherokee County, NC](05-GIS-Data-Engineering-and-CAD/scanned-contours-to-kmz/) | Cherokee County, North Carolina, USA | 2026 | ArcMap, Export to CAD, Shapefile |
 | [County Dataset Integration: Scott & Dakota, MN](05-GIS-Data-Engineering-and-CAD/minnesota-county-data-merge/) | Scott and Dakota Counties, Minnesota, USA | 2024 | ArcGIS Pro |
 | [Address Geocoding: New York & Long Island](05-GIS-Data-Engineering-and-CAD/ny-address-geocoding/) | New York, USA | 2025 | Geocoding, Excel, Google Maps |
 | [Refinery Site Plan Digitisation: Process Units & Muster Points (QGIS)](05-GIS-Data-Engineering-and-CAD/qgis-polygon-point-digitisation/) | Texas City, Texas, USA | 2025 | QGIS, Georeferencer, GeoPackage |
