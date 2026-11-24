@@ -645,3 +645,20 @@ D["indonesia-landuse-school-locator"].update(
     findings=["School points concentrate on Java, with further clusters in Sumatra, Bali and the Lesser Sunda islands",
               "Road density follows the same pattern: dense on Java and Sumatra, sparse in Kalimantan and Papua",
               "Two layouts delivered: a national land-use and school locator map and a location map of Indonesia"])
+
+D["nc-contours-to-cad"].update(
+    tools=["ArcMap / ArcGIS Pro", "Export to CAD", "NC OneMap"],
+    data=["NC OneMap 1-ft raster contours (from 3-ft DEMs), file geodatabase",
+          "One-mile area of interest in Cherokee County, NC, around the Hiwassee River and Apalachia Lake, reaching the Tennessee state line",
+          "Esri World Street Map basemap for checking"],
+    method=["Downloaded the contour FGDB and built the AOI box from the client's centre point and a one-mile buffer (adjusted to the client's marked area)",
+            "Clipped the contours to the AOI, keeping the elevation (Contour) and index-contour (Index) attributes",
+            "Exported to shapefile and to DWG with Export to CAD",
+            "Checked the labels at large scale, documented the coordinate system (State Plane, US feet) in a text note and confirmed that both files open"],
+    findings=["9,986 contour lines in the clipped area at a 1-ft interval, with every fifth foot flagged as an index contour",
+              "Elevations run from about 1,277 ft near the lake shore to over 1,650 ft on the ridges",
+              "Delivered SHP + DWG + projection note; accepted and paid",
+              "Noted that the dataset covers North Carolina only, so the part of the AOI in Tennessee has no contours",
+              "Client review: “Abdul delivered exactly what we needed with a complex GIS to CAD conversion.”"],
+    captions=["Area of interest (red box) over the Hiwassee River and Apalachia Lake, Cherokee County, NC",
+              "Clipped 1-ft contours with elevation labels and the contour attribute table (9,986 features)"])
